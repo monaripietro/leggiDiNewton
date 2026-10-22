@@ -1,0 +1,741 @@
+{
+  "common": {
+    "siteName": "Newton in movimento",
+    "skip": "Salta al contenuto",
+    "menu": "Menu",
+    "externalLink": "(sito esterno)",
+    "lang": {
+      "label": "Lingua",
+      "changed": "Lingua cambiata: italiano"
+    },
+    "theme": {
+      "dark": "Tema scuro",
+      "nowDark": "Tema scuro attivato",
+      "nowLight": "Tema chiaro attivato"
+    },
+    "nav": {
+      "label": "Navigazione principale",
+      "home": "Home",
+      "history": "Storia",
+      "law1": "Prima legge",
+      "law2": "Seconda legge",
+      "law3": "Terza legge",
+      "quiz": "Quiz",
+      "sources": "Fonti"
+    },
+    "footer": {
+      "about": "Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.",
+      "license": "Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.",
+      "privacy": "Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.",
+      "linksLabel": "Collegamenti utili",
+      "sources": "Fonti e bibliografia",
+      "credits": "Crediti",
+      "top": "Torna all'inizio"
+    },
+    "pagerLabel": "Pagina precedente e successiva",
+    "badge": {
+      "doc": "Documentato",
+      "trad": "Tradizione",
+      "debate": "Dibattito"
+    },
+    "keyIdea": "Idea chiave",
+    "warn": "Attenzione: leggenda o dibattito",
+    "historyNote": "Nota storica",
+    "latinLabel": "Forma originale in latino",
+    "steps": {
+      "hook": "La domanda",
+      "story": "Un po' di storia",
+      "predict": "Predici",
+      "experiment": "Sperimenta",
+      "explain": "Spiega",
+      "myths": "Errori frequenti",
+      "check": "Verifica"
+    },
+    "myth": "Idea sbagliata",
+    "fact": "Come stanno davvero le cose",
+    "sim": {
+      "play": "Avvia",
+      "pause": "Pausa",
+      "resume": "Riprendi",
+      "reset": "Reset",
+      "step": "Passo avanti",
+      "controls": "Controlli della simulazione",
+      "playback": "Riproduzione",
+      "description": "Descrizione in tempo reale",
+      "dataTable": "Tabella dati (alternativa ai grafici)",
+      "dataEmpty": "Nessun dato ancora: avvia la simulazione.",
+      "physics": "Come funziona la fisica (per i curiosi)",
+      "reducedMotion": "Movimento ridotto attivo: la simulazione parte in pausa. Usa «Avvia» oppure «Passo avanti».",
+      "legend": "Legenda",
+      "legendV": "v = velocità (freccia piena)",
+      "legendF": "F = forza (freccia tratteggiata)",
+      "legendA": "a = accelerazione (freccia puntinata)",
+      "scale": "Scala delle frecce: {px} px = {value} {unit}",
+      "time": "t (s)",
+      "paused": "Simulazione in pausa.",
+      "running": "Simulazione in corso.",
+      "resetDone": "Simulazione riportata allo stato iniziale."
+    },
+    "predict": {
+      "confirm": "Conferma la previsione",
+      "locked": "Previsione registrata. Ora prova la simulazione qui sotto e osserva cosa succede.",
+      "reveal": "Confronta con ciò che hai osservato",
+      "revealHint": "Il confronto si sblocca dopo aver provato la simulazione.",
+      "choose": "Scegli una delle tre risposte.",
+      "yours": "La tua previsione: «{answer}»",
+      "right": "Previsione giusta!",
+      "notQuite": "La simulazione mostra qualcosa di diverso: succede spesso, ed è così che si impara."
+    },
+    "quiz": {
+      "check": "Verifica",
+      "correct": "Esatto!",
+      "retry": "Non ancora: rileggi il suggerimento e riprova.",
+      "choose": "Scegli una risposta prima di verificare."
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Newton in movimento — Le tre leggi del moto",
+      "description": "Scopri le tre leggi di Newton con la loro storia e con simulazioni interattive accessibili, in italiano e in inglese."
+    },
+    "title": "Newton in movimento",
+    "promise": "Scopri come un'idea sul moto ha cambiato il mondo.",
+    "intro": "Tre leggi, poche righe in un libro del 1687, e ancora oggi spiegano perché una palla si ferma, come accelera un'auto e come vola un razzo. Qui le scopri sperimentando, prima di vedere le formule.",
+    "cta": "Inizia dal viaggio storico",
+    "ctaLaws": "Vai subito alla prima legge",
+    "heroAlt": "Illustrazione: un carrello con tre frecce, una per ciascuna legge del moto.",
+    "lawsTitle": "Le tre leggi",
+    "law1": {
+      "tag": "Legge 1",
+      "title": "Inerzia",
+      "text": "Perché un oggetto continua a muoversi, o resta fermo, se nessuna forza lo cambia.",
+      "link": "Esplora la prima legge"
+    },
+    "law2": {
+      "tag": "Legge 2",
+      "title": "Forza e accelerazione",
+      "text": "Come forza e massa decidono quanto cambia la velocità: la forma moderna è F = m·a.",
+      "link": "Esplora la seconda legge"
+    },
+    "law3": {
+      "tag": "Legge 3",
+      "title": "Azione e reazione",
+      "text": "Perché le forze nascono sempre in coppia, e come fa un razzo a spingersi nel vuoto.",
+      "link": "Esplora la terza legge"
+    },
+    "methodTitle": "Come funziona ogni pagina",
+    "method": {
+      "predict": "Predici",
+      "predictText": "Scegli cosa pensi che succederà.",
+      "experiment": "Sperimenta",
+      "experimentText": "Prova la simulazione e cambia i parametri.",
+      "explain": "Spiega",
+      "explainText": "Scopri l'idea chiave e la formula.",
+      "check": "Verifica",
+      "checkText": "Metti alla prova ciò che hai capito."
+    },
+    "accessTitle": "Per tutte e tutti",
+    "accessText": "Ogni simulazione si usa anche solo con la tastiera, ha una descrizione testuale aggiornata in tempo reale e una tabella dati alternativa ai grafici. Se il tuo sistema chiede di ridurre il movimento, le simulazioni partono in pausa."
+  },
+  "history": {
+    "meta": {
+      "title": "Storia — Come sono nate le leggi del moto | Newton in movimento",
+      "description": "Una linea del tempo, con le fonti, dalle idee di Galileo e Descartes ai Principia di Newton del 1687."
+    },
+    "eyebrow": "Il viaggio storico",
+    "title": "Come sono nate le leggi del moto",
+    "lead": "Dai predecessori di Newton alla pubblicazione dei Principia nel 1687: le tappe documentate, le tradizioni e i punti ancora discussi.",
+    "howTitle": "Come leggere questa pagina",
+    "howText": "Ogni tappa ha un'etichetta che indica quanto è affidabile ciò che racconta:",
+    "howDoc": "**Documentato**: confermato da documenti e fonti storiche.",
+    "howTrad": "**Tradizione**: racconto tramandato, plausibile ma non verificabile in ogni dettaglio.",
+    "howDebate": "**Dibattito**: tema su cui le interpretazioni divergono.",
+    "filterLegend": "Mostra le tappe:",
+    "filterAll": "Tutte",
+    "filterCount": "Tappe mostrate: {n} su {total}.",
+    "appleTitle": "Le leggi non nascono dalla mela",
+    "appleText": "L'aneddoto della mela riguarda la gravitazione, non le tre leggi del moto. Le leggi sono il frutto di molti anni di studio e del lavoro di molti studiosi prima di Newton.",
+    "whyLabel": "Perché conta per le leggi?",
+    "sourceLabel": "Fonte",
+    "events": {
+      "predecessors": {
+        "when": "Prima di Newton",
+        "title": "Galileo e Descartes: l'idea di inerzia",
+        "text": "Il principio d'inerzia non nasce con Newton. Galileo lo formulò per il moto orizzontale: un corpo che si muove su un piano continua a muoversi se nulla lo frena. Descartes generalizzò l'idea al moto in linea retta. Newton la inserì come prima delle sue leggi del moto.",
+        "why": "È il cuore della prima legge: senza una forza, il moto di un corpo non cambia. Ed è un buon antidoto al mito del genio che inventa tutto da solo.",
+        "bridge": "[Prima di Newton: Galileo → vai alla Legge 1](legge-1.html)",
+        "source": "[Encyclopaedia Britannica; Stanford Encyclopedia of Philosophy](fonti.html#secondarie)"
+      },
+      "others": {
+        "when": "Prima di Newton",
+        "title": "Molte menti al lavoro",
+        "text": "Altri studiosi prepararono il terreno: Galileo studiò anche la caduta dei gravi, Huygens gli urti e la forza centrifuga, Kepler le orbite dei pianeti. Hooke, Wren e Halley discutevano di una forza che diminuisce con il quadrato della distanza.",
+        "why": "Urti e spinte reciproche tra corpi sono proprio il terreno della terza legge: le idee di Newton raccolgono e organizzano un lavoro collettivo.",
+        "bridge": "[Urti e spinte reciproche → vai alla Legge 3](legge-3.html)",
+        "source": "[Stanford Encyclopedia of Philosophy](fonti.html#sep)"
+      },
+      "birth": {
+        "when": "1642",
+        "title": "Nasce Isaac Newton",
+        "text": "Isaac Newton nasce a Woolsthorpe, nel Lincolnshire, in Inghilterra.",
+        "note": "Perché due date? In Inghilterra si usava ancora il calendario giuliano, secondo cui Newton nacque il 25 dicembre 1642. Nel calendario gregoriano, quello che usiamo oggi, lo stesso giorno corrisponde al 4 gennaio 1643.",
+        "why": "Woolsthorpe è anche il luogo in cui Newton tornerà negli anni della peste. E la doppia data ricorda di leggere le fonti con attenzione.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "plague": {
+        "when": "1665–1667",
+        "title": "La peste e gli «anni dei miracoli»",
+        "text": "La peste costringe a chiudere l'Università di Cambridge. Newton trascorre periodi a Woolsthorpe Manor, con due soggiorni prolungati tra l'estate del 1665 e la primavera del 1667. Questi anni sono ricordati come *annus mirabilis*, gli «anni dei miracoli».",
+        "why": "Il nome stesso dice quanto questo periodo di studio lontano dall'università sia considerato importante nel percorso di Newton.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "apple": {
+        "when": "circa 1666",
+        "title": "La mela",
+        "text": "Da anziano, nel 1726, Newton raccontò a William Stukeley di aver pensato alla gravitazione osservando la caduta di una mela; Stukeley riportò l'episodio nelle sue memorie. Il National Trust lo definisce una leggenda scientifica ritenuta in larga parte vera.",
+        "note": "Non è documentato che la mela abbia colpito Newton in testa: è un dettaglio della tradizione popolare, da considerare non attendibile.",
+        "why": "La mela riguarda la gravitazione, non le tre leggi del moto: **le leggi non nascono dalla mela**.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "halley": {
+        "when": "agosto 1684",
+        "title": "La domanda di Halley",
+        "text": "Edmond Halley visita Newton a Cambridge e gli chiede quale curva descriverebbe un pianeta attratto da una forza che diminuisce con il quadrato della distanza. Newton risponde: un'ellisse. Dice di averlo già calcolato, ma sul momento non ritrova i calcoli.",
+        "why": "Da questa domanda parte la catena di eventi che, in meno di tre anni, porta ai *Principia* e alle tre leggi.",
+        "source": "[Cambridge Digital Library; Stanford Encyclopedia of Philosophy](fonti.html#primarie)"
+      },
+      "demotu": {
+        "when": "novembre 1684",
+        "title": "Il trattato «De motu»",
+        "text": "Newton invia a Halley un trattato di 9 pagine, *De motu corporum in gyrum* («Sul moto dei corpi in orbita»).",
+        "why": "È il nucleo che Newton amplierà fino a farne l'opera in cui compaiono le tre leggi.",
+        "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
+      },
+      "royal": {
+        "when": "10 dicembre 1684",
+        "title": "Alla Royal Society",
+        "text": "Halley riferisce alla Royal Society di aver visto il trattato di Newton. Viene incoraggiata la pubblicazione.",
+        "why": "Da qui il lavoro di Newton sul moto diventa un progetto di pubblicazione.",
+        "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
+      },
+      "writing": {
+        "when": "1685–1686",
+        "title": "Diciotto mesi di lavoro",
+        "text": "Newton lavora intensamente per circa 18 mesi per ampliare il trattato. Nell'aprile del 1686 presenta e dedica alla Royal Society il primo libro dei *Principia*.",
+        "why": "Il trattato di 9 pagine diventa un'opera ampia: sarà questa a contenere le tre leggi.",
+        "source": "[Cambridge Digital Library, MS Add. 3965](fonti.html#cudl-3965)"
+      },
+      "principia": {
+        "when": "1687",
+        "title": "Escono i Principia",
+        "text": "Vengono pubblicati i *Philosophiæ Naturalis Principia Mathematica*. Le tre leggi compaiono nella sezione «Assiomi, ovvero leggi del moto» (*Axiomata, sive leges motus*). Halley ne cura la stampa. Nell'opera Newton applica le leggi anche al moto dei pianeti e alle maree.",
+        "note": "La seconda legge, nei *Principia*, non è scritta come F = m·a: Newton parla di una variazione della «quantità di moto» proporzionale alla forza motrice impressa. F = m·a è la forma moderna, una riformulazione successiva.",
+        "why": "È la nascita ufficiale delle tre leggi del moto.",
+        "bridge": "Vai alle leggi: [Legge 1](legge-1.html) · [Legge 2](legge-2.html) · [Legge 3](legge-3.html)",
+        "source": "[Principia, 1687 (pubblico dominio)](fonti.html#principia)"
+      },
+      "hooke": {
+        "when": "Una disputa sulla priorità",
+        "title": "Hooke e Newton",
+        "text": "Robert Hooke e Isaac Newton ebbero una controversia su chi avesse avuto per primo l'idea di una forza inversamente proporzionale al quadrato della distanza. Le interpretazioni degli storici sono diverse; qui ci limitiamo a segnalarla, senza entrare nei dettagli.",
+        "why": "Ricorda che la scienza è fatta anche di confronti, e talvolta di contrasti, tra persone.",
+        "source": "[Stanford Encyclopedia of Philosophy](fonti.html#sep)"
+      }
+    }
+  },
+  "law1": {
+    "meta": {
+      "title": "Prima legge: l'inerzia | Newton in movimento",
+      "description": "Il carrello sul ghiaccio: una simulazione interattiva per capire che senza forza risultante la velocità non cambia."
+    },
+    "eyebrow": "Legge 1 · Inerzia",
+    "title": "Prima legge: l'inerzia",
+    "hook": "Perché una palla che rotola, prima o poi, si ferma?",
+    "story": "Galileo aveva già capito, per il moto orizzontale, che un corpo continua a muoversi se nulla lo frena; Descartes estese l'idea al moto in linea retta. Newton la mise al primo posto tra le sue leggi del moto, nei *Principia* del 1687. [Leggi la storia completa](storia.html#ev-predecessors)",
+    "predict": {
+      "text": "Dai una spinta a un carrello su una superficie senza alcun attrito, come nello spazio. Dopo la spinta, che cosa succede?",
+      "a": "Rallenta piano piano e si ferma, perché la spinta si consuma.",
+      "b": "Continua alla stessa velocità, in linea retta.",
+      "c": "Accelera sempre di più.",
+      "fa": "È l'intuizione più comune, perché sulla Terra tutto finisce per fermarsi. Ma a fermare le cose è l'attrito: hai visto che nella corsia senza attrito il carrello non rallenta mai.",
+      "fb": "Proprio così: senza forze che lo frenino, il carrello mantiene la stessa velocità. Lo hai visto nella corsia senza attrito.",
+      "fc": "Per accelerare servirebbe una forza che continua ad agire. Dopo la spinta non c'è più nessuna forza: la velocità resta costante."
+    },
+    "sim": {
+      "title": "Il carrello sul ghiaccio",
+      "intro": "Scegli la superficie, poi premi «Dai una spinta». La corsia superiore usa l'attrito che scegli; quella inferiore, per confronto, non ha attrito.",
+      "canvasLabel": "Simulazione, vista laterale: due corsie orizzontali con un carrello ciascuna. Sopra il carrello con l'attrito scelto, sotto il carrello senza attrito. Le frecce indicano la velocità v e la forza di attrito F.",
+      "laneMain": "Con attrito (μ = {mu})",
+      "laneFree": "Senza attrito (μ = 0)",
+      "push": "Dai una spinta",
+      "impulse": "Spinta (impulso)",
+      "mu": "Attrito μ",
+      "mass": "Massa",
+      "surface": "Superficie",
+      "ice": "Ghiaccio",
+      "wood": "Legno",
+      "rubber": "Gomma",
+      "space": "Spazio (0)",
+      "compare": "Mostra la corsia senza attrito",
+      "rV": "Velocità",
+      "rF": "Forza risultante",
+      "rD": "Distanza percorsa",
+      "rVfree": "Velocità senza attrito",
+      "graph": "Velocità nel tempo (grafico v–t)",
+      "graphY": "v (m/s)",
+      "colT": "t (s)",
+      "colV": "v con attrito (m/s)",
+      "colVfree": "v senza attrito (m/s)",
+      "colF": "F risultante (N)",
+      "ready": "Carrello fermo, massa {m} kg, attrito μ = {mu}. Premi «Dai una spinta».",
+      "pushed": "Spinta! Il carrello parte a {v} m/s.",
+      "moving": "Carrello da {m} kg, attrito μ = {mu}: velocità {v} m/s, forza risultante {f} N.",
+      "constant": "Carrello da {m} kg, attrito zero: velocità costante {v} m/s. Nessuna forza, nessun cambiamento di velocità.",
+      "stopped": "Il carrello con attrito si è fermato dopo {d} m: l'attrito lo ha frenato. Quello senza attrito continua a {v} m/s.",
+      "stoppedAlone": "Il carrello si è fermato dopo {d} m: l'attrito lo ha frenato.",
+      "physics": "Ogni 1/120 di secondo il motore calcola: forza di attrito F = −μ·m·g (sempre opposta al moto, solo mentre il carrello si muove), accelerazione a = F / m, poi aggiorna velocità e posizione (v ← v + a·Δt, x ← x + v·Δt). Con μ = 0 la forza è zero, quindi a = 0 e la velocità non cambia mai. La spinta è un impulso J: cambia la velocità di J / m. Valore usato: g = 9,81 m/s². La pista scorre in modo continuo: quando il carrello esce a destra rientra a sinistra."
+    },
+    "keyIdea": {
+      "sentence": "Un corpo non cambia il suo moto da solo: serve una forza che lo cambi.",
+      "text": "Se la forza risultante su un corpo è zero, il corpo resta fermo oppure continua a muoversi in linea retta a velocità costante. Il carrello si ferma solo perché l'attrito è una forza che lo frena.",
+      "formula": "ΣF = 0  ⇒  v = costante",
+      "sumF": "forza risultante, cioè la somma di tutte le forze che agiscono sul corpo. Si misura in newton (N).",
+      "v": "velocità, in metri al secondo (m/s). Ha un valore e una direzione: «costante» vuol dire che non cambiano né l'uno né l'altra."
+    },
+    "latin": {
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "text": "Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.",
+      "modern": "In parole semplici: ogni corpo resta fermo, o continua a muoversi in linea retta a velocità costante, finché delle forze non lo costringono a cambiare. [Fonte](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "«Serve una forza per mantenere il moto.»",
+        "fact": "Serve una forza per *cambiare* il moto. Sulla Terra sembra il contrario perché attrito e aria frenano sempre: per questo bisogna continuare a spingere."
+      },
+      "2": {
+        "myth": "«L'inerzia è una forza che spinge il corpo in avanti.»",
+        "fact": "L'inerzia non è una forza: è la tendenza di ogni corpo a mantenere il suo stato di moto. Nel carrello senza attrito non compare nessuna freccia di forza, eppure si muove."
+      },
+      "3": {
+        "myth": "«Gli oggetti pesanti hanno più inerzia, quindi cadono più velocemente.»",
+        "fact": "Più massa vuol dire più inerzia, ma anche più forza di gravità: i due effetti si compensano. Senza l'aria, oggetti di massa diversa cadono insieme."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "Una sonda spaziale, lontana da pianeti e stelle, spegne i motori. Che cosa fa?",
+        "a": "Si ferma subito.",
+        "b": "Rallenta piano piano.",
+        "c": "Continua a muoversi alla stessa velocità.",
+        "fa": "Suggerimento: per fermarsi servirebbe una forza. Nello spazio vuoto quale forza potrebbe frenarla?",
+        "fb": "Suggerimento: a rallentare le cose sulla Terra è l'attrito. Nello spazio non c'è niente che sfreghi contro la sonda.",
+        "fc": "Senza forze, il moto non cambia: la sonda prosegue alla stessa velocità, in linea retta."
+      },
+      "q2": {
+        "text": "Un libro è fermo sul tavolo. Quale frase è corretta?",
+        "a": "Sul libro non agisce nessuna forza.",
+        "b": "Le forze sul libro si bilanciano: la forza risultante è zero.",
+        "c": "L'inerzia tiene fermo il libro come una colla.",
+        "fa": "Suggerimento: la gravità tira il libro verso il basso. Che cosa gli impedisce di cadere?",
+        "fb": "Giusto: il peso tira verso il basso e il tavolo spinge verso l'alto con la stessa intensità. Risultante zero, quindi il libro resta fermo.",
+        "fc": "Suggerimento: l'inerzia non è una forza, è la tendenza a non cambiare moto. Pensa a quali forze agiscono sul libro."
+      }
+    },
+    "prev": "← Storia",
+    "next": "Seconda legge →"
+  },
+  "law2": {
+    "meta": {
+      "title": "Seconda legge: forza e accelerazione | Newton in movimento",
+      "description": "Spingi il carrello: scopri con una simulazione interattiva come forza e massa determinano l'accelerazione (F = m·a)."
+    },
+    "eyebrow": "Legge 2 · Forza e accelerazione",
+    "title": "Seconda legge: forza e accelerazione",
+    "hook": "Perché è più facile mettere in moto un carrello vuoto che uno pieno?",
+    "story": "Nei *Principia* (1687) Newton scrisse che la variazione della «quantità di moto» è proporzionale alla forza motrice impressa, e avviene lungo la retta in cui la forza agisce. Oggi la scriviamo, in forma moderna, F = m·a. [Leggi la storia](storia.html#ev-principia)",
+    "predict": {
+      "text": "Spingi un carrello con una certa forza. Poi lo spingi con una forza doppia, senza cambiare la massa. Che cosa succede all'accelerazione?",
+      "a": "Resta uguale.",
+      "b": "Raddoppia.",
+      "c": "Diventa quattro volte più grande.",
+      "fa": "Prova a confrontare due righe della tabella con la stessa massa: con forza doppia l'accelerazione misurata non resta uguale.",
+      "fb": "Esatto: a parità di massa, accelerazione e forza sono proporzionali. Doppia forza, doppia accelerazione.",
+      "fc": "Guarda la tabella degli esperimenti: con forza doppia l'accelerazione raddoppia, non quadruplica. Forza e accelerazione sono proporzionali."
+    },
+    "sim": {
+      "title": "Spingi il carrello",
+      "intro": "Scegli forza e massa, poi avvia: la forza agisce finché il carrello non arriva in fondo alla pista. Ogni prova finisce nella tabella degli esperimenti.",
+      "canvasLabel": "Simulazione, vista laterale: un carrello su una pista orizzontale lunga 20 metri, spinto da una forza F. Le frecce indicano la forza F, l'accelerazione a e la velocità v.",
+      "modeLabel": "Modalità",
+      "modeFree": "Esperimento libero",
+      "modeRule": "Scopri la regola",
+      "modeChallenge": "Sfida",
+      "force": "Forza F",
+      "forceHint": "Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la freccia rossa sulla pista.",
+      "mass": "Massa m",
+      "direction": "Direzione della forza",
+      "right": "Verso destra",
+      "left": "Verso sinistra",
+      "friction": "Attrito con la pista (μ = 0,1)",
+      "rF": "Forza applicata",
+      "rNet": "Forza risultante",
+      "rM": "Massa",
+      "rA": "Accelerazione a = F/m",
+      "rV": "Velocità",
+      "rX": "Posizione",
+      "graphA": "Accelerazione nel tempo (a–t)",
+      "graphV": "Velocità nel tempo (v–t)",
+      "graphAY": "a (m/s²)",
+      "graphVY": "v (m/s)",
+      "trials": "Tabella degli esperimenti (ultime 5 prove)",
+      "trialsCaption": "Ultime prove: forza, massa e accelerazione misurata",
+      "colN": "Prova",
+      "colF": "F (N)",
+      "colM": "m (kg)",
+      "colA": "a misurata (m/s²)",
+      "colT": "t (s)",
+      "colV": "v (m/s)",
+      "colX": "x (m)",
+      "noTrials": "Nessuna prova ancora. Avvia la simulazione!",
+      "historyNote": "Newton scrisse la legge in termini di variazione della quantità di moto; F = m·a è la forma moderna.",
+      "ready": "Carrello fermo. Forza {f} N, massa {m} kg. Premi «Avvia».",
+      "moving": "Forza risultante {f} N, massa {m} kg: accelerazione {a} m/s², velocità {v} m/s.",
+      "static": "La spinta di {f} N non basta a vincere l'attrito statico: il carrello resta fermo.",
+      "end": "Fine pista. Prova registrata: F = {f} N, m = {m} kg, a = {a} m/s².",
+      "forceChanged": "Forza: {f} N. Accelerazione prevista: {a} m/s².",
+      "massChanged": "Massa: {m} kg. Accelerazione prevista: {a} m/s².",
+      "ruleStart": "Fai una prova con i valori iniziali. Poi cambia **una sola** grandezza alla volta.",
+      "ruleNext": "Ora prova a raddoppiare la forza lasciando uguale la massa: che cosa succede ad a?",
+      "ruleForceDouble": "Hai raddoppiato la forza con la stessa massa: l'accelerazione è passata da {a1} a {a2} m/s², cioè circa il doppio. Ora prova a raddoppiare la massa con la stessa forza.",
+      "ruleMassDouble": "Hai raddoppiato la massa con la stessa forza: l'accelerazione è passata da {a1} a {a2} m/s², cioè circa la metà. Hai scoperto la regola: a = F / m.",
+      "ruleOther": "Confronta le ultime due prove: F è passata da {f1} a {f2} N, m da {m1} a {m2} kg, a da {a1} a {a2} m/s². Per vedere bene la regola cambia una sola grandezza e prova a raddoppiarla.",
+      "challengeGoal": "Sfida: parti da fermo e taglia il traguardo a {d} m in {T} s esatti (tolleranza ± 0,1 s). Scegli F e m, poi avvia.",
+      "challengeWin": "Traguardo in {t} s: sfida vinta! Con F = {f} N e m = {m} kg l'accelerazione era {a} m/s².",
+      "challengeEarly": "Traguardo in {t} s: troppo presto. Ti serve un'accelerazione più piccola: diminuisci la forza o aumenta la massa.",
+      "challengeLate": "Traguardo in {t} s: troppo tardi. Ti serve un'accelerazione più grande: aumenta la forza o diminuisci la massa.",
+      "challengeHint": "Indizio: per percorrere d metri partendo da fermi in T secondi serve a = 2·d / T².",
+      "challengeNew": "Nuova sfida",
+      "finishLabel": "traguardo",
+      "physics": "Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio."
+    },
+    "keyIdea": {
+      "sentence": "La forza risultante cambia la velocità: più massa, più difficile cambiarla.",
+      "text": "A parità di massa, una forza doppia produce un'accelerazione doppia. A parità di forza, una massa doppia accelera la metà. E l'accelerazione ha sempre la direzione della forza risultante.",
+      "formula": "F = m · a   (forma moderna)",
+      "F": "forza risultante, in newton (N). 1 N è la forza che fa accelerare 1 kg di 1 m/s².",
+      "m": "massa, in chilogrammi (kg): misura quanto è difficile cambiare il moto del corpo.",
+      "a": "accelerazione, in metri al secondo quadrato (m/s²): di quanto cambia la velocità ogni secondo."
+    },
+    "massWeight": {
+      "title": "Massa e peso non sono la stessa cosa",
+      "text": "La **massa** (kg) dice quanta inerzia ha un corpo ed è uguale ovunque. Il **peso** è la forza con cui la gravità lo attira (N): sulla Terra vale circa m · 9,81 N, sulla Luna molto meno. Un astronauta sulla Luna pesa meno, ma ha la stessa massa."
+    },
+    "latin": {
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "text": "Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.",
+      "modern": "In parole semplici: il cambiamento del moto è proporzionale alla forza impressa e avviene nella direzione in cui la forza agisce. [Fonte](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "«La velocità è proporzionale alla forza.»",
+        "fact": "È l'**accelerazione** a essere proporzionale alla forza. Con una forza costante la velocità continua a crescere: guarda il grafico v–t, è una retta in salita."
+      },
+      "2": {
+        "myth": "«La forza è dentro il corpo che si muove.»",
+        "fact": "Una forza è un'azione tra due corpi (chi spinge e chi è spinto). Quando la spinta finisce, il corpo non si porta dietro nessuna forza: conserva solo la sua velocità."
+      },
+      "3": {
+        "myth": "«Massa e peso sono la stessa cosa.»",
+        "fact": "La massa si misura in kg e non cambia; il peso è una forza, si misura in N e dipende dalla gravità del luogo."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "Un carrello di 4 kg viene spinto con una forza risultante di 8 N. Quanto vale la sua accelerazione?",
+        "a": "32 m/s²",
+        "b": "2 m/s²",
+        "c": "0,5 m/s²",
+        "fa": "Suggerimento: hai moltiplicato forza e massa. L'accelerazione è la forza divisa per la massa.",
+        "fb": "Esatto: a = F / m = 8 N / 4 kg = 2 m/s².",
+        "fc": "Suggerimento: hai diviso la massa per la forza. Prova al contrario: a = F / m."
+      },
+      "q2": {
+        "text": "Spingi con la stessa forza un carrello vuoto e uno carico, di massa tripla. Che cosa succede?",
+        "a": "Il carrello carico accelera un terzo di quello vuoto.",
+        "b": "Accelerano allo stesso modo, perché la forza è la stessa.",
+        "c": "Il carrello carico accelera tre volte di più.",
+        "fa": "Giusto: a parità di forza, massa tripla significa accelerazione tre volte più piccola.",
+        "fb": "Suggerimento: la forza è la stessa, ma conta anche la massa. Ricorda a = F / m.",
+        "fc": "Suggerimento: più massa rende più difficile cambiare la velocità, non più facile."
+      },
+      "q3": {
+        "text": "Un carrello si muove verso destra, ma la forza risultante su di esso punta verso sinistra. Che cosa succede?",
+        "a": "Continua ad accelerare verso destra.",
+        "b": "Rallenta, perché l'accelerazione punta verso sinistra.",
+        "c": "Si ferma all'istante.",
+        "fa": "Suggerimento: l'accelerazione ha sempre la direzione della forza risultante, non quella della velocità.",
+        "fb": "Esatto: l'accelerazione punta a sinistra, quindi la velocità verso destra diminuisce (e poi, se la forza continua, il carrello torna indietro).",
+        "fc": "Suggerimento: una forza cambia la velocità poco alla volta. Per fermarsi all'istante servirebbe un'accelerazione infinita."
+      }
+    },
+    "prev": "← Prima legge",
+    "next": "Terza legge →"
+  },
+  "law3": {
+    "meta": {
+      "title": "Terza legge: azione e reazione | Newton in movimento",
+      "description": "Pattinatori e razzo: simulazioni interattive per capire che le forze nascono in coppia e agiscono su corpi diversi."
+    },
+    "eyebrow": "Legge 3 · Azione e reazione",
+    "title": "Terza legge: azione e reazione",
+    "hook": "Se spingi un amico sui pattini, perché ti muovi anche tu?",
+    "story": "La terza legge è l'ultima delle tre leggi enunciate nei *Principia* (1687). Prima di Newton, Huygens aveva già studiato gli urti tra corpi. [Leggi la storia](storia.html#ev-others)",
+    "predict": {
+      "text": "Due pattinatori sul ghiaccio: A (adulto, 60 kg) spinge B (ragazzo, 40 kg). Durante la spinta, chi riceve la forza più grande?",
+      "a": "B, perché è A a spingere.",
+      "b": "A, perché è più pesante.",
+      "c": "Nessuno dei due: le due forze hanno la stessa intensità.",
+      "fa": "Hai visto le due frecce durante la spinta: hanno la stessa lunghezza. B si muove più veloce non perché riceve più forza, ma perché ha meno massa.",
+      "fb": "Le due frecce di forza hanno la stessa lunghezza. A si muove più lentamente perché ha più massa, non perché riceve più forza.",
+      "fc": "Esatto: A spinge B e B spinge A con la stessa forza, in verso opposto. Le velocità sono diverse solo perché le masse sono diverse."
+    },
+    "sim": {
+      "title": "Pattini e razzo",
+      "intro": "Due scene: nella prima due pattinatori si spingono a vicenda; nella seconda un razzo nello spazio espelle gas.",
+      "sceneLabel": "Scena",
+      "sceneA": "A · Due pattinatori",
+      "sceneB": "B · Razzo nello spazio",
+      "canvasLabelA": "Simulazione, scena dei pattinatori: due figure su una pista di ghiaccio, A a sinistra e B a destra. Durante la spinta compaiono due frecce di forza uguali e opposte, ciascuna sul proprio corpo.",
+      "canvasLabelB": "Simulazione, scena del razzo: un razzo nello spazio vuoto espelle gas verso sinistra e viene spinto verso destra. Le frecce indicano la forza del razzo sul gas e quella del gas sul razzo.",
+      "massA": "Massa di A",
+      "massB": "Massa di B",
+      "pushBtn": "Spingi!",
+      "forceOnB": "F su B da A",
+      "forceOnA": "F su A da B",
+      "labelA": "A",
+      "labelB": "B",
+      "rFA": "Forza su A",
+      "rFB": "Forza su B",
+      "rVA": "Velocità di A",
+      "rVB": "Velocità di B",
+      "rP": "Quantità di moto totale",
+      "readyA": "A ({mA} kg) e B ({mB} kg) sono fermi e vicini. Premi «Spingi!».",
+      "pushing": "Spinta in corso: B riceve {f} N verso destra da A, A riceve {f} N verso sinistra da B. Stessa intensità, verso opposto, su corpi diversi.",
+      "released": "Fine della spinta. A scivola a sinistra a {vA} m/s, B a destra a {vB} m/s: chi ha meno massa va più veloce.",
+      "endA": "I pattinatori hanno raggiunto il bordo della pista. Rapporto delle velocità: {ratio}, uguale al rapporto inverso delle masse.",
+      "flow": "Portata del getto",
+      "dryMass": "Massa del razzo vuoto",
+      "ignite": "Accendi il motore",
+      "forceOnGas": "F sul gas dal razzo",
+      "forceOnRocket": "F sul razzo dal gas",
+      "rThrust": "Spinta",
+      "rMass": "Massa attuale",
+      "rFuel": "Carburante",
+      "rVR": "Velocità del razzo",
+      "readyB": "Razzo fermo nello spazio, massa {m} kg di cui {fuel} kg di carburante. Premi «Accendi il motore».",
+      "burning": "Motore acceso: il razzo spinge il gas a sinistra con {f} N, il gas spinge il razzo a destra con {f} N. Velocità {v} m/s.",
+      "burnout": "Carburante esaurito: il razzo prosegue a velocità costante {v} m/s (prima legge!).",
+      "vacuumNote": "Nello spazio non c'è aria: il razzo non si «appoggia» a niente. Spinge il proprio gas all'indietro, e il gas spinge il razzo in avanti.",
+      "graphB": "Velocità del razzo nel tempo (v–t)",
+      "graphVY": "v (m/s)",
+      "colT": "t (s)",
+      "colVA": "v di A (m/s)",
+      "colVB": "v di B (m/s)",
+      "colP": "quantità di moto totale (kg·m/s)",
+      "colVR": "v razzo (m/s)",
+      "colM": "massa (kg)",
+      "physics": "Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s."
+    },
+    "keyIdea": {
+      "sentence": "Ogni volta che A spinge B, B spinge A con la stessa forza, in verso opposto.",
+      "text": "Le forze nascono sempre in coppia. Le due forze della coppia hanno la stessa intensità e verso opposto, ma agiscono su corpi diversi: per questo non si annullano. Gli effetti sul moto, invece, dipendono dalle masse.",
+      "formula": "F(A su B) = − F(B su A)",
+      "FAB": "la forza che A esercita su B, in newton (N).",
+      "FBA": "la forza che B esercita su A. Il segno meno indica il verso opposto."
+    },
+    "latin": {
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "text": "Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.",
+      "modern": "In parole semplici: a ogni azione corrisponde sempre una reazione uguale e contraria; le azioni reciproche di due corpi sono sempre uguali e dirette in versi opposti. [Fonte](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "«Il più forte spinge di più.»",
+        "fact": "Le due forze della coppia sono sempre uguali. Chi è più «forte» può spingere più a lungo o più intensamente, ma in ogni istante riceve indietro la stessa forza che dà."
+      },
+      "2": {
+        "myth": "«Azione e reazione si annullano, quindi niente si muove.»",
+        "fact": "Si annullerebbero solo se agissero sullo stesso corpo. Invece una agisce su A e l'altra su B: ciascun corpo riceve una sola delle due forze e si mette in moto."
+      },
+      "3": {
+        "myth": "«Un camion colpisce un'auto con più forza di quanta l'auto ne eserciti sul camion.»",
+        "fact": "Durante l'urto le due forze sono uguali. L'auto subisce un effetto molto maggiore perché ha molta meno massa: a parità di forza, accelera di più."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "Sei su una barca ferma e lanci uno zaino verso la riva. Che cosa succede alla barca?",
+        "a": "Resta ferma.",
+        "b": "Si sposta verso la riva, insieme allo zaino.",
+        "c": "Si sposta un po' nel verso opposto al lancio.",
+        "fa": "Suggerimento: mentre spingi lo zaino, lo zaino spinge te. Tu sei sulla barca…",
+        "fb": "Suggerimento: la forza che lo zaino esercita su di te ha verso opposto al lancio.",
+        "fc": "Esatto: tu spingi lo zaino verso la riva, lo zaino spinge te (e la barca) nel verso opposto. La barca, molto più pesante, si muove poco."
+      },
+      "q2": {
+        "text": "Perché un razzo può accelerare anche nello spazio, dove non c'è aria?",
+        "a": "Perché spinge il gas all'indietro e il gas spinge il razzo in avanti.",
+        "b": "Non può: senza aria su cui appoggiarsi, il razzo resta fermo.",
+        "c": "Perché nello spazio non c'è gravità.",
+        "fa": "Esatto: la coppia di forze è tra razzo e gas espulso. L'aria non serve.",
+        "fb": "Suggerimento: nella simulazione il razzo è nel vuoto, eppure accelera. Con che cosa interagisce?",
+        "fc": "Suggerimento: la gravità non c'entra con la spinta. Chiediti: su che cosa agisce il razzo, e che cosa agisce sul razzo?"
+      }
+    },
+    "prev": "← Seconda legge",
+    "next": "Quiz finale →"
+  },
+  "quiz": {
+    "meta": {
+      "title": "Quiz finale | Newton in movimento",
+      "description": "Metti alla prova ciò che hai imparato sulle tre leggi di Newton e sulla loro storia, con suggerimenti per ogni risposta."
+    },
+    "eyebrow": "Verifica finale",
+    "title": "Quiz finale",
+    "lead": "Otto domande sulle tre leggi e sulla loro storia. Nessun punteggio negativo: per ogni risposta ricevi una spiegazione o un suggerimento. Puoi riprovare quante volte vuoi.",
+    "progress": "Risposte corrette: {n} su {total}.",
+    "done": "Complimenti: hai risposto correttamente a tutte le domande!",
+    "q1": {
+      "text": "Un disco da hockey scivola su un ghiaccio perfettamente liscio. Nessuna forza orizzontale agisce su di esso. Che cosa fa?",
+      "a": "Rallenta finché si ferma.",
+      "b": "Prosegue in linea retta a velocità costante.",
+      "c": "Curva leggermente.",
+      "fa": "Suggerimento: senza attrito, che cosa potrebbe rallentarlo? (Legge 1)",
+      "fb": "Esatto: è la prima legge. Senza forza risultante la velocità non cambia.",
+      "fc": "Suggerimento: per curvare serve una forza laterale. (Legge 1)"
+    },
+    "q2": {
+      "text": "Quale grandezza è proporzionale alla forza risultante, a parità di massa?",
+      "a": "La velocità.",
+      "b": "La posizione.",
+      "c": "L'accelerazione.",
+      "fa": "Suggerimento: con una forza costante la velocità continua a crescere, quindi non può essere proporzionale alla forza.",
+      "fb": "Suggerimento: la posizione dipende anche da dove sei partito. Pensa a che cosa cambia la forza.",
+      "fc": "Esatto: a = F / m. Doppia forza, doppia accelerazione."
+    },
+    "q3": {
+      "text": "Una forza di 15 N agisce su una massa di 3 kg. Quanto vale l'accelerazione?",
+      "a": "5 m/s²",
+      "b": "45 m/s²",
+      "c": "0,2 m/s²",
+      "fa": "Esatto: a = F / m = 15 / 3 = 5 m/s².",
+      "fb": "Suggerimento: hai moltiplicato. L'accelerazione è forza diviso massa.",
+      "fc": "Suggerimento: hai diviso massa per forza. Prova F / m."
+    },
+    "q4": {
+      "text": "Un'auto e un camion si scontrano. Durante l'urto, come sono le forze che si scambiano?",
+      "a": "Il camion esercita una forza maggiore.",
+      "b": "Sono uguali in intensità e opposte in verso.",
+      "c": "L'auto esercita una forza maggiore, perché va più veloce.",
+      "fa": "Suggerimento: la terza legge vale sempre, qualunque siano le masse.",
+      "fb": "Esatto: terza legge. L'auto subisce effetti maggiori solo perché ha meno massa.",
+      "fc": "Suggerimento: la velocità non cambia la regola di azione e reazione."
+    },
+    "q5": {
+      "text": "Perché azione e reazione non si annullano?",
+      "a": "Perché agiscono su corpi diversi.",
+      "b": "Perché una è sempre più grande.",
+      "c": "In realtà si annullano sempre.",
+      "fa": "Esatto: ciascuna forza agisce su un corpo diverso, quindi non si possono sommare sullo stesso corpo.",
+      "fb": "Suggerimento: la terza legge dice che sono sempre uguali in intensità.",
+      "fc": "Suggerimento: se si annullassero, nessun razzo potrebbe partire. Su quali corpi agiscono?"
+    },
+    "q6": {
+      "text": "Secondo le fonti, che legame c'è tra la mela di Newton e le tre leggi del moto?",
+      "a": "Le tre leggi nacquero quando una mela colpì Newton in testa.",
+      "b": "Nessuno diretto: l'aneddoto riguarda la gravitazione.",
+      "c": "La mela ispirò la terza legge.",
+      "fa": "Suggerimento: che la mela abbia colpito Newton in testa non è documentato. E di quale idea parla l'aneddoto?",
+      "fb": "Esatto: la mela è legata alla gravitazione, non alle leggi del moto.",
+      "fc": "Suggerimento: rileggi la tappa «La mela» nella pagina Storia."
+    },
+    "q7": {
+      "text": "In quale opera compaiono per la prima volta le tre leggi, e in che anno?",
+      "a": "Nel De motu corporum in gyrum, 1684.",
+      "b": "Nei Principia, 1687.",
+      "c": "In una lettera alla Royal Society, 1666.",
+      "fa": "Suggerimento: il De motu è il trattato di 9 pagine che Newton poi ampliò.",
+      "fb": "Esatto: nei Philosophiæ Naturalis Principia Mathematica del 1687, nella sezione «Assiomi, ovvero leggi del moto».",
+      "fc": "Suggerimento: guarda la linea del tempo nella pagina Storia."
+    },
+    "q8": {
+      "text": "Chi aveva già formulato l'idea di inerzia, almeno in parte, prima di Newton?",
+      "a": "Nessuno: è un'idea interamente di Newton.",
+      "b": "Halley.",
+      "c": "Galileo e Descartes.",
+      "fa": "Suggerimento: Newton raccolse idee di chi lo aveva preceduto. Rileggi «Prima di Newton».",
+      "fb": "Suggerimento: Halley ebbe un ruolo importante nella nascita dei Principia, ma non nell'idea di inerzia.",
+      "fc": "Esatto: Galileo per il moto orizzontale, Descartes per il moto in linea retta."
+    },
+    "prev": "← Terza legge",
+    "next": "Fonti →"
+  },
+  "sources": {
+    "meta": {
+      "title": "Fonti e bibliografia | Newton in movimento",
+      "description": "Le fonti primarie e secondarie usate per i contenuti storici del sito, con indicazione delle licenze."
+    },
+    "eyebrow": "Fonti",
+    "title": "Fonti e bibliografia",
+    "lead": "Ogni affermazione storica del sito rimanda a una di queste fonti. Distinguiamo tra fonti primarie (documenti dell'epoca) e secondarie (studi e opere di consultazione).",
+    "primaryTitle": "Fonti primarie",
+    "secondaryTitle": "Fonti secondarie",
+    "principles": "Principio editoriale: distinguiamo sempre tra fatto documentato, tradizione e interpretazione. I testi in latino citati provengono da edizioni dei *Principia* di pubblico dominio; le traduzioni in italiano e in inglese sono nostre.",
+    "items": {
+      "principia": {
+        "title": "Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687; 3ª ed. 1726)",
+        "desc": "L'opera in cui compaiono le tre leggi, nella sezione «Axiomata, sive leges motus». Scansioni consultabili nella collezione Newton della Cambridge Digital Library.",
+        "link": "[Cambridge Digital Library — Newton Papers](https://cudl.lib.cam.ac.uk/collections/newton/1)",
+        "license": "Testo originale: pubblico dominio."
+      },
+      "cudl": {
+        "title": "Cambridge Digital Library, «Papers connected with the Principia» (MS Add. 3965)",
+        "desc": "Manoscritti legati alla genesi e alla revisione dei *Principia*.",
+        "link": "[MS Add. 3965 su Cambridge Digital Library](https://cudl.lib.cam.ac.uk/view/MS-ADD-03965/1)",
+        "license": "Consultazione online; verificare le condizioni d'uso delle immagini sul sito."
+      },
+      "nt": {
+        "title": "National Trust, storia di Woolsthorpe Manor",
+        "desc": "La casa natale di Newton, gli anni 1665–1667 e la storia della mela.",
+        "link": "[History of Woolsthorpe Manor — National Trust](https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/woolsthorpe-manor/history-of-woolsthorpe-manor)",
+        "license": "Contenuto protetto da copyright: citato solo come riferimento."
+      },
+      "sep": {
+        "title": "Stanford Encyclopedia of Philosophy, voce «Newton's Philosophiae Naturalis Principia Mathematica»",
+        "desc": "Voce di consultazione sulla genesi, la struttura e le leggi dei *Principia*.",
+        "link": "[plato.stanford.edu](https://plato.stanford.edu/entries/newton-principia/)",
+        "license": "Contenuto protetto da copyright: citato solo come riferimento."
+      },
+      "britannica": {
+        "title": "Encyclopaedia Britannica, «Newton's laws of motion»",
+        "desc": "Voce enciclopedica sulle tre leggi e sui loro predecessori.",
+        "link": "[britannica.com](https://www.britannica.com/science/Newtons-laws-of-motion)",
+        "license": "Contenuto protetto da copyright: citato solo come riferimento."
+      },
+      "nova": {
+        "title": "NOVA / PBS, «Newton's Dark Secrets»",
+        "desc": "Documentario e materiali di approfondimento sulla vita e il lavoro di Newton.",
+        "link": "[pbs.org/wgbh/nova](https://www.pbs.org/wgbh/nova/newton/)",
+        "license": "Contenuto protetto da copyright: citato solo come riferimento."
+      }
+    },
+    "imagesTitle": "Immagini e font",
+    "imagesText": "Tutte le illustrazioni sono disegni SVG originali creati per questo sito. Font: Atkinson Hyperlegible (Braille Institute) e Fraunces, entrambi con licenza SIL Open Font License 1.1, ospitati sul sito stesso. L'elenco completo è nel file CREDITS.md del progetto.",
+    "prev": "← Quiz",
+    "next": "Torna alla home →"
+  },
+  "historyPager": {
+    "prev": "← Home",
+    "next": "Prima legge →"
+  }
+}

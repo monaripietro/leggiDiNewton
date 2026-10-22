@@ -1,0 +1,129 @@
+/* Design token. Ogni coppia testo/sfondo è verificata da tools/contrast-check.js */
+
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/atkinson-hyperlegible-latin-400-normal.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/atkinson-hyperlegible-latin-400-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("../fonts/atkinson-hyperlegible-latin-700-normal.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("../fonts/fraunces-latin-600-normal.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  /* tema chiaro */
+  --bg: #FBFAF7;
+  --surface: #FFFFFF;
+  --ink: #1F2A37;
+  --ink-soft: #4B5563;
+  --mint: #CDEFE3;
+  --peach: #FFD9C4;
+  --lavender: #DCD3F5;
+  --sky: #CFE6FA;
+  --lemon: #FFF1B8;
+  --accent: #2F6F8F;
+  --on-accent: #FFFFFF;
+  --border: #7A8494;
+  --line: #E3E1DA;
+  --focus: #2F6F8F;
+  /* colori dei vettori nelle simulazioni (componenti UI: ≥ 3:1 sulla superficie) */
+  --vec-v: #1D6B4F;
+  --vec-f: #B4441B;
+  --vec-a: #5B3FA8;
+  --sim-ground: #6B7280;
+  --sim-body: #2F6F8F;
+
+  --font-body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --fs-body: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
+  --fs-small: 1rem;
+  --fs-h1: clamp(2rem, 1.5rem + 2.4vw, 3.25rem);
+  --fs-h2: clamp(1.5rem, 1.25rem + 1.2vw, 2.125rem);
+  --fs-h3: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --shadow: 0 1px 2px rgb(31 42 55 / 0.06), 0 4px 16px rgb(31 42 55 / 0.06);
+  --measure: 70ch;
+  --max-width: 1100px;
+}
+
+/* Tema scuro: preferenza di sistema, salvo scelta esplicita "light" */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --bg: #14181F;
+    --surface: #1C222B;
+    --ink: #E8EDF3;
+    --ink-soft: #B6C0CC;
+    --mint: #1E3D34;
+    --peach: #45301F;
+    --lavender: #322B4A;
+    --sky: #1F3448;
+    --lemon: #3F3A1A;
+    --accent: #8CC8E6;
+    --on-accent: #14181F;
+    --border: #7D8794;
+    --line: #2C3440;
+    --focus: #8CC8E6;
+    --vec-v: #6FD3A8;
+    --vec-f: #FF9F7A;
+    --vec-a: #B9A6F5;
+    --sim-ground: #8A94A3;
+    --sim-body: #8CC8E6;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #14181F;
+  --surface: #1C222B;
+  --ink: #E8EDF3;
+  --ink-soft: #B6C0CC;
+  --mint: #1E3D34;
+  --peach: #45301F;
+  --lavender: #322B4A;
+  --sky: #1F3448;
+  --lemon: #3F3A1A;
+  --accent: #8CC8E6;
+  --on-accent: #14181F;
+  --border: #7D8794;
+  --line: #2C3440;
+  --focus: #8CC8E6;
+  --vec-v: #6FD3A8;
+  --vec-f: #FF9F7A;
+  --vec-a: #B9A6F5;
+  --sim-ground: #8A94A3;
+  --sim-body: #8CC8E6;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 4px 16px rgb(0 0 0 / 0.25);
+}
