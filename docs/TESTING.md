@@ -8,6 +8,7 @@
 | HTML allineato a `partials/` e `it.json` | `node tools/build.js --check` | ok |
 | Link interni e ancore | `node tools/check-links.js` | ok |
 | Contrasti dei token (chiaro e scuro) | `node tools/contrast-check.js` | ok, tutte le coppie ≥ soglia |
+| Elenco file del Service Worker | `node tools/check-sw.js` | ok |
 | Fisica (SPEC 8.5) | `node --test tests/physics.test.js` | 7/7 ok |
 
 Criteri fisici coperti: velocità costante con μ = 0 per 60 s (|Δv| < 1e-9); arresto alla distanza v0²/(2μg); a = 5,00 ± 0,01 m/s² con F = 10 N e m = 2 kg; attrito statico; conservazione della quantità di moto (pattinatori e razzo, < 1e-6 relativo); stesso stato a 30, 60 e 144 Hz.
@@ -17,7 +18,7 @@ Criteri fisici coperti: velocità costante con μ = 0 per 60 s (|Δv| < 1e-9); a
 |---|---|---|
 | Errori console, HTTP, richieste esterne (7 pagine × chiaro/scuro) | `node tests/smoke.mjs` | 0 errori, 0 richieste esterne |
 | axe-core 4.10, WCAG 2.2 A/AA + best practice (7 pagine × chiaro/scuro × 1280/320 px) | `node tests/a11y.mjs URL axe.min.js` | 0 violazioni; nessuno scroll orizzontale a 320 px |
-| Lighthouse 12 (desktop headless) | — | Performance 100, Accessibility 100, Best practices 100, SEO 91–92 prima della correzione di `hreflang` (ora URL assoluti) |
+| Lighthouse 12 (desktop headless) | — | Performance 99–100, Accessibility 100, Best practices 100, SEO 100 |
 | Peso pagine | Lighthouse `total-byte-weight` | 197 KB (home) – 266 KB (Legge 2), sotto i 300 KB |
 
 Nota: axe non può verificare il contenuto disegnato nei canvas. I colori dei vettori sono token verificati da `contrast-check.js` (≥ 3:1 sulla superficie) e i vettori sono distinguibili anche per forma (piena / tratteggiata / puntinata) ed etichetta.
@@ -32,6 +33,11 @@ Nota: axe non può verificare il contenuto disegnato nei canvas. I colori dei ve
 - [x] Menu mobile (360 px): apertura, chiusura con Esc, ritorno del focus al pulsante.
 - [x] Filtro della linea del tempo con conteggio annunciato.
 - [x] Test fisici anche nel browser: `tests/physics.test.html`.
+- [x] Simulazioni funzionanti senza `ctx.roundRect` (browser meno recenti, alternativa con `arcTo`).
+- [x] Legge 2: un clic fuori dalla freccia non cambia la forza; trascinando la freccia la forza cambia. 10 pressioni rapide sul cursore producono 1 annuncio.
+- [x] Previsione bloccata dopo l'uso della simulazione.
+- [x] Dizionario non raggiungibile: la lingua resta quella attuale e viene annunciato l'errore.
+- [x] Legge 3: "Avvia" fa partire la spinta e, a fine pista, riparte da capo.
 
 ## Checklist manuale (da completare prima di ogni rilascio)
 - [ ] **Screen reader**: un percorso completo con NVDA (Windows) o VoiceOver (macOS/iOS): Home → Storia → Legge 1 (previsione, simulazione, mini-verifica). *Non eseguito nell'ambiente di sviluppo.*

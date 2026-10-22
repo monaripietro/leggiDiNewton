@@ -4,16 +4,13 @@
 <!-- @head -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Terza legge: azione e reazione | Newton in movimento</title>
 <meta name="description" content="Pattinatori e razzo: simulazioni interattive per capire che le forze nascono in coppia e agiscono su corpi diversi.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html">
-<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html?lang=it">
-<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html?lang=en">
-<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Newton in movimento">
 <meta property="og:title" content="Terza legge: azione e reazione | Newton in movimento">
@@ -189,7 +186,7 @@
         </div>
         <details>
           <summary data-i18n="common.sim.physics">Come funziona la fisica (per i curiosi)</summary>
-          <p data-i18n="law3.sim.physics">Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s.</p>
+          <p data-i18n="law3.sim.physics">Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s. Perché non usiamo F = m·a per il razzo? Perché la sua massa cambia mentre brucia il carburante: la forma generale della seconda legge è F = Δp/Δt (variazione della quantità di moto nel tempo), che coincide con F = m·a solo quando la massa è costante.</p>
         </details>
       </div>
     </section>
@@ -207,7 +204,7 @@
         </dl>
       </div>
       <h3 data-i18n="common.latinLabel">Forma originale in latino</h3>
-      <p data-i18n="law3.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio):</p>
+      <p data-i18n="law3.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio; grafia normalizzata: «ae» per «æ», «et» per «&amp;»):</p>
       <blockquote class="latin" lang="la"><p data-i18n="law3.latin.text">Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.</p></blockquote>
       <p data-i18n="law3.latin.modern">In parole semplici: a ogni azione corrisponde sempre una reazione uguale e contraria; le azioni reciproche di due corpi sono sempre uguali e dirette in versi opposti. <a href="fonti.html#principia">Fonte</a></p>
     </section>
@@ -218,7 +215,7 @@
 <ul class="misconceptions">
   <li>
     <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law3.myths.1.myth">«Il più forte spinge di più.»</span></p>
-    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law3.myths.1.fact">Le due forze della coppia sono sempre uguali. Chi è più «forte» può spingere più a lungo o più intensamente, ma in ogni istante riceve indietro la stessa forza che dà.</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law3.myths.1.fact">Le due forze della coppia sono sempre uguali, istante per istante. Una persona più muscolosa può spingere con più forza, ma allora cresce allo stesso modo anche la forza che riceve indietro.</span></p>
   </li>
   <li>
     <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law3.myths.2.myth">«Azione e reazione si annullano, quindi niente si muove.»</span></p>
@@ -280,7 +277,7 @@
     <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
       <ul>
         <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
-        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="fonti.html#crediti" data-i18n="common.footer.credits">Crediti</a></li>
         <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
       </ul>
     </nav>

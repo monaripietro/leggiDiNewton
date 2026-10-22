@@ -4,16 +4,13 @@
 <!-- @head -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; base-uri 'self'; form-action 'self'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Seconda legge: forza e accelerazione | Newton in movimento</title>
 <meta name="description" content="Spingi il carrello: scopri con una simulazione interattiva come forza e massa determinano l'accelerazione (F = m·a).">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html">
-<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html?lang=it">
-<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html?lang=en">
-<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Newton in movimento">
 <meta property="og:title" content="Seconda legge: forza e accelerazione | Newton in movimento">
@@ -164,7 +161,7 @@
               <div class="control">
                 <label for="l2-force"><span data-i18n="law2.sim.force">Forza F</span> <output for="l2-force"></output></label>
                 <input id="l2-force" type="range" min="0" max="50" step="1" value="20" aria-describedby="l2-force-hint">
-                <p class="sim-note" id="l2-force-hint" data-i18n="law2.sim.forceHint">Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la freccia rossa sulla pista.</p>
+                <p class="sim-note" id="l2-force-hint" data-i18n="law2.sim.forceHint">Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la punta della freccia tratteggiata F sulla pista: il lato del carrello dove la porti decide il verso.</p>
               </div>
               <div class="control">
                 <label for="l2-mass"><span data-i18n="law2.sim.mass">Massa m</span> <output for="l2-mass"></output></label>
@@ -185,7 +182,7 @@
         </div>
         <details>
           <summary data-i18n="common.sim.physics">Come funziona la fisica (per i curiosi)</summary>
-          <p data-i18n="law2.sim.physics">Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio.</p>
+          <p data-i18n="law2.sim.physics">Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio. Semplificazione: per l'attrito statico e per quello dinamico usiamo lo stesso coefficiente μ = 0,1 (nella realtà quello statico è di solito un po' più grande).</p>
         </details>
       </div>
     </section>
@@ -204,11 +201,11 @@
         </dl>
       </div>
       <div class="callout callout-warn">
-        <h3 id="mass-weight-title" class="callout-title" data-i18n="law2.massWeight.title">Massa e peso non sono la stessa cosa</h3>
+        <h3 class="callout-title" data-i18n="law2.massWeight.title">Massa e peso non sono la stessa cosa</h3>
         <p data-i18n="law2.massWeight.text">La <strong>massa</strong> (kg) dice quanta inerzia ha un corpo ed è uguale ovunque. Il <strong>peso</strong> è la forza con cui la gravità lo attira (N): sulla Terra vale circa m · 9,81 N, sulla Luna molto meno. Un astronauta sulla Luna pesa meno, ma ha la stessa massa.</p>
       </div>
       <h3 data-i18n="common.latinLabel">Forma originale in latino</h3>
-      <p data-i18n="law2.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio):</p>
+      <p data-i18n="law2.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio; grafia normalizzata: «ae» per «æ», «et» per «&amp;»):</p>
       <blockquote class="latin" lang="la"><p data-i18n="law2.latin.text">Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.</p></blockquote>
       <p data-i18n="law2.latin.modern">In parole semplici: il cambiamento del moto è proporzionale alla forza impressa e avviene nella direzione in cui la forza agisce. <a href="fonti.html#principia">Fonte</a></p>
     </section>
@@ -295,7 +292,7 @@
     <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
       <ul>
         <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
-        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="fonti.html#crediti" data-i18n="common.footer.credits">Crediti</a></li>
         <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
       </ul>
     </nav>

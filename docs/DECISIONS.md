@@ -26,6 +26,13 @@ Registro delle scelte prese dove la SPEC era ambigua o lasciava più opzioni (SP
 - La tappa "Molte menti al lavoro" collega Huygens (urti) alla Legge 3 per affinità fisica, senza affermare un nesso storico diretto.
 - La voce "Isaac Newton Institute, pagina sul melo" della SPEC non è stata inserita in `fonti.html`: l'URL non è stato trovato (vedi `docs/TODO-VERIFICA.md`).
 
+## Interazione
+- **Previsione bloccata**: dopo aver confermato una previsione e usato la simulazione, la scelta non si può più cambiare (altrimenti "Predici → Osserva" perde senso).
+- **Trascinamento della forza (Legge 2)**: si afferra la freccia F, che parte dal bordo del carrello nel verso della forza; il lato del carrello in cui si porta la punta decide il verso. Il trascinamento parte solo toccando la freccia, così chi scorre la pagina su mobile non cambia la forza per errore. In modalità Sfida il verso è bloccato.
+- **Annunci dei cursori** limitati a uno al secondo (lo screen reader legge già il valore del cursore).
+- **"Avvia" nella scena A della Legge 3** equivale a "Spingi!" e riparte da capo se i pattinatori sono arrivati al bordo.
+- **Crediti**: il link del footer porta a `fonti.html#crediti` (pagina HTML) invece che a `CREDITS.md`, che su Pages verrebbe servito come testo grezzo.
+
 ## Scene facoltative non implementate (M6)
 "Tovaglia" (Legge 1), gara tra due carrelli (Legge 2), "Due dinamometri" (Legge 3): facoltative nella SPEC, rinviate per tenere ogni pagina focalizzata su un solo concetto.
 
@@ -34,7 +41,7 @@ La SPEC indica MIT per il codice, ma il repository contiene già `LICENSE` Apach
 
 ## Hosting, SEO, offline
 - URL di pubblicazione ipotizzato: `https://monaripietro.github.io/leggiDiNewton/` (usato in `canonical`, `hreflang`, `og:image`, `sitemap.xml`, `robots.txt`, che richiedono URL assoluti). Tutti gli altri percorsi sono relativi.
-- Lingua per URL tramite `?lang=it|en` (nessuna duplicazione di pagine in `/it/` e `/en/`).
+- Lingua per URL tramite `?lang=it|en` (nessuna duplicazione di pagine in `/it/` e `/en/`). L'HTML statico è in italiano e l'inglese esiste solo con JavaScript: per questo **non** si dichiarano link `hreflang` (punterebbero a contenuto italiano). Pagine statiche `/en/` richiederebbero un'estensione di `tools/build.js`.
 - Service Worker con strategia "prima la rete, poi la cache": contenuti sempre aggiornati online, consultabili offline dopo la prima visita. Registrato solo in contesti sicuri (HTTPS o localhost).
 - Versioni delle GitHub Actions (`checkout@v4`, `setup-node@v4`, `configure-pages@v5`, `upload-pages-artifact@v3`, `deploy-pages@v4`): non è stato possibile verificarle online durante lo sviluppo; controllarle al primo deploy.
 - `.github/workflows/pages.yml` pubblica solo i file del sito (`_site/`), non `docs/`, `tools/`, `tests/`, `partials/`.

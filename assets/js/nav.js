@@ -26,8 +26,15 @@ function initLangSelect() {
   if (!select) return;
   select.value = getLang();
   select.addEventListener("change", async () => {
-    await setLang(select.value);
-    announce(t("common.lang.changed"));
+    try {
+      await setLang(select.value);
+      announce(t("common.lang.changed"));
+    } catch (err) {
+      // dizionario non raggiungibile (es. offline senza cache): resta la lingua attuale
+      console.warn(err);
+      select.value = getLang();
+      announce(t("common.lang.error"));
+    }
   });
   document.addEventListener("langchange", () => {
     select.value = getLang();

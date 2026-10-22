@@ -1,7 +1,7 @@
 // Service Worker: rende il sito consultabile offline dopo la prima visita.
 // Strategia "prima la rete, poi la cache": i contenuti sono sempre aggiornati quando c'è connessione,
 // e la copia in cache viene usata solo offline. Percorsi relativi: il sito vive in /<nome-repo>/.
-const CACHE = "nim-v1";
+const CACHE = "nim-v2";
 const PRECACHE = [
   "./",
   "index.html",

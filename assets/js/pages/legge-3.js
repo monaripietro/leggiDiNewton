@@ -5,7 +5,7 @@ import { createLiveText } from "../a11y.js";
 import { initQuestions, initPredictions } from "../quiz.js";
 import { createSimulation, whenVisible } from "../sim/engine.js";
 import { createSkatersModel, SKATERS_DEFAULTS, createRocketModel, ROCKET_DEFAULTS } from "../sim/sim-reaction.js";
-import { setupCanvas, readColors, drawArrow, drawGraphAt, Series } from "../sim/canvas-utils.js";
+import { setupCanvas, readColors, drawArrow, drawGraphAt, Series, roundRectPath } from "../sim/canvas-utils.js";
 import { setupPlayback, bindRange, fillTable, writeReadout, markUsed, unit } from "../sim/sim-ui.js";
 
 await ready;
@@ -59,7 +59,7 @@ function mount(root) {
     ctx.strokeStyle = colors.ink;
     ctx.lineWidth = 2;
     ctx.beginPath();
-    ctx.roundRect(x - 14 * s, y - 70 * s, 28 * s, 48 * s, 8);
+    roundRectPath(ctx, x - 14 * s, y - 70 * s, 28 * s, 48 * s, 8);
     ctx.fill();
     ctx.stroke();
     ctx.beginPath();
@@ -321,7 +321,18 @@ function mount(root) {
     sim.redraw();
   });
 
-  setupPlayback(root, sim, { autoStart: true });
+  setupPlayback(root, sim, {
+    autoStart: true,
+    // nella scena A "Avvia" equivale a "Spingi!": riparte da capo se i pattinatori sono al bordo
+    onBeforeStart: () => {
+      if (scene !== "A") return;
+      if (models.A.state.ended) sim.reset();
+      if (models.A.state.phase === "ready") {
+        models.A.push();
+        lastRow = models.A.state.t - 0.25;
+      }
+    },
+  });
   showTable();
   live.now(describe());
   sim.redraw();

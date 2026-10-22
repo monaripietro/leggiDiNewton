@@ -6,7 +6,8 @@
     "externalLink": "(sito esterno)",
     "lang": {
       "label": "Lingua",
-      "changed": "Lingua cambiata: italiano"
+      "changed": "Lingua cambiata: italiano",
+      "error": "Non è stato possibile caricare la lingua scelta. Controlla la connessione e riprova."
     },
     "theme": {
       "dark": "Tema scuro",
@@ -186,7 +187,7 @@
         "when": "1665–1667",
         "title": "La peste e gli «anni dei miracoli»",
         "text": "La peste costringe a chiudere l'Università di Cambridge. Newton trascorre periodi a Woolsthorpe Manor, con due soggiorni prolungati tra l'estate del 1665 e la primavera del 1667. Questi anni sono ricordati come *annus mirabilis*, gli «anni dei miracoli».",
-        "why": "Il nome stesso dice quanto questo periodo di studio lontano dall'università sia considerato importante nel percorso di Newton.",
+        "why": "È il periodo in cui la tradizione colloca l'aneddoto della mela (vedi la tappa successiva).",
         "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
       },
       "apple": {
@@ -201,7 +202,7 @@
         "when": "agosto 1684",
         "title": "La domanda di Halley",
         "text": "Edmond Halley visita Newton a Cambridge e gli chiede quale curva descriverebbe un pianeta attratto da una forza che diminuisce con il quadrato della distanza. Newton risponde: un'ellisse. Dice di averlo già calcolato, ma sul momento non ritrova i calcoli.",
-        "why": "Da questa domanda parte la catena di eventi che, in meno di tre anni, porta ai *Principia* e alle tre leggi.",
+        "why": "È il primo passo della sequenza documentata che, in meno di tre anni, arriva ai *Principia* e alle tre leggi.",
         "source": "[Cambridge Digital Library; Stanford Encyclopedia of Philosophy](fonti.html#primarie)"
       },
       "demotu": {
@@ -215,7 +216,7 @@
         "when": "10 dicembre 1684",
         "title": "Alla Royal Society",
         "text": "Halley riferisce alla Royal Society di aver visto il trattato di Newton. Viene incoraggiata la pubblicazione.",
-        "why": "Da qui il lavoro di Newton sul moto diventa un progetto di pubblicazione.",
+        "why": "La pubblicazione viene incoraggiata: segue il lavoro di ampliamento del trattato che porterà ai *Principia*.",
         "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
       },
       "writing": {
@@ -293,7 +294,8 @@
       "constant": "Carrello da {m} kg, attrito zero: velocità costante {v} m/s. Nessuna forza, nessun cambiamento di velocità.",
       "stopped": "Il carrello con attrito si è fermato dopo {d} m: l'attrito lo ha frenato. Quello senza attrito continua a {v} m/s.",
       "stoppedAlone": "Il carrello si è fermato dopo {d} m: l'attrito lo ha frenato.",
-      "physics": "Ogni 1/120 di secondo il motore calcola: forza di attrito F = −μ·m·g (sempre opposta al moto, solo mentre il carrello si muove), accelerazione a = F / m, poi aggiorna velocità e posizione (v ← v + a·Δt, x ← x + v·Δt). Con μ = 0 la forza è zero, quindi a = 0 e la velocità non cambia mai. La spinta è un impulso J: cambia la velocità di J / m. Valore usato: g = 9,81 m/s². La pista scorre in modo continuo: quando il carrello esce a destra rientra a sinistra."
+      "physics": "Ogni 1/120 di secondo il motore calcola: forza di attrito F = −μ·m·g (sempre opposta al moto, solo mentre il carrello si muove), accelerazione a = F / m, poi aggiorna velocità e posizione (v ← v + a·Δt, x ← x + v·Δt). Con μ = 0 la forza è zero, quindi a = 0 e la velocità non cambia mai. La spinta è un impulso J: cambia la velocità di J / m. Valore usato: g = 9,81 m/s². La pista scorre in modo continuo: quando il carrello esce a destra rientra a sinistra.",
+      "canvasLabelSingle": "Simulazione, vista laterale: una corsia orizzontale con un carrello e l'attrito scelto. Le frecce indicano la velocità v e la forza di attrito F."
     },
     "keyIdea": {
       "sentence": "Un corpo non cambia il suo moto da solo: serve una forza che lo cambi.",
@@ -303,7 +305,7 @@
       "v": "velocità, in metri al secondo (m/s). Ha un valore e una direzione: «costante» vuol dire che non cambiano né l'uno né l'altra."
     },
     "latin": {
-      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio; grafia normalizzata: «ae» per «æ», «et» per «&»):",
       "text": "Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.",
       "modern": "In parole semplici: ogni corpo resta fermo, o continua a muoversi in linea retta a velocità costante, finché delle forze non lo costringono a cambiare. [Fonte](fonti.html#principia)"
     },
@@ -371,7 +373,7 @@
       "modeRule": "Scopri la regola",
       "modeChallenge": "Sfida",
       "force": "Forza F",
-      "forceHint": "Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la freccia rossa sulla pista.",
+      "forceHint": "Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la punta della freccia tratteggiata F sulla pista: il lato del carrello dove la porti decide il verso.",
       "mass": "Massa m",
       "direction": "Direzione della forza",
       "right": "Verso destra",
@@ -416,7 +418,7 @@
       "challengeHint": "Indizio: per percorrere d metri partendo da fermi in T secondi serve a = 2·d / T².",
       "challengeNew": "Nuova sfida",
       "finishLabel": "traguardo",
-      "physics": "Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio."
+      "physics": "Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio. Semplificazione: per l'attrito statico e per quello dinamico usiamo lo stesso coefficiente μ = 0,1 (nella realtà quello statico è di solito un po' più grande)."
     },
     "keyIdea": {
       "sentence": "La forza risultante cambia la velocità: più massa, più difficile cambiarla.",
@@ -431,7 +433,7 @@
       "text": "La **massa** (kg) dice quanta inerzia ha un corpo ed è uguale ovunque. Il **peso** è la forza con cui la gravità lo attira (N): sulla Terra vale circa m · 9,81 N, sulla Luna molto meno. Un astronauta sulla Luna pesa meno, ma ha la stessa massa."
     },
     "latin": {
-      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio; grafia normalizzata: «ae» per «æ», «et» per «&»):",
       "text": "Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.",
       "modern": "In parole semplici: il cambiamento del moto è proporzionale alla forza impressa e avviene nella direzione in cui la forza agisce. [Fonte](fonti.html#principia)"
     },
@@ -544,7 +546,7 @@
       "colP": "quantità di moto totale (kg·m/s)",
       "colVR": "v razzo (m/s)",
       "colM": "massa (kg)",
-      "physics": "Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s."
+      "physics": "Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s. Perché non usiamo F = m·a per il razzo? Perché la sua massa cambia mentre brucia il carburante: la forma generale della seconda legge è F = Δp/Δt (variazione della quantità di moto nel tempo), che coincide con F = m·a solo quando la massa è costante."
     },
     "keyIdea": {
       "sentence": "Ogni volta che A spinge B, B spinge A con la stessa forza, in verso opposto.",
@@ -554,14 +556,14 @@
       "FBA": "la forza che B esercita su A. Il segno meno indica il verso opposto."
     },
     "latin": {
-      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio):",
+      "intro": "Ecco la legge come la scrisse Newton (3ª edizione dei *Principia*, 1726, testo di pubblico dominio; grafia normalizzata: «ae» per «æ», «et» per «&»):",
       "text": "Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.",
       "modern": "In parole semplici: a ogni azione corrisponde sempre una reazione uguale e contraria; le azioni reciproche di due corpi sono sempre uguali e dirette in versi opposti. [Fonte](fonti.html#principia)"
     },
     "myths": {
       "1": {
         "myth": "«Il più forte spinge di più.»",
-        "fact": "Le due forze della coppia sono sempre uguali. Chi è più «forte» può spingere più a lungo o più intensamente, ma in ogni istante riceve indietro la stessa forza che dà."
+        "fact": "Le due forze della coppia sono sempre uguali, istante per istante. Una persona più muscolosa può spingere con più forza, ma allora cresce allo stesso modo anche la forza che riceve indietro."
       },
       "2": {
         "myth": "«Azione e reazione si annullano, quindi niente si muove.»",

@@ -60,7 +60,7 @@ a:hover {
 /* Link esterni: indicati con una freccia (il testo per gli screen reader è nel markup) */
 a[rel~="external"]::after {
   content: " ↗";
-  speak: never;
+  content: " ↗" / ""; /* testo alternativo vuoto: gli screen reader leggono già "(sito esterno)" */
 }
 
 img,

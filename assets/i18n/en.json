@@ -6,7 +6,8 @@
     "externalLink": "(external site)",
     "lang": {
       "label": "Language",
-      "changed": "Language changed: English"
+      "changed": "Language changed: English",
+      "error": "The selected language could not be loaded. Check your connection and try again."
     },
     "theme": {
       "dark": "Dark theme",
@@ -186,7 +187,7 @@
         "when": "1665–1667",
         "title": "The plague and the “wonder years”",
         "text": "The plague forces the University of Cambridge to close. Newton spends time at Woolsthorpe Manor, with two long stays between the summer of 1665 and the spring of 1667. These years are remembered as the *annus mirabilis*, the “year of wonders”.",
-        "why": "The name alone shows how important this period of study away from the university is considered in Newton's path.",
+        "why": "It is the period in which tradition places the apple story (see the next milestone).",
         "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
       },
       "apple": {
@@ -201,7 +202,7 @@
         "when": "August 1684",
         "title": "Halley's question",
         "text": "Edmond Halley visits Newton in Cambridge and asks him what curve a planet would follow if it were pulled by a force that weakens with the square of the distance. Newton answers: an ellipse. He says he has already worked it out, but cannot find his calculations at that moment.",
-        "why": "This question starts the chain of events that, in less than three years, leads to the *Principia* and the three laws.",
+        "why": "It is the first step in the documented sequence that, in less than three years, leads to the *Principia* and the three laws.",
         "source": "[Cambridge Digital Library; Stanford Encyclopedia of Philosophy](fonti.html#primarie)"
       },
       "demotu": {
@@ -215,7 +216,7 @@
         "when": "10 December 1684",
         "title": "At the Royal Society",
         "text": "Halley reports to the Royal Society that he has seen Newton's treatise. Publication is encouraged.",
-        "why": "From here, Newton's work on motion becomes a publishing project.",
+        "why": "Publication is encouraged: the work of expanding the treatise that will lead to the *Principia* follows.",
         "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
       },
       "writing": {
@@ -293,7 +294,8 @@
       "constant": "{m} kg cart, zero friction: constant velocity {v} m/s. No force, no change in velocity.",
       "stopped": "The cart with friction stopped after {d} m: friction slowed it down. The frictionless one keeps going at {v} m/s.",
       "stoppedAlone": "The cart stopped after {d} m: friction slowed it down.",
-      "physics": "Every 1/120 of a second the engine computes: friction force F = −μ·m·g (always opposite to the motion, only while the cart moves), acceleration a = F / m, then updates velocity and position (v ← v + a·Δt, x ← x + v·Δt). With μ = 0 the force is zero, so a = 0 and the velocity never changes. The push is an impulse J: it changes the velocity by J / m. Value used: g = 9.81 m/s². The track loops: when the cart leaves on the right it comes back on the left."
+      "physics": "Every 1/120 of a second the engine computes: friction force F = −μ·m·g (always opposite to the motion, only while the cart moves), acceleration a = F / m, then updates velocity and position (v ← v + a·Δt, x ← x + v·Δt). With μ = 0 the force is zero, so a = 0 and the velocity never changes. The push is an impulse J: it changes the velocity by J / m. Value used: g = 9.81 m/s². The track loops: when the cart leaves on the right it comes back on the left.",
+      "canvasLabelSingle": "Simulation, side view: one horizontal lane with a cart and the chosen friction. Arrows show velocity v and friction force F."
     },
     "keyIdea": {
       "sentence": "A body does not change its motion on its own: it takes a force to change it.",
@@ -303,7 +305,7 @@
       "v": "velocity, in metres per second (m/s). It has a size and a direction: “constant” means neither one changes."
     },
     "latin": {
-      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text; spelling normalised: “ae” for “æ”, “et” for “&”):",
       "text": "Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.",
       "modern": "In plain words: every body stays at rest, or keeps moving in a straight line at constant speed, unless forces acting on it compel it to change. [Source](fonti.html#principia)"
     },
@@ -371,7 +373,7 @@
       "modeRule": "Find the rule",
       "modeChallenge": "Challenge",
       "force": "Force F",
-      "forceHint": "On the slider: ← → arrow keys for 1 N, Shift + arrow for 5 N. You can also drag the red arrow on the track.",
+      "forceHint": "On the slider: ← → arrow keys for 1 N, Shift + arrow for 5 N. You can also drag the tip of the dashed arrow F on the track: the side of the cart you drag it to sets the direction.",
       "mass": "Mass m",
       "direction": "Direction of the force",
       "right": "To the right",
@@ -416,7 +418,7 @@
       "challengeHint": "Hint: to cover d metres from rest in T seconds you need a = 2·d / T².",
       "challengeNew": "New challenge",
       "finishLabel": "finish",
-      "physics": "Every 1/120 of a second the engine computes the net force (applied force plus any friction, F_friction = μ·m·g opposite to the motion), then a = F_net / m, v ← v + a·Δt and x ← x + v·Δt. If the push does not exceed μ·m·g, static friction balances it and the cart stays put. The acceleration in the table is measured as change in velocity divided by time, just as in a lab."
+      "physics": "Every 1/120 of a second the engine computes the net force (applied force plus any friction, F_friction = μ·m·g opposite to the motion), then a = F_net / m, v ← v + a·Δt and x ← x + v·Δt. If the push does not exceed μ·m·g, static friction balances it and the cart stays put. The acceleration in the table is measured as change in velocity divided by time, just as in a lab. Simplification: we use the same coefficient μ = 0.1 for static and kinetic friction (in reality the static one is usually a little larger)."
     },
     "keyIdea": {
       "sentence": "The net force changes the velocity: the more mass, the harder it is to change.",
@@ -431,7 +433,7 @@
       "text": "**Mass** (kg) tells you how much inertia a body has and is the same everywhere. **Weight** is the force with which gravity pulls it (N): on Earth it is about m · 9.81 N, on the Moon much less. An astronaut on the Moon weighs less but has the same mass."
     },
     "latin": {
-      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text; spelling normalised: “ae” for “æ”, “et” for “&”):",
       "text": "Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.",
       "modern": "In plain words: the change in motion is proportional to the impressed force and takes place in the direction in which that force acts. [Source](fonti.html#principia)"
     },
@@ -544,7 +546,7 @@
       "colP": "total momentum (kg·m/s)",
       "colVR": "rocket v (m/s)",
       "colM": "mass (kg)",
-      "physics": "Skaters: during contact (0.4 s) the engine applies +F to B and −F to A at the same instant; each body accelerates by F/m. Afterwards the frictionless ice lets them glide. Total momentum m_A·v_A + m_B·v_B stays zero, so v_A / v_B = −m_B / m_A. Rocket: at each step a small mass of gas dm leaves at 40 m/s relative to the rocket. From conservation of momentum, m·v = (m − dm)·v′ + dm·(v − u), the engine finds the new velocity v′. Thrust equals flow rate × 40 m/s."
+      "physics": "Skaters: during contact (0.4 s) the engine applies +F to B and −F to A at the same instant; each body accelerates by F/m. Afterwards the frictionless ice lets them glide. Total momentum m_A·v_A + m_B·v_B stays zero, so v_A / v_B = −m_B / m_A. Rocket: at each step a small mass of gas dm leaves at 40 m/s relative to the rocket. From conservation of momentum, m·v = (m − dm)·v′ + dm·(v − u), the engine finds the new velocity v′. Thrust equals flow rate × 40 m/s. Why not use F = m·a for the rocket? Because its mass changes as it burns fuel: the general form of the second law is F = Δp/Δt (change in momentum over time), which equals F = m·a only when the mass is constant."
     },
     "keyIdea": {
       "sentence": "Whenever A pushes B, B pushes A with the same force, in the opposite direction.",
@@ -554,14 +556,14 @@
       "FBA": "the force B exerts on A. The minus sign means the opposite direction."
     },
     "latin": {
-      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text; spelling normalised: “ae” for “æ”, “et” for “&”):",
       "text": "Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.",
       "modern": "In plain words: to every action there is always an equal and opposite reaction; the mutual actions of two bodies on each other are always equal and directed in opposite directions. [Source](fonti.html#principia)"
     },
     "myths": {
       "1": {
         "myth": "“The stronger one pushes harder.”",
-        "fact": "The two forces in the pair are always equal. A “stronger” person can push for longer or harder, but at every instant gets back the same force they give."
+        "fact": "The two forces in the pair are always equal, at every instant. A more muscular person can push harder, but then the force they get back grows by exactly the same amount."
       },
       "2": {
         "myth": "“Action and reaction cancel out, so nothing moves.”",
