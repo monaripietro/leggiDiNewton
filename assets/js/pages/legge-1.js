@@ -5,7 +5,7 @@ import { createLiveText } from "../a11y.js";
 import { initQuestions, initPredictions } from "../quiz.js";
 import { createSimulation, whenVisible } from "../sim/engine.js";
 import { createInertiaModel, INERTIA_DEFAULTS } from "../sim/sim-inertia.js";
-import { setupCanvas, readColors, drawArrow, drawGraphAt, Series } from "../sim/canvas-utils.js";
+import { setupCanvas, readColors, drawArrow, drawGraphAt, Series, roundRectPath } from "../sim/canvas-utils.js";
 import { setupPlayback, bindRange, fillTable, writeReadout, markUsed, unit } from "../sim/sim-ui.js";
 
 await ready;
@@ -84,7 +84,7 @@ function mount(root) {
     ctx.strokeStyle = colors.body;
     ctx.lineWidth = 3;
     ctx.beginPath();
-    ctx.roundRect(cx - cw / 2, y - ch - 10, cw, ch, 6);
+    roundRectPath(ctx, cx - cw / 2, y - ch - 10, cw, ch, 6);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = colors.ink;
@@ -216,6 +216,10 @@ function mount(root) {
   compare.addEventListener("change", () => {
     sim.setParam("compare", compare.checked);
     freeReadout.hidden = !compare.checked;
+    // l'etichetta del canvas descrive ciò che si vede: una o due corsie
+    const key = compare.checked ? "law1.sim.canvasLabel" : "law1.sim.canvasLabelSingle";
+    canvas.dataset.i18nAttr = `aria-label:${key}`;
+    canvas.setAttribute("aria-label", t(key));
   });
   root.querySelector('[data-role="controls"]').addEventListener("submit", (e) => e.preventDefault());
 

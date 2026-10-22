@@ -58,6 +58,15 @@ export function initPredictions() {
     let choice = null;
     let used = false;
     let revealed = false;
+    const radios = [...form.querySelectorAll("input[type=radio]")];
+
+    // Una previsione fatta prima della simulazione non si può più cambiare dopo averla usata:
+    // altrimenti "Predici → Osserva" perde senso.
+    const lock = () => {
+      if (!choice || !used) return;
+      radios.forEach((r) => (r.disabled = true));
+      confirm.disabled = true;
+    };
 
     const updateReveal = () => {
       reveal.hidden = !choice;
@@ -92,6 +101,7 @@ export function initPredictions() {
       revealed = false;
       result.replaceChildren();
       result.className = "feedback";
+      lock();
       showStatus();
       updateReveal();
     });
@@ -105,6 +115,7 @@ export function initPredictions() {
     });
     document.addEventListener("sim:used", () => {
       used = true;
+      lock();
       updateReveal();
       showStatus();
     });

@@ -6,7 +6,7 @@ import { createLiveText } from "../a11y.js";
 import { initQuestions, initPredictions } from "../quiz.js";
 import { createSimulation, whenVisible } from "../sim/engine.js";
 import { createForceModel, FORCE_DEFAULTS } from "../sim/sim-force.js";
-import { setupCanvas, readColors, drawArrow, drawGraphAt, Series } from "../sim/canvas-utils.js";
+import { setupCanvas, readColors, drawArrow, drawGraphAt, Series, roundRectPath } from "../sim/canvas-utils.js";
 import { setupPlayback, bindRange, addShiftStep, fillTable, writeReadout, unit } from "../sim/sim-ui.js";
 
 await ready;
@@ -40,6 +40,7 @@ function mount(root) {
   let lastSample = -1;
   let lastRow = -1;
   let guideState = { key: "", vars: {} };
+  let arrowHit = null;
 
   const { ctx, size } = setupCanvas(canvas, (w) => (w < 560 ? 0.62 : 1.5), (w, h) => {
     const sceneH = Math.round(h * (w < 560 ? 0.42 : 0.5));
@@ -104,7 +105,7 @@ function mount(root) {
     ctx.strokeStyle = colors.body;
     ctx.lineWidth = 3;
     ctx.beginPath();
-    ctx.roundRect(cx - cw / 2, y - ch - 10, cw, ch, 6);
+    roundRectPath(ctx, cx - cw / 2, y - ch - 10, cw, ch, 6);
     ctx.fill();
     ctx.stroke();
     ctx.fillStyle = colors.ink;
@@ -117,10 +118,14 @@ function mount(root) {
     ctx.textAlign = "center";
     ctx.textBaseline = "middle";
     ctx.fillText(`${fmt(params.mass, 1)} kg`, cx, y - 10 - ch / 2);
-    // vettori: F (tratteggiata) dal bordo posteriore, a (puntinata) e v (piena) sopra il carrello
+    // vettori: F (tratteggiata) parte dal bordo del carrello nel verso della forza,
+    // a (puntinata) e v (piena) sopra il carrello
     const applied = params.force * params.dir;
-    const fx = cx - Math.sign(applied) * (cw / 2 + 4) - applied * layout.pxPerN;
-    drawArrow(ctx, fx, y - 10 - ch / 2, applied * layout.pxPerN, 0, { color: colors.vecF, label: "F", dash: [8, 5], font: colors.font, labelOffset: -14 });
+    const fy = y - 10 - ch / 2;
+    const fx = cx + params.dir * (cw / 2 + 4);
+    drawArrow(ctx, fx, fy, applied * layout.pxPerN, 0, { color: colors.vecF, label: "F", dash: [8, 5], font: colors.font, labelOffset: -14 });
+    // zona trascinabile: la freccia della forza (più un margine attorno al carrello quando F = 0)
+    arrowHit = { y: fy, x0: cx - cw / 2 - Math.max(40, params.force * layout.pxPerN + 24), x1: cx + cw / 2 + Math.max(40, params.force * layout.pxPerN + 24), half: cw / 2 + 4 };
     drawArrow(ctx, cx, y - ch - 26, state.a * layout.pxPerA, 0, { color: colors.vecA, label: "a", dash: [2, 5], font: colors.font });
     drawArrow(ctx, cx, y - ch - 56, state.v * layout.pxPerMs, 0, { color: colors.vecV, label: "v", font: colors.font });
 
@@ -248,7 +253,8 @@ function mount(root) {
     format: (v) => unit(v, 0, "N"),
     onInput: (v) => {
       sim.setParam("force", v);
-      live.now(t("law2.sim.forceChanged", { f: fmt(v * model.params.dir, 0), a: fmt(expectedA(), 2) }));
+      // .soon: al massimo un annuncio al secondo mentre si muove il cursore
+      live.soon(t("law2.sim.forceChanged", { f: fmt(v * model.params.dir, 0), a: fmt(expectedA(), 2) }));
     },
   });
   addShiftStep(forceInput, 5);
@@ -256,7 +262,7 @@ function mount(root) {
     format: (v) => unit(v, 1, "kg"),
     onInput: (v) => {
       sim.setParam("mass", v);
-      live.now(t("law2.sim.massChanged", { m: fmt(v, 1), a: fmt(expectedA(), 2) }));
+      live.soon(t("law2.sim.massChanged", { m: fmt(v, 1), a: fmt(expectedA(), 2) }));
     },
   });
   addShiftStep(massInput, 2.5);
@@ -269,28 +275,42 @@ function mount(root) {
   }
   root.querySelector('[data-role="controls"]').addEventListener("submit", (e) => e.preventDefault());
 
-  // trascinamento della freccia della forza (alternativa: il cursore, da tastiera)
+  // trascinamento della punta della freccia della forza (alternativa da tastiera: il cursore)
   let dragging = false;
   const forceFromPointer = (e) => {
     const rect = canvas.getBoundingClientRect();
     const dx = e.clientX - rect.left - cartX(model.state.x);
-    const f = Math.max(0, Math.min(50, Math.round(Math.abs(dx) / layout.pxPerN)));
-    const dir = dx < 0 ? 1 : -1; // si tira la coda della freccia: verso opposto al trascinamento
-    if (dir !== model.params.dir) {
+    // la punta segue il puntatore: lato destro del carrello = forza verso destra
+    const len = Math.max(0, Math.abs(dx) - (arrowHit?.half ?? 0));
+    const f = Math.max(0, Math.min(50, Math.round(len / layout.pxPerN)));
+    const dir = dx >= 0 ? 1 : -1;
+    if (dir !== model.params.dir && !dirInputs[0].disabled) {
       dirInputs.find((i) => Number(i.value) === dir).checked = true;
       sim.setParam("dir", dir);
     }
-    force.set(f);
-    sim.setParam("force", f);
+    // in modalità Sfida il verso è bloccato: dal lato opposto la forza si azzera
+    const value = dir === model.params.dir ? f : 0;
+    force.set(value);
+    sim.setParam("force", value);
   };
   canvas.addEventListener("pointerdown", (e) => {
-    const rect = canvas.getBoundingClientRect();
-    if (e.clientY - rect.top > layout.sceneH) return;
+    // si trascina solo partendo dalla freccia: un tocco altrove (es. per scorrere la pagina) non cambia la forza
+    if (!overArrow(e)) return;
     dragging = true;
     canvas.setPointerCapture(e.pointerId);
     forceFromPointer(e);
   });
-  canvas.addEventListener("pointermove", (e) => dragging && forceFromPointer(e));
+  const overArrow = (e) => {
+    const rect = canvas.getBoundingClientRect();
+    const px = e.clientX - rect.left;
+    const py = e.clientY - rect.top;
+    return arrowHit && Math.abs(py - arrowHit.y) <= 22 && px >= arrowHit.x0 && px <= arrowHit.x1;
+  };
+  canvas.addEventListener("pointermove", (e) => {
+    if (dragging) forceFromPointer(e);
+    else canvas.style.cursor = overArrow(e) ? "ew-resize" : "";
+  });
+  canvas.addEventListener("pointercancel", () => (dragging = false));
   canvas.addEventListener("pointerup", () => {
     if (!dragging) return;
     dragging = false;

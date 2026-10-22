@@ -38,6 +38,7 @@ node tools/check-placeholders.js   # nessun [[DA VERIFICARE]] nel sito
 node tools/check-i18n.js           # chiavi it/en allineate e tutte definite
 node tools/build.js --check        # HTML allineato a partials/ e it.json
 node tools/check-links.js          # link interni e ancore (--external per gli URL esterni)
+node tools/check-sw.js             # elenco file del Service Worker coerente con il sito
 node tools/contrast-check.js       # contrasti WCAG dei token, tema chiaro e scuro
 node --test tests/physics.test.js  # criteri di accuratezza fisica (SPEC 8.5)
 ```
