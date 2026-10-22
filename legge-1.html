@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="it">
+<head>
+<!-- @head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Prima legge: l'inerzia | Newton in movimento</title>
+<meta name="description" content="Il carrello sul ghiaccio: una simulazione interattiva per capire che senza forza risultante la velocità non cambia.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/legge-1.html">
+<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/legge-1.html?lang=it">
+<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/legge-1.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/legge-1.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newton in movimento">
+<meta property="og:title" content="Prima legge: l'inerzia | Newton in movimento">
+<meta property="og:description" content="Il carrello sul ghiaccio: una simulazione interattiva per capire che senza forza risultante la velocità non cambia.">
+<meta property="og:image" content="https://monaripietro.github.io/leggiDiNewton/assets/img/og-image.png">
+<meta property="og:image:alt" content="Newton in movimento: le tre leggi del moto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/theme-init.js"></script>
+<script type="module" src="assets/js/nav.js"></script>
+<!-- /@head -->
+</head>
+<body data-page="law1" class="law-1">
+<!-- @header -->
+<a class="skip-link" href="#main" data-i18n="common.skip">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/><path d="M7 19h14" stroke="#1F2A37" stroke-width="2.5" stroke-linecap="round"/><path d="M19 14.5l5 4.5-5 4.5z" fill="#1F2A37"/><circle cx="11" cy="11" r="3.2" fill="#FFD9C4" stroke="#1F2A37" stroke-width="1.6"/></svg>
+      <span data-i18n="common.siteName">Newton in movimento</span>
+    </a>
+    <div class="header-tools">
+      <label class="visually-hidden" for="lang-select" data-i18n="common.lang.label">Lingua</label>
+      <select id="lang-select">
+        <option value="it" lang="it">Italiano</option>
+        <option value="en" lang="en">English</option>
+      </select>
+      <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg>
+        <span data-theme-label data-i18n="common.theme.dark">Tema scuro</span>
+      </button>
+      <button id="nav-toggle" class="btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="common.menu">Menu</span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:common.nav.label" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html" data-nav="home" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="storia.html" data-nav="history" data-i18n="common.nav.history">Storia</a></li>
+        <li><a href="legge-1.html" data-nav="law1" aria-current="page" data-i18n="common.nav.law1">Prima legge</a></li>
+        <li><a href="legge-2.html" data-nav="law2" data-i18n="common.nav.law2">Seconda legge</a></li>
+        <li><a href="legge-3.html" data-nav="law3" data-i18n="common.nav.law3">Terza legge</a></li>
+        <li><a href="quiz.html" data-nav="quiz" data-i18n="common.nav.quiz">Quiz</a></li>
+        <li><a href="fonti.html" data-nav="sources" data-i18n="common.nav.sources">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /@header -->
+<main id="main" tabindex="-1">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow" data-i18n="law1.eyebrow">Legge 1 · Inerzia</p>
+      <h1 data-i18n="law1.title">Prima legge: l'inerzia</h1>
+      <p class="lead" data-i18n="law1.hook">Perché una palla che rotola, prima o poi, si ferma?</p>
+    </header>
+
+    <section aria-labelledby="story-title">
+      <h2 id="story-title" data-i18n="common.steps.story">Un po' di storia</h2>
+      <p data-i18n="law1.story">Galileo aveva già capito, per il moto orizzontale, che un corpo continua a muoversi se nulla lo frena; Descartes estese l'idea al moto in linea retta. Newton la mise al primo posto tra le sue leggi del moto, nei <em>Principia</em> del 1687. <a href="storia.html#ev-predecessors">Leggi la storia completa</a></p>
+    </section>
+
+    <section aria-labelledby="predict-title">
+      <h2 id="predict-title" class="step-heading"><span class="step-num" aria-hidden="true">1</span> <span data-i18n="common.steps.predict">Predici</span></h2>
+<!-- @predict key=law1.predict correct=b -->
+<form class="question predict" data-predict="law1.predict" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="law1.predict.text">Dai una spinta a un carrello su una superficie senza alcun attrito, come nello spazio. Dopo la spinta, che cosa succede?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law1-predict" value="a"> <span data-i18n="law1.predict.a">Rallenta piano piano e si ferma, perché la spinta si consuma.</span></label>
+      <label class="option"><input type="radio" name="law1-predict" value="b"> <span data-i18n="law1.predict.b">Continua alla stessa velocità, in linea retta.</span></label>
+      <label class="option"><input type="radio" name="law1-predict" value="c"> <span data-i18n="law1.predict.c">Accelera sempre di più.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-role="confirm" data-i18n="common.predict.confirm">Conferma la previsione</button>
+    <p class="feedback" data-role="status" role="status" aria-live="polite"></p>
+    <button type="button" class="btn" data-role="reveal" hidden data-i18n="common.predict.reveal">Confronta con ciò che hai osservato</button>
+    <div class="feedback" data-role="result" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@predict -->
+    </section>
+
+    <section aria-labelledby="experiment-title">
+      <h2 id="experiment-title" class="step-heading"><span class="step-num" aria-hidden="true">2</span> <span data-i18n="common.steps.experiment">Sperimenta</span></h2>
+      <div class="sim" id="sim-inertia" role="region" aria-labelledby="sim1-title">
+        <h3 id="sim1-title" data-i18n="law1.sim.title">Il carrello sul ghiaccio</h3>
+        <p data-i18n="law1.sim.intro">Scegli la superficie, poi premi «Dai una spinta». La corsia superiore usa l'attrito che scegli; quella inferiore, per confronto, non ha attrito.</p>
+        <p class="sim-note" data-role="reduced" hidden data-i18n="common.sim.reducedMotion">Movimento ridotto attivo: la simulazione parte in pausa. Usa «Avvia» oppure «Passo avanti».</p>
+        <div class="sim-layout">
+          <div>
+            <div class="sim-stage">
+              <canvas role="img" data-i18n-attr="aria-label:law1.sim.canvasLabel" aria-label="Simulazione, vista laterale: due corsie orizzontali con un carrello ciascuna. Sopra il carrello con l'attrito scelto, sotto il carrello senza attrito. Le frecce indicano la velocità v e la forza di attrito F."></canvas>
+            </div>
+            <ul class="sim-legend" data-i18n-attr="aria-label:common.sim.legend" aria-label="Legenda">
+              <li><span class="swatch swatch-v" aria-hidden="true"></span> <span data-i18n="common.sim.legendV">v = velocità (freccia piena)</span></li>
+              <li><span class="swatch swatch-f" aria-hidden="true"></span> <span data-i18n="common.sim.legendF">F = forza (freccia tratteggiata)</span></li>
+              <li data-role="scale-v"></li>
+              <li data-role="scale-f"></li>
+            </ul>
+            <div class="sim-buttons" role="group" data-i18n-attr="aria-label:common.sim.playback" aria-label="Riproduzione">
+              <button type="button" class="btn btn-primary" data-action="push" data-i18n="law1.sim.push">Dai una spinta</button>
+              <button type="button" class="btn" data-action="toggle" data-i18n="common.sim.play">Avvia</button>
+              <button type="button" class="btn" data-action="step" data-i18n="common.sim.step">Passo avanti</button>
+              <button type="button" class="btn" data-action="reset" data-i18n="common.sim.reset">Reset</button>
+            </div>
+            <dl class="sim-readout">
+              <div><dt data-i18n="law1.sim.rV">Velocità</dt><dd data-out="v">0 m/s</dd></div>
+              <div><dt data-i18n="law1.sim.rF">Forza risultante</dt><dd data-out="f">0 N</dd></div>
+              <div><dt data-i18n="law1.sim.rD">Distanza percorsa</dt><dd data-out="d">0 m</dd></div>
+              <div data-role="free-readout"><dt data-i18n="law1.sim.rVfree">Velocità senza attrito</dt><dd data-out="vfree">0 m/s</dd></div>
+            </dl>
+            <p class="sim-live" data-role="live" aria-live="polite"></p>
+            <details>
+              <summary data-i18n="common.sim.dataTable">Tabella dati (alternativa ai grafici)</summary>
+              <div class="table-wrap">
+                <table>
+                  <caption class="visually-hidden" data-i18n="common.sim.dataTable">Tabella dati (alternativa ai grafici)</caption>
+                  <thead><tr><th scope="col" data-i18n="law1.sim.colT">t (s)</th><th scope="col" data-i18n="law1.sim.colV">v con attrito (m/s)</th><th scope="col" data-i18n="law1.sim.colVfree">v senza attrito (m/s)</th><th scope="col" data-i18n="law1.sim.colF">F risultante (N)</th></tr></thead>
+                  <tbody data-role="table"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+          <form class="sim-controls" data-role="controls" novalidate>
+            <fieldset>
+              <legend data-i18n="law1.sim.surface">Superficie</legend>
+              <div class="preset-group">
+                <button type="button" class="btn" data-mu="0.02" aria-pressed="false" data-i18n="law1.sim.ice">Ghiaccio</button>
+                <button type="button" class="btn" data-mu="0.25" aria-pressed="false" data-i18n="law1.sim.wood">Legno</button>
+                <button type="button" class="btn" data-mu="0.5" aria-pressed="false" data-i18n="law1.sim.rubber">Gomma</button>
+                <button type="button" class="btn" data-mu="0" aria-pressed="false" data-i18n="law1.sim.space">Spazio (0)</button>
+              </div>
+              <div class="control">
+                <label for="l1-mu"><span data-i18n="law1.sim.mu">Attrito μ</span> <output for="l1-mu"></output></label>
+                <input id="l1-mu" type="range" min="0" max="0.5" step="0.01" value="0.1">
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend data-i18n="common.sim.controls">Controlli della simulazione</legend>
+              <div class="control">
+                <label for="l1-impulse"><span data-i18n="law1.sim.impulse">Spinta (impulso)</span> <output for="l1-impulse"></output></label>
+                <input id="l1-impulse" type="range" min="1" max="10" step="0.5" value="6">
+              </div>
+              <div class="control">
+                <label for="l1-mass"><span data-i18n="law1.sim.mass">Massa</span> <output for="l1-mass"></output></label>
+                <input id="l1-mass" type="range" min="0.5" max="10" step="0.5" value="2">
+              </div>
+              <label class="check"><input id="l1-compare" type="checkbox" checked> <span data-i18n="law1.sim.compare">Mostra la corsia senza attrito</span></label>
+            </fieldset>
+          </form>
+        </div>
+        <details>
+          <summary data-i18n="common.sim.physics">Come funziona la fisica (per i curiosi)</summary>
+          <p data-i18n="law1.sim.physics">Ogni 1/120 di secondo il motore calcola: forza di attrito F = −μ·m·g (sempre opposta al moto, solo mentre il carrello si muove), accelerazione a = F / m, poi aggiorna velocità e posizione (v ← v + a·Δt, x ← x + v·Δt). Con μ = 0 la forza è zero, quindi a = 0 e la velocità non cambia mai. La spinta è un impulso J: cambia la velocità di J / m. Valore usato: g = 9,81 m/s². La pista scorre in modo continuo: quando il carrello esce a destra rientra a sinistra.</p>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="explain-title">
+      <h2 id="explain-title" class="step-heading"><span class="step-num" aria-hidden="true">3</span> <span data-i18n="common.steps.explain">Spiega</span></h2>
+      <div class="callout callout-key">
+        <p class="callout-title" data-i18n="common.keyIdea">Idea chiave</p>
+        <p class="key-sentence" data-i18n="law1.keyIdea.sentence">Un corpo non cambia il suo moto da solo: serve una forza che lo cambi.</p>
+        <p data-i18n="law1.keyIdea.text">Se la forza risultante su un corpo è zero, il corpo resta fermo oppure continua a muoversi in linea retta a velocità costante. Il carrello si ferma solo perché l'attrito è una forza che lo frena.</p>
+        <p class="formula-box formula" data-i18n="law1.keyIdea.formula">ΣF = 0  ⇒  v = costante</p>
+        <dl class="symbols">
+          <dt>ΣF</dt><dd data-i18n="law1.keyIdea.sumF">forza risultante, cioè la somma di tutte le forze che agiscono sul corpo. Si misura in newton (N).</dd>
+          <dt>v</dt><dd data-i18n="law1.keyIdea.v">velocità, in metri al secondo (m/s). Ha un valore e una direzione: «costante» vuol dire che non cambiano né l'uno né l'altra.</dd>
+        </dl>
+      </div>
+      <h3 data-i18n="common.latinLabel">Forma originale in latino</h3>
+      <p data-i18n="law1.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio):</p>
+      <blockquote class="latin" lang="la"><p data-i18n="law1.latin.text">Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.</p></blockquote>
+      <p data-i18n="law1.latin.modern">In parole semplici: ogni corpo resta fermo, o continua a muoversi in linea retta a velocità costante, finché delle forze non lo costringono a cambiare. <a href="fonti.html#principia">Fonte</a></p>
+    </section>
+
+    <section aria-labelledby="myths-title">
+      <h2 id="myths-title" data-i18n="common.steps.myths">Errori frequenti</h2>
+<!-- @myths law=law1 -->
+<ul class="misconceptions">
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law1.myths.1.myth">«Serve una forza per mantenere il moto.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law1.myths.1.fact">Serve una forza per <em>cambiare</em> il moto. Sulla Terra sembra il contrario perché attrito e aria frenano sempre: per questo bisogna continuare a spingere.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law1.myths.2.myth">«L'inerzia è una forza che spinge il corpo in avanti.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law1.myths.2.fact">L'inerzia non è una forza: è la tendenza di ogni corpo a mantenere il suo stato di moto. Nel carrello senza attrito non compare nessuna freccia di forza, eppure si muove.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law1.myths.3.myth">«Gli oggetti pesanti hanno più inerzia, quindi cadono più velocemente.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law1.myths.3.fact">Più massa vuol dire più inerzia, ma anche più forza di gravità: i due effetti si compensano. Senza l'aria, oggetti di massa diversa cadono insieme.</span></p>
+  </li>
+</ul>
+<!-- /@myths -->
+    </section>
+
+    <section aria-labelledby="check-title">
+      <h2 id="check-title" class="step-heading"><span class="step-num" aria-hidden="true">4</span> <span data-i18n="common.steps.check">Verifica</span></h2>
+<!-- @question key=law1.check.q1 correct=c -->
+<form class="question" data-quiz="law1.check.q1" data-correct="c" novalidate>
+  <fieldset>
+    <legend data-i18n="law1.check.q1.text">Una sonda spaziale, lontana da pianeti e stelle, spegne i motori. Che cosa fa?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law1-check-q1" value="a"> <span data-i18n="law1.check.q1.a">Si ferma subito.</span></label>
+      <label class="option"><input type="radio" name="law1-check-q1" value="b"> <span data-i18n="law1.check.q1.b">Rallenta piano piano.</span></label>
+      <label class="option"><input type="radio" name="law1-check-q1" value="c"> <span data-i18n="law1.check.q1.c">Continua a muoversi alla stessa velocità.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=law1.check.q2 correct=b -->
+<form class="question" data-quiz="law1.check.q2" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="law1.check.q2.text">Un libro è fermo sul tavolo. Quale frase è corretta?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law1-check-q2" value="a"> <span data-i18n="law1.check.q2.a">Sul libro non agisce nessuna forza.</span></label>
+      <label class="option"><input type="radio" name="law1-check-q2" value="b"> <span data-i18n="law1.check.q2.b">Le forze sul libro si bilanciano: la forza risultante è zero.</span></label>
+      <label class="option"><input type="radio" name="law1-check-q2" value="c"> <span data-i18n="law1.check.q2.c">L'inerzia tiene fermo il libro come una colla.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+    </section>
+<!-- @pager prev=storia.html next=legge-2.html key=law1 -->
+<nav class="pager" data-i18n-attr="aria-label:common.pagerLabel" aria-label="Pagina precedente e successiva">
+  <a class="btn" href="storia.html" rel="prev" data-i18n="law1.prev">← Storia</a>
+  <a class="btn btn-primary" href="legge-2.html" rel="next" data-i18n="law1.next">Seconda legge →</a>
+</nav>
+<!-- /@pager -->
+  </div>
+</main>
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="common.footer.about">Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.</p>
+    <p data-i18n="common.footer.privacy">Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.</p>
+    <p data-i18n="common.footer.license">Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.</p>
+    <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
+      <ul>
+        <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
+        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- /@footer -->
+<script type="module" src="assets/js/pages/legge-1.js"></script>
+</body>
+</html>
