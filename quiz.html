@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="it">
+<head>
+<!-- @head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Quiz finale | Newton in movimento</title>
+<meta name="description" content="Metti alla prova ciò che hai imparato sulle tre leggi di Newton e sulla loro storia, con suggerimenti per ogni risposta.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/quiz.html">
+<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/quiz.html?lang=it">
+<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/quiz.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/quiz.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newton in movimento">
+<meta property="og:title" content="Quiz finale | Newton in movimento">
+<meta property="og:description" content="Metti alla prova ciò che hai imparato sulle tre leggi di Newton e sulla loro storia, con suggerimenti per ogni risposta.">
+<meta property="og:image" content="https://monaripietro.github.io/leggiDiNewton/assets/img/og-image.png">
+<meta property="og:image:alt" content="Newton in movimento: le tre leggi del moto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/theme-init.js"></script>
+<script type="module" src="assets/js/nav.js"></script>
+<!-- /@head -->
+</head>
+<body data-page="quiz" class="law-h">
+<!-- @header -->
+<a class="skip-link" href="#main" data-i18n="common.skip">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/><path d="M7 19h14" stroke="#1F2A37" stroke-width="2.5" stroke-linecap="round"/><path d="M19 14.5l5 4.5-5 4.5z" fill="#1F2A37"/><circle cx="11" cy="11" r="3.2" fill="#FFD9C4" stroke="#1F2A37" stroke-width="1.6"/></svg>
+      <span data-i18n="common.siteName">Newton in movimento</span>
+    </a>
+    <div class="header-tools">
+      <label class="visually-hidden" for="lang-select" data-i18n="common.lang.label">Lingua</label>
+      <select id="lang-select">
+        <option value="it" lang="it">Italiano</option>
+        <option value="en" lang="en">English</option>
+      </select>
+      <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg>
+        <span data-theme-label data-i18n="common.theme.dark">Tema scuro</span>
+      </button>
+      <button id="nav-toggle" class="btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="common.menu">Menu</span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:common.nav.label" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html" data-nav="home" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="storia.html" data-nav="history" data-i18n="common.nav.history">Storia</a></li>
+        <li><a href="legge-1.html" data-nav="law1" data-i18n="common.nav.law1">Prima legge</a></li>
+        <li><a href="legge-2.html" data-nav="law2" data-i18n="common.nav.law2">Seconda legge</a></li>
+        <li><a href="legge-3.html" data-nav="law3" data-i18n="common.nav.law3">Terza legge</a></li>
+        <li><a href="quiz.html" data-nav="quiz" aria-current="page" data-i18n="common.nav.quiz">Quiz</a></li>
+        <li><a href="fonti.html" data-nav="sources" data-i18n="common.nav.sources">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /@header -->
+<main id="main" tabindex="-1">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow" data-i18n="quiz.eyebrow">Verifica finale</p>
+      <h1 data-i18n="quiz.title">Quiz finale</h1>
+      <p class="lead" data-i18n="quiz.lead">Otto domande sulle tre leggi e sulla loro storia. Nessun punteggio negativo: per ogni risposta ricevi una spiegazione o un suggerimento. Puoi riprovare quante volte vuoi.</p>
+    </header>
+    <p class="sim-guide" id="quiz-progress" role="status" aria-live="polite"></p>
+<!-- @question key=quiz.q1 correct=b -->
+<form class="question" data-quiz="quiz.q1" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q1.text">Un disco da hockey scivola su un ghiaccio perfettamente liscio. Nessuna forza orizzontale agisce su di esso. Che cosa fa?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q1" value="a"> <span data-i18n="quiz.q1.a">Rallenta finché si ferma.</span></label>
+      <label class="option"><input type="radio" name="quiz-q1" value="b"> <span data-i18n="quiz.q1.b">Prosegue in linea retta a velocità costante.</span></label>
+      <label class="option"><input type="radio" name="quiz-q1" value="c"> <span data-i18n="quiz.q1.c">Curva leggermente.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q2 correct=c -->
+<form class="question" data-quiz="quiz.q2" data-correct="c" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q2.text">Quale grandezza è proporzionale alla forza risultante, a parità di massa?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q2" value="a"> <span data-i18n="quiz.q2.a">La velocità.</span></label>
+      <label class="option"><input type="radio" name="quiz-q2" value="b"> <span data-i18n="quiz.q2.b">La posizione.</span></label>
+      <label class="option"><input type="radio" name="quiz-q2" value="c"> <span data-i18n="quiz.q2.c">L'accelerazione.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q3 correct=a -->
+<form class="question" data-quiz="quiz.q3" data-correct="a" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q3.text">Una forza di 15 N agisce su una massa di 3 kg. Quanto vale l'accelerazione?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q3" value="a"> <span data-i18n="quiz.q3.a">5 m/s²</span></label>
+      <label class="option"><input type="radio" name="quiz-q3" value="b"> <span data-i18n="quiz.q3.b">45 m/s²</span></label>
+      <label class="option"><input type="radio" name="quiz-q3" value="c"> <span data-i18n="quiz.q3.c">0,2 m/s²</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q4 correct=b -->
+<form class="question" data-quiz="quiz.q4" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q4.text">Un'auto e un camion si scontrano. Durante l'urto, come sono le forze che si scambiano?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q4" value="a"> <span data-i18n="quiz.q4.a">Il camion esercita una forza maggiore.</span></label>
+      <label class="option"><input type="radio" name="quiz-q4" value="b"> <span data-i18n="quiz.q4.b">Sono uguali in intensità e opposte in verso.</span></label>
+      <label class="option"><input type="radio" name="quiz-q4" value="c"> <span data-i18n="quiz.q4.c">L'auto esercita una forza maggiore, perché va più veloce.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q5 correct=a -->
+<form class="question" data-quiz="quiz.q5" data-correct="a" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q5.text">Perché azione e reazione non si annullano?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q5" value="a"> <span data-i18n="quiz.q5.a">Perché agiscono su corpi diversi.</span></label>
+      <label class="option"><input type="radio" name="quiz-q5" value="b"> <span data-i18n="quiz.q5.b">Perché una è sempre più grande.</span></label>
+      <label class="option"><input type="radio" name="quiz-q5" value="c"> <span data-i18n="quiz.q5.c">In realtà si annullano sempre.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q6 correct=b -->
+<form class="question" data-quiz="quiz.q6" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q6.text">Secondo le fonti, che legame c'è tra la mela di Newton e le tre leggi del moto?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q6" value="a"> <span data-i18n="quiz.q6.a">Le tre leggi nacquero quando una mela colpì Newton in testa.</span></label>
+      <label class="option"><input type="radio" name="quiz-q6" value="b"> <span data-i18n="quiz.q6.b">Nessuno diretto: l'aneddoto riguarda la gravitazione.</span></label>
+      <label class="option"><input type="radio" name="quiz-q6" value="c"> <span data-i18n="quiz.q6.c">La mela ispirò la terza legge.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q7 correct=b -->
+<form class="question" data-quiz="quiz.q7" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q7.text">In quale opera compaiono per la prima volta le tre leggi, e in che anno?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q7" value="a"> <span data-i18n="quiz.q7.a">Nel De motu corporum in gyrum, 1684.</span></label>
+      <label class="option"><input type="radio" name="quiz-q7" value="b"> <span data-i18n="quiz.q7.b">Nei Principia, 1687.</span></label>
+      <label class="option"><input type="radio" name="quiz-q7" value="c"> <span data-i18n="quiz.q7.c">In una lettera alla Royal Society, 1666.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=quiz.q8 correct=c -->
+<form class="question" data-quiz="quiz.q8" data-correct="c" novalidate>
+  <fieldset>
+    <legend data-i18n="quiz.q8.text">Chi aveva già formulato l'idea di inerzia, almeno in parte, prima di Newton?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="quiz-q8" value="a"> <span data-i18n="quiz.q8.a">Nessuno: è un'idea interamente di Newton.</span></label>
+      <label class="option"><input type="radio" name="quiz-q8" value="b"> <span data-i18n="quiz.q8.b">Halley.</span></label>
+      <label class="option"><input type="radio" name="quiz-q8" value="c"> <span data-i18n="quiz.q8.c">Galileo e Descartes.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @pager prev=legge-3.html next=fonti.html key=quiz -->
+<nav class="pager" data-i18n-attr="aria-label:common.pagerLabel" aria-label="Pagina precedente e successiva">
+  <a class="btn" href="legge-3.html" rel="prev" data-i18n="quiz.prev">← Terza legge</a>
+  <a class="btn btn-primary" href="fonti.html" rel="next" data-i18n="quiz.next">Fonti →</a>
+</nav>
+<!-- /@pager -->
+  </div>
+</main>
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="common.footer.about">Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.</p>
+    <p data-i18n="common.footer.privacy">Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.</p>
+    <p data-i18n="common.footer.license">Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.</p>
+    <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
+      <ul>
+        <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
+        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- /@footer -->
+<script type="module" src="assets/js/pages/quiz.js"></script>
+</body>
+</html>
