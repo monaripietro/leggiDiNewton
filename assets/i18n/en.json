@@ -1,0 +1,741 @@
+{
+  "common": {
+    "siteName": "Newton in Motion",
+    "skip": "Skip to content",
+    "menu": "Menu",
+    "externalLink": "(external site)",
+    "lang": {
+      "label": "Language",
+      "changed": "Language changed: English"
+    },
+    "theme": {
+      "dark": "Dark theme",
+      "nowDark": "Dark theme on",
+      "nowLight": "Light theme on"
+    },
+    "nav": {
+      "label": "Main navigation",
+      "home": "Home",
+      "history": "History",
+      "law1": "First law",
+      "law2": "Second law",
+      "law3": "Third law",
+      "quiz": "Quiz",
+      "sources": "Sources"
+    },
+    "footer": {
+      "about": "An educational site to discover Isaac Newton's three laws of motion, their history and the ideas behind the formulas.",
+      "license": "Text licensed CC BY 4.0. Open-source code (see the LICENSE file). Images: original SVG drawings.",
+      "privacy": "No cookies and no tracking: your language and theme choices stay in your browser.",
+      "linksLabel": "Useful links",
+      "sources": "Sources and bibliography",
+      "credits": "Credits",
+      "top": "Back to top"
+    },
+    "pagerLabel": "Previous and next page",
+    "badge": {
+      "doc": "Documented",
+      "trad": "Tradition",
+      "debate": "Debated"
+    },
+    "keyIdea": "Key idea",
+    "warn": "Careful: legend or debate",
+    "historyNote": "Historical note",
+    "latinLabel": "Original Latin wording",
+    "steps": {
+      "hook": "The question",
+      "story": "A bit of history",
+      "predict": "Predict",
+      "experiment": "Experiment",
+      "explain": "Explain",
+      "myths": "Common mistakes",
+      "check": "Check"
+    },
+    "myth": "Misconception",
+    "fact": "What really happens",
+    "sim": {
+      "play": "Start",
+      "pause": "Pause",
+      "resume": "Resume",
+      "reset": "Reset",
+      "step": "Step forward",
+      "controls": "Simulation controls",
+      "playback": "Playback",
+      "description": "Live description",
+      "dataTable": "Data table (alternative to the graphs)",
+      "dataEmpty": "No data yet: start the simulation.",
+      "physics": "How the physics works (for the curious)",
+      "reducedMotion": "Reduced motion is on: the simulation starts paused. Use “Start” or “Step forward”.",
+      "legend": "Legend",
+      "legendV": "v = velocity (solid arrow)",
+      "legendF": "F = force (dashed arrow)",
+      "legendA": "a = acceleration (dotted arrow)",
+      "scale": "Arrow scale: {px} px = {value} {unit}",
+      "time": "t (s)",
+      "paused": "Simulation paused.",
+      "running": "Simulation running.",
+      "resetDone": "Simulation reset to its starting state."
+    },
+    "predict": {
+      "confirm": "Lock in my prediction",
+      "locked": "Prediction saved. Now try the simulation below and watch what happens.",
+      "reveal": "Compare with what you saw",
+      "revealHint": "The comparison unlocks once you have tried the simulation.",
+      "choose": "Pick one of the three answers.",
+      "yours": "Your prediction: “{answer}”",
+      "right": "Good prediction!",
+      "notQuite": "The simulation shows something different. That happens a lot, and it is how we learn."
+    },
+    "quiz": {
+      "check": "Check",
+      "correct": "Correct!",
+      "retry": "Not yet: read the hint and try again.",
+      "choose": "Pick an answer before checking."
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Newton in Motion — The three laws of motion",
+      "description": "Discover Newton's three laws through their history and accessible interactive simulations, in English and Italian."
+    },
+    "title": "Newton in Motion",
+    "promise": "Discover how one idea about motion changed the world.",
+    "intro": "Three laws, a few lines in a book from 1687, and they still explain why a ball stops rolling, how a car speeds up and how a rocket flies. Here you discover them by experimenting, before you see the formulas.",
+    "cta": "Start with the history",
+    "ctaLaws": "Go straight to the first law",
+    "heroAlt": "Illustration: a cart with three arrows, one for each law of motion.",
+    "lawsTitle": "The three laws",
+    "law1": {
+      "tag": "Law 1",
+      "title": "Inertia",
+      "text": "Why an object keeps moving, or stays still, unless a force changes that.",
+      "link": "Explore the first law"
+    },
+    "law2": {
+      "tag": "Law 2",
+      "title": "Force and acceleration",
+      "text": "How force and mass decide how much the velocity changes: the modern form is F = m·a.",
+      "link": "Explore the second law"
+    },
+    "law3": {
+      "tag": "Law 3",
+      "title": "Action and reaction",
+      "text": "Why forces always come in pairs, and how a rocket can push itself through empty space.",
+      "link": "Explore the third law"
+    },
+    "methodTitle": "How each page works",
+    "method": {
+      "predict": "Predict",
+      "predictText": "Choose what you think will happen.",
+      "experiment": "Experiment",
+      "experimentText": "Try the simulation and change the settings.",
+      "explain": "Explain",
+      "explainText": "Find out the key idea and the formula.",
+      "check": "Check",
+      "checkText": "Test what you have understood."
+    },
+    "accessTitle": "For everyone",
+    "accessText": "Every simulation works with the keyboard alone, has a text description updated live and a data table as an alternative to the graphs. If your system asks for reduced motion, simulations start paused."
+  },
+  "history": {
+    "meta": {
+      "title": "History — How the laws of motion came about | Newton in Motion",
+      "description": "A sourced timeline, from the ideas of Galileo and Descartes to Newton's Principia of 1687."
+    },
+    "eyebrow": "The historical journey",
+    "title": "How the laws of motion came about",
+    "lead": "From Newton's predecessors to the publication of the Principia in 1687: the documented milestones, the traditions and the points still debated.",
+    "howTitle": "How to read this page",
+    "howText": "Every milestone carries a label showing how reliable its story is:",
+    "howDoc": "**Documented**: confirmed by historical documents and sources.",
+    "howTrad": "**Tradition**: a story handed down, plausible but not verifiable in every detail.",
+    "howDebate": "**Debated**: a topic on which interpretations differ.",
+    "filterLegend": "Show milestones:",
+    "filterAll": "All",
+    "filterCount": "Showing {n} of {total} milestones.",
+    "appleTitle": "The laws did not come from the apple",
+    "appleText": "The apple story is about gravitation, not about the three laws of motion. The laws came out of many years of study and the work of many scholars before Newton.",
+    "whyLabel": "Why does it matter for the laws?",
+    "sourceLabel": "Source",
+    "events": {
+      "predecessors": {
+        "when": "Before Newton",
+        "title": "Galileo and Descartes: the idea of inertia",
+        "text": "The principle of inertia did not begin with Newton. Galileo stated it for horizontal motion: a body moving on a level surface keeps moving unless something slows it down. Descartes generalised the idea to motion in a straight line. Newton made it the first of his laws of motion.",
+        "why": "It is the heart of the first law: without a force, a body's motion does not change. It is also a good antidote to the myth of the lone genius who invents everything.",
+        "bridge": "[Before Newton: Galileo → go to Law 1](legge-1.html)",
+        "source": "[Encyclopaedia Britannica; Stanford Encyclopedia of Philosophy](fonti.html#secondarie)"
+      },
+      "others": {
+        "when": "Before Newton",
+        "title": "Many minds at work",
+        "text": "Other scholars prepared the ground: Galileo also studied falling bodies, Huygens collisions and centrifugal force, Kepler the orbits of the planets. Hooke, Wren and Halley discussed a force that weakens with the square of the distance.",
+        "why": "Collisions and bodies pushing on each other are exactly the territory of the third law: Newton's ideas gather and organise a collective effort.",
+        "bridge": "[Collisions and mutual pushes → go to Law 3](legge-3.html)",
+        "source": "[Stanford Encyclopedia of Philosophy](fonti.html#sep)"
+      },
+      "birth": {
+        "when": "1642",
+        "title": "Isaac Newton is born",
+        "text": "Isaac Newton is born at Woolsthorpe, Lincolnshire, in England.",
+        "note": "Why two dates? England still used the Julian calendar, by which Newton was born on 25 December 1642. In the Gregorian calendar, the one we use today, the same day is 4 January 1643.",
+        "why": "Woolsthorpe is also where Newton will return during the plague years. And the double date is a reminder to read sources carefully.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "plague": {
+        "when": "1665–1667",
+        "title": "The plague and the “wonder years”",
+        "text": "The plague forces the University of Cambridge to close. Newton spends time at Woolsthorpe Manor, with two long stays between the summer of 1665 and the spring of 1667. These years are remembered as the *annus mirabilis*, the “year of wonders”.",
+        "why": "The name alone shows how important this period of study away from the university is considered in Newton's path.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "apple": {
+        "when": "about 1666",
+        "title": "The apple",
+        "text": "As an old man, in 1726, Newton told William Stukeley that watching an apple fall had set him thinking about gravitation; Stukeley recorded the episode in his memoirs. The National Trust calls it a scientific legend that is believed to be largely true.",
+        "note": "There is no record that the apple hit Newton on the head: that detail belongs to popular tradition and should be treated as unreliable.",
+        "why": "The apple is about gravitation, not the three laws of motion: **the laws did not come from the apple**.",
+        "source": "[National Trust, Woolsthorpe Manor](fonti.html#national-trust)"
+      },
+      "halley": {
+        "when": "August 1684",
+        "title": "Halley's question",
+        "text": "Edmond Halley visits Newton in Cambridge and asks him what curve a planet would follow if it were pulled by a force that weakens with the square of the distance. Newton answers: an ellipse. He says he has already worked it out, but cannot find his calculations at that moment.",
+        "why": "This question starts the chain of events that, in less than three years, leads to the *Principia* and the three laws.",
+        "source": "[Cambridge Digital Library; Stanford Encyclopedia of Philosophy](fonti.html#primarie)"
+      },
+      "demotu": {
+        "when": "November 1684",
+        "title": "The “De motu” treatise",
+        "text": "Newton sends Halley a 9-page treatise, *De motu corporum in gyrum* (“On the motion of bodies in orbit”).",
+        "why": "It is the core that Newton will expand into the work where the three laws appear.",
+        "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
+      },
+      "royal": {
+        "when": "10 December 1684",
+        "title": "At the Royal Society",
+        "text": "Halley reports to the Royal Society that he has seen Newton's treatise. Publication is encouraged.",
+        "why": "From here, Newton's work on motion becomes a publishing project.",
+        "source": "[Cambridge Digital Library](fonti.html#cudl-3965)"
+      },
+      "writing": {
+        "when": "1685–1686",
+        "title": "Eighteen months of work",
+        "text": "Newton works intensely for about 18 months to expand the treatise. In April 1686 he presents and dedicates the first book of the *Principia* to the Royal Society.",
+        "why": "The 9-page treatise becomes a major work: this is the one that will contain the three laws.",
+        "source": "[Cambridge Digital Library, MS Add. 3965](fonti.html#cudl-3965)"
+      },
+      "principia": {
+        "when": "1687",
+        "title": "The Principia is published",
+        "text": "The *Philosophiæ Naturalis Principia Mathematica* is published. The three laws appear in the section “Axioms, or laws of motion” (*Axiomata, sive leges motus*). Halley oversees the printing. In the work Newton also applies the laws to the motion of the planets and to the tides.",
+        "note": "In the *Principia* the second law is not written as F = m·a: Newton speaks of a change in the “quantity of motion” proportional to the motive force impressed. F = m·a is the modern form, a later reformulation.",
+        "why": "This is the official birth of the three laws of motion.",
+        "bridge": "Go to the laws: [Law 1](legge-1.html) · [Law 2](legge-2.html) · [Law 3](legge-3.html)",
+        "source": "[Principia, 1687 (public domain)](fonti.html#principia)"
+      },
+      "hooke": {
+        "when": "A dispute over priority",
+        "title": "Hooke and Newton",
+        "text": "Robert Hooke and Isaac Newton had a dispute over who first had the idea of a force inversely proportional to the square of the distance. Historians interpret it in different ways; here we simply point it out, without going into the details.",
+        "why": "It is a reminder that science is also made of exchanges, and sometimes clashes, between people.",
+        "source": "[Stanford Encyclopedia of Philosophy](fonti.html#sep)"
+      }
+    }
+  },
+  "law1": {
+    "meta": {
+      "title": "First law: inertia | Newton in Motion",
+      "description": "The cart on ice: an interactive simulation showing that without a net force, velocity does not change."
+    },
+    "eyebrow": "Law 1 · Inertia",
+    "title": "First law: inertia",
+    "hook": "Why does a rolling ball always end up stopping?",
+    "story": "Galileo had already understood, for horizontal motion, that a body keeps moving unless something slows it down; Descartes extended the idea to motion in a straight line. Newton put it first among his laws of motion, in the 1687 *Principia*. [Read the full history](storia.html#ev-predecessors)",
+    "predict": {
+      "text": "You give a push to a cart on a surface with no friction at all, as in space. After the push, what happens?",
+      "a": "It slowly slows down and stops, because the push gets used up.",
+      "b": "It keeps going at the same speed, in a straight line.",
+      "c": "It goes faster and faster.",
+      "fa": "That is the most common intuition, because on Earth everything ends up stopping. But what stops things is friction: in the frictionless lane you saw that the cart never slows down.",
+      "fb": "Exactly: with no force to slow it down, the cart keeps the same velocity. You saw it in the frictionless lane.",
+      "fc": "Speeding up would need a force that keeps acting. After the push there is no force left: the velocity stays constant."
+    },
+    "sim": {
+      "title": "The cart on ice",
+      "intro": "Choose a surface, then press “Give it a push”. The top lane uses the friction you choose; the bottom lane, for comparison, has no friction.",
+      "canvasLabel": "Simulation, side view: two horizontal lanes with one cart each. Top: the cart with the chosen friction. Bottom: the cart with no friction. Arrows show velocity v and friction force F.",
+      "laneMain": "With friction (μ = {mu})",
+      "laneFree": "No friction (μ = 0)",
+      "push": "Give it a push",
+      "impulse": "Push (impulse)",
+      "mu": "Friction μ",
+      "mass": "Mass",
+      "surface": "Surface",
+      "ice": "Ice",
+      "wood": "Wood",
+      "rubber": "Rubber",
+      "space": "Space (0)",
+      "compare": "Show the frictionless lane",
+      "rV": "Velocity",
+      "rF": "Net force",
+      "rD": "Distance travelled",
+      "rVfree": "Velocity without friction",
+      "graph": "Velocity over time (v–t graph)",
+      "graphY": "v (m/s)",
+      "colT": "t (s)",
+      "colV": "v with friction (m/s)",
+      "colVfree": "v without friction (m/s)",
+      "colF": "Net F (N)",
+      "ready": "Cart at rest, mass {m} kg, friction μ = {mu}. Press “Give it a push”.",
+      "pushed": "Push! The cart sets off at {v} m/s.",
+      "moving": "{m} kg cart, friction μ = {mu}: velocity {v} m/s, net force {f} N.",
+      "constant": "{m} kg cart, zero friction: constant velocity {v} m/s. No force, no change in velocity.",
+      "stopped": "The cart with friction stopped after {d} m: friction slowed it down. The frictionless one keeps going at {v} m/s.",
+      "stoppedAlone": "The cart stopped after {d} m: friction slowed it down.",
+      "physics": "Every 1/120 of a second the engine computes: friction force F = −μ·m·g (always opposite to the motion, only while the cart moves), acceleration a = F / m, then updates velocity and position (v ← v + a·Δt, x ← x + v·Δt). With μ = 0 the force is zero, so a = 0 and the velocity never changes. The push is an impulse J: it changes the velocity by J / m. Value used: g = 9.81 m/s². The track loops: when the cart leaves on the right it comes back on the left."
+    },
+    "keyIdea": {
+      "sentence": "A body does not change its motion on its own: it takes a force to change it.",
+      "text": "If the net force on a body is zero, the body stays at rest or keeps moving in a straight line at constant velocity. The cart stops only because friction is a force that slows it down.",
+      "formula": "ΣF = 0  ⇒  v = constant",
+      "sumF": "net force, the sum of all the forces acting on the body. Measured in newtons (N).",
+      "v": "velocity, in metres per second (m/s). It has a size and a direction: “constant” means neither one changes."
+    },
+    "latin": {
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "text": "Corpus omne perseverare in statu suo quiescendi vel movendi uniformiter in directum, nisi quatenus illud a viribus impressis cogitur statum suum mutare.",
+      "modern": "In plain words: every body stays at rest, or keeps moving in a straight line at constant speed, unless forces acting on it compel it to change. [Source](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "“You need a force to keep something moving.”",
+        "fact": "You need a force to *change* motion. On Earth it seems the other way round because friction and air are always slowing things down: that is why you have to keep pushing."
+      },
+      "2": {
+        "myth": "“Inertia is a force that pushes a body forward.”",
+        "fact": "Inertia is not a force: it is every body's tendency to keep its state of motion. On the frictionless cart no force arrow appears, yet it moves."
+      },
+      "3": {
+        "myth": "“Heavy objects have more inertia, so they fall faster.”",
+        "fact": "More mass means more inertia, but also more gravitational pull: the two effects cancel out. Without air, objects of different mass fall together."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "A space probe, far from planets and stars, switches off its engines. What does it do?",
+        "a": "It stops immediately.",
+        "b": "It slowly slows down.",
+        "c": "It keeps moving at the same speed.",
+        "fa": "Hint: stopping would need a force. In empty space, what force could slow it down?",
+        "fb": "Hint: on Earth friction is what slows things down. In space nothing rubs against the probe.",
+        "fc": "Without forces, motion does not change: the probe carries on at the same speed, in a straight line."
+      },
+      "q2": {
+        "text": "A book is lying still on a table. Which statement is correct?",
+        "a": "No force acts on the book.",
+        "b": "The forces on the book balance: the net force is zero.",
+        "c": "Inertia holds the book in place like glue.",
+        "fa": "Hint: gravity pulls the book down. What stops it from falling?",
+        "fb": "Right: its weight pulls down and the table pushes up just as hard. Zero net force, so the book stays put.",
+        "fc": "Hint: inertia is not a force, it is the tendency not to change motion. Think about which forces act on the book."
+      }
+    },
+    "prev": "← History",
+    "next": "Second law →"
+  },
+  "law2": {
+    "meta": {
+      "title": "Second law: force and acceleration | Newton in Motion",
+      "description": "Push the cart: an interactive simulation to discover how force and mass determine acceleration (F = m·a)."
+    },
+    "eyebrow": "Law 2 · Force and acceleration",
+    "title": "Second law: force and acceleration",
+    "hook": "Why is an empty trolley easier to get moving than a full one?",
+    "story": "In the *Principia* (1687) Newton wrote that the change in “quantity of motion” is proportional to the motive force impressed, and takes place along the straight line in which the force acts. Today we write it, in modern form, as F = m·a. [Read the history](storia.html#ev-principia)",
+    "predict": {
+      "text": "You push a cart with a certain force. Then you push it with twice the force, without changing its mass. What happens to the acceleration?",
+      "a": "It stays the same.",
+      "b": "It doubles.",
+      "c": "It becomes four times bigger.",
+      "fa": "Compare two rows of the table with the same mass: with twice the force, the measured acceleration does not stay the same.",
+      "fb": "Exactly: for the same mass, acceleration and force are proportional. Twice the force, twice the acceleration.",
+      "fc": "Look at the experiment table: with twice the force the acceleration doubles, it does not quadruple. Force and acceleration are proportional."
+    },
+    "sim": {
+      "title": "Push the cart",
+      "intro": "Choose force and mass, then start: the force acts until the cart reaches the end of the track. Every run goes into the experiment table.",
+      "canvasLabel": "Simulation, side view: a cart on a 20-metre horizontal track, pushed by a force F. Arrows show force F, acceleration a and velocity v.",
+      "modeLabel": "Mode",
+      "modeFree": "Free experiment",
+      "modeRule": "Find the rule",
+      "modeChallenge": "Challenge",
+      "force": "Force F",
+      "forceHint": "On the slider: ← → arrow keys for 1 N, Shift + arrow for 5 N. You can also drag the red arrow on the track.",
+      "mass": "Mass m",
+      "direction": "Direction of the force",
+      "right": "To the right",
+      "left": "To the left",
+      "friction": "Friction with the track (μ = 0.1)",
+      "rF": "Applied force",
+      "rNet": "Net force",
+      "rM": "Mass",
+      "rA": "Acceleration a = F/m",
+      "rV": "Velocity",
+      "rX": "Position",
+      "graphA": "Acceleration over time (a–t)",
+      "graphV": "Velocity over time (v–t)",
+      "graphAY": "a (m/s²)",
+      "graphVY": "v (m/s)",
+      "trials": "Experiment table (last 5 runs)",
+      "trialsCaption": "Latest runs: force, mass and measured acceleration",
+      "colN": "Run",
+      "colF": "F (N)",
+      "colM": "m (kg)",
+      "colA": "measured a (m/s²)",
+      "colT": "t (s)",
+      "colV": "v (m/s)",
+      "colX": "x (m)",
+      "noTrials": "No runs yet. Start the simulation!",
+      "historyNote": "Newton wrote the law in terms of the change in quantity of motion; F = m·a is the modern form.",
+      "ready": "Cart at rest. Force {f} N, mass {m} kg. Press “Start”.",
+      "moving": "Net force {f} N, mass {m} kg: acceleration {a} m/s², velocity {v} m/s.",
+      "static": "A push of {f} N is not enough to overcome static friction: the cart stays put.",
+      "end": "End of track. Run recorded: F = {f} N, m = {m} kg, a = {a} m/s².",
+      "forceChanged": "Force: {f} N. Expected acceleration: {a} m/s².",
+      "massChanged": "Mass: {m} kg. Expected acceleration: {a} m/s².",
+      "ruleStart": "Do one run with the starting values. Then change **only one** quantity at a time.",
+      "ruleNext": "Now try doubling the force while keeping the mass the same: what happens to a?",
+      "ruleForceDouble": "You doubled the force with the same mass: the acceleration went from {a1} to {a2} m/s², roughly twice as much. Now try doubling the mass with the same force.",
+      "ruleMassDouble": "You doubled the mass with the same force: the acceleration went from {a1} to {a2} m/s², roughly half. You have found the rule: a = F / m.",
+      "ruleOther": "Compare the last two runs: F went from {f1} to {f2} N, m from {m1} to {m2} kg, a from {a1} to {a2} m/s². To see the rule clearly, change just one quantity and try doubling it.",
+      "challengeGoal": "Challenge: start from rest and cross the finish line at {d} m in exactly {T} s (± 0.1 s). Choose F and m, then start.",
+      "challengeWin": "Finish in {t} s: challenge won! With F = {f} N and m = {m} kg the acceleration was {a} m/s².",
+      "challengeEarly": "Finish in {t} s: too early. You need a smaller acceleration: reduce the force or increase the mass.",
+      "challengeLate": "Finish in {t} s: too late. You need a larger acceleration: increase the force or reduce the mass.",
+      "challengeHint": "Hint: to cover d metres from rest in T seconds you need a = 2·d / T².",
+      "challengeNew": "New challenge",
+      "finishLabel": "finish",
+      "physics": "Every 1/120 of a second the engine computes the net force (applied force plus any friction, F_friction = μ·m·g opposite to the motion), then a = F_net / m, v ← v + a·Δt and x ← x + v·Δt. If the push does not exceed μ·m·g, static friction balances it and the cart stays put. The acceleration in the table is measured as change in velocity divided by time, just as in a lab."
+    },
+    "keyIdea": {
+      "sentence": "The net force changes the velocity: the more mass, the harder it is to change.",
+      "text": "For the same mass, twice the force gives twice the acceleration. For the same force, twice the mass gives half the acceleration. And the acceleration always points in the direction of the net force.",
+      "formula": "F = m · a   (modern form)",
+      "F": "net force, in newtons (N). 1 N is the force that accelerates 1 kg by 1 m/s².",
+      "m": "mass, in kilograms (kg): how hard it is to change the body's motion.",
+      "a": "acceleration, in metres per second squared (m/s²): how much the velocity changes each second."
+    },
+    "massWeight": {
+      "title": "Mass and weight are not the same thing",
+      "text": "**Mass** (kg) tells you how much inertia a body has and is the same everywhere. **Weight** is the force with which gravity pulls it (N): on Earth it is about m · 9.81 N, on the Moon much less. An astronaut on the Moon weighs less but has the same mass."
+    },
+    "latin": {
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "text": "Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.",
+      "modern": "In plain words: the change in motion is proportional to the impressed force and takes place in the direction in which that force acts. [Source](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "“Velocity is proportional to force.”",
+        "fact": "It is **acceleration** that is proportional to force. With a constant force the velocity keeps growing: look at the v–t graph, it is a rising straight line."
+      },
+      "2": {
+        "myth": "“The force is inside the moving body.”",
+        "fact": "A force is an action between two bodies (the pusher and the pushed). When the push ends, the body does not carry a force along with it: it only keeps its velocity."
+      },
+      "3": {
+        "myth": "“Mass and weight are the same thing.”",
+        "fact": "Mass is measured in kg and does not change; weight is a force, measured in N, and depends on the local gravity."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "A 4 kg cart is pushed with a net force of 8 N. What is its acceleration?",
+        "a": "32 m/s²",
+        "b": "2 m/s²",
+        "c": "0.5 m/s²",
+        "fa": "Hint: you multiplied force and mass. Acceleration is force divided by mass.",
+        "fb": "Correct: a = F / m = 8 N / 4 kg = 2 m/s².",
+        "fc": "Hint: you divided mass by force. Try it the other way round: a = F / m."
+      },
+      "q2": {
+        "text": "You push an empty trolley and a loaded one, with three times the mass, using the same force. What happens?",
+        "a": "The loaded trolley accelerates one third as much as the empty one.",
+        "b": "They accelerate the same, because the force is the same.",
+        "c": "The loaded trolley accelerates three times as much.",
+        "fa": "Right: for the same force, three times the mass means a third of the acceleration.",
+        "fb": "Hint: the force is the same, but mass matters too. Remember a = F / m.",
+        "fc": "Hint: more mass makes it harder to change the velocity, not easier."
+      },
+      "q3": {
+        "text": "A cart is moving to the right, but the net force on it points to the left. What happens?",
+        "a": "It keeps speeding up to the right.",
+        "b": "It slows down, because the acceleration points to the left.",
+        "c": "It stops instantly.",
+        "fa": "Hint: acceleration always points in the direction of the net force, not the velocity.",
+        "fb": "Correct: the acceleration points left, so the rightward velocity decreases (and, if the force keeps acting, the cart then moves back).",
+        "fc": "Hint: a force changes the velocity gradually. Stopping instantly would need infinite acceleration."
+      }
+    },
+    "prev": "← First law",
+    "next": "Third law →"
+  },
+  "law3": {
+    "meta": {
+      "title": "Third law: action and reaction | Newton in Motion",
+      "description": "Skaters and a rocket: interactive simulations showing that forces come in pairs and act on different bodies."
+    },
+    "eyebrow": "Law 3 · Action and reaction",
+    "title": "Third law: action and reaction",
+    "hook": "If you push a friend while wearing skates, why do you move too?",
+    "story": "The third law is the last of the three laws stated in the *Principia* (1687). Before Newton, Huygens had already studied collisions between bodies. [Read the history](storia.html#ev-others)",
+    "predict": {
+      "text": "Two skaters on ice: A (an adult, 60 kg) pushes B (a teenager, 40 kg). During the push, who receives the larger force?",
+      "a": "B, because A is the one pushing.",
+      "b": "A, because A is heavier.",
+      "c": "Neither: the two forces have the same size.",
+      "fa": "You saw the two arrows during the push: they are the same length. B moves faster not because it gets more force, but because it has less mass.",
+      "fb": "The two force arrows are the same length. A moves more slowly because it has more mass, not because it gets more force.",
+      "fc": "Exactly: A pushes B and B pushes A with the same force, in opposite directions. The velocities differ only because the masses differ."
+    },
+    "sim": {
+      "title": "Skaters and rocket",
+      "intro": "Two scenes: in the first, two skaters push each other; in the second, a rocket in space expels gas.",
+      "sceneLabel": "Scene",
+      "sceneA": "A · Two skaters",
+      "sceneB": "B · Rocket in space",
+      "canvasLabelA": "Simulation, skaters scene: two figures on an ice rink, A on the left and B on the right. During the push two equal and opposite force arrows appear, each on its own body.",
+      "canvasLabelB": "Simulation, rocket scene: a rocket in empty space expels gas to the left and is pushed to the right. Arrows show the force of the rocket on the gas and of the gas on the rocket.",
+      "massA": "Mass of A",
+      "massB": "Mass of B",
+      "pushBtn": "Push!",
+      "forceOnB": "F on B from A",
+      "forceOnA": "F on A from B",
+      "labelA": "A",
+      "labelB": "B",
+      "rFA": "Force on A",
+      "rFB": "Force on B",
+      "rVA": "Velocity of A",
+      "rVB": "Velocity of B",
+      "rP": "Total momentum",
+      "readyA": "A ({mA} kg) and B ({mB} kg) are at rest, side by side. Press “Push!”.",
+      "pushing": "Pushing: B receives {f} N to the right from A, A receives {f} N to the left from B. Same size, opposite direction, on different bodies.",
+      "released": "Push over. A glides left at {vA} m/s, B right at {vB} m/s: the one with less mass goes faster.",
+      "endA": "The skaters reached the edge of the rink. Ratio of velocities: {ratio}, equal to the inverse ratio of the masses.",
+      "flow": "Exhaust flow rate",
+      "dryMass": "Empty rocket mass",
+      "ignite": "Fire the engine",
+      "forceOnGas": "F on gas from rocket",
+      "forceOnRocket": "F on rocket from gas",
+      "rThrust": "Thrust",
+      "rMass": "Current mass",
+      "rFuel": "Fuel",
+      "rVR": "Rocket velocity",
+      "readyB": "Rocket at rest in space, mass {m} kg including {fuel} kg of fuel. Press “Fire the engine”.",
+      "burning": "Engine on: the rocket pushes the gas left with {f} N, the gas pushes the rocket right with {f} N. Velocity {v} m/s.",
+      "burnout": "Fuel used up: the rocket carries on at a constant {v} m/s (first law!).",
+      "vacuumNote": "There is no air in space: the rocket does not “push against” anything. It pushes its own gas backwards, and the gas pushes the rocket forwards.",
+      "graphB": "Rocket velocity over time (v–t)",
+      "graphVY": "v (m/s)",
+      "colT": "t (s)",
+      "colVA": "v of A (m/s)",
+      "colVB": "v of B (m/s)",
+      "colP": "total momentum (kg·m/s)",
+      "colVR": "rocket v (m/s)",
+      "colM": "mass (kg)",
+      "physics": "Skaters: during contact (0.4 s) the engine applies +F to B and −F to A at the same instant; each body accelerates by F/m. Afterwards the frictionless ice lets them glide. Total momentum m_A·v_A + m_B·v_B stays zero, so v_A / v_B = −m_B / m_A. Rocket: at each step a small mass of gas dm leaves at 40 m/s relative to the rocket. From conservation of momentum, m·v = (m − dm)·v′ + dm·(v − u), the engine finds the new velocity v′. Thrust equals flow rate × 40 m/s."
+    },
+    "keyIdea": {
+      "sentence": "Whenever A pushes B, B pushes A with the same force, in the opposite direction.",
+      "text": "Forces always come in pairs. The two forces in a pair have the same size and opposite directions, but they act on different bodies: that is why they do not cancel out. Their effects on motion, however, depend on the masses.",
+      "formula": "F(A on B) = − F(B on A)",
+      "FAB": "the force A exerts on B, in newtons (N).",
+      "FBA": "the force B exerts on A. The minus sign means the opposite direction."
+    },
+    "latin": {
+      "intro": "Here is the law as Newton wrote it (3rd edition of the *Principia*, 1726, public-domain text):",
+      "text": "Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.",
+      "modern": "In plain words: to every action there is always an equal and opposite reaction; the mutual actions of two bodies on each other are always equal and directed in opposite directions. [Source](fonti.html#principia)"
+    },
+    "myths": {
+      "1": {
+        "myth": "“The stronger one pushes harder.”",
+        "fact": "The two forces in the pair are always equal. A “stronger” person can push for longer or harder, but at every instant gets back the same force they give."
+      },
+      "2": {
+        "myth": "“Action and reaction cancel out, so nothing moves.”",
+        "fact": "They would cancel only if they acted on the same body. Instead one acts on A and the other on B: each body receives only one of the two forces and starts moving."
+      },
+      "3": {
+        "myth": "“A truck hits a car with more force than the car exerts on the truck.”",
+        "fact": "During the crash the two forces are equal. The car suffers a much bigger effect because it has much less mass: for the same force, it accelerates more."
+      }
+    },
+    "check": {
+      "q1": {
+        "text": "You are on a boat at rest and throw a backpack towards the shore. What happens to the boat?",
+        "a": "It stays still.",
+        "b": "It moves towards the shore, along with the backpack.",
+        "c": "It moves a little in the direction opposite to the throw.",
+        "fa": "Hint: while you push the backpack, the backpack pushes you. And you are on the boat…",
+        "fb": "Hint: the force the backpack exerts on you points opposite to the throw.",
+        "fc": "Correct: you push the backpack towards the shore, the backpack pushes you (and the boat) the other way. The much heavier boat moves only a little."
+      },
+      "q2": {
+        "text": "Why can a rocket speed up even in space, where there is no air?",
+        "a": "Because it pushes the gas backwards and the gas pushes the rocket forwards.",
+        "b": "It can't: with no air to push against, the rocket stays still.",
+        "c": "Because there is no gravity in space.",
+        "fa": "Correct: the force pair is between the rocket and the expelled gas. No air is needed.",
+        "fb": "Hint: in the simulation the rocket is in a vacuum, yet it speeds up. What does it interact with?",
+        "fc": "Hint: gravity has nothing to do with thrust. Ask yourself: what does the rocket act on, and what acts on the rocket?"
+      }
+    },
+    "prev": "← Second law",
+    "next": "Final quiz →"
+  },
+  "quiz": {
+    "meta": {
+      "title": "Final quiz | Newton in Motion",
+      "description": "Test what you have learned about Newton's three laws and their history, with feedback for every answer."
+    },
+    "eyebrow": "Final check",
+    "title": "Final quiz",
+    "lead": "Eight questions on the three laws and their history. No negative marking: every answer comes with an explanation or a hint. You can try again as often as you like.",
+    "progress": "Correct answers: {n} of {total}.",
+    "done": "Well done: you answered every question correctly!",
+    "q1": {
+      "text": "A hockey puck slides on perfectly smooth ice. No horizontal force acts on it. What does it do?",
+      "a": "It slows down until it stops.",
+      "b": "It carries on in a straight line at constant speed.",
+      "c": "It curves slightly.",
+      "fa": "Hint: without friction, what could slow it down? (Law 1)",
+      "fb": "Correct: that is the first law. With no net force, velocity does not change.",
+      "fc": "Hint: curving needs a sideways force. (Law 1)"
+    },
+    "q2": {
+      "text": "For the same mass, which quantity is proportional to the net force?",
+      "a": "Velocity.",
+      "b": "Position.",
+      "c": "Acceleration.",
+      "fa": "Hint: with a constant force velocity keeps increasing, so it cannot be proportional to the force.",
+      "fb": "Hint: position also depends on where you started. Think about what the force changes.",
+      "fc": "Correct: a = F / m. Twice the force, twice the acceleration."
+    },
+    "q3": {
+      "text": "A force of 15 N acts on a mass of 3 kg. What is the acceleration?",
+      "a": "5 m/s²",
+      "b": "45 m/s²",
+      "c": "0.2 m/s²",
+      "fa": "Correct: a = F / m = 15 / 3 = 5 m/s².",
+      "fb": "Hint: you multiplied. Acceleration is force divided by mass.",
+      "fc": "Hint: you divided mass by force. Try F / m."
+    },
+    "q4": {
+      "text": "A car and a truck collide. During the crash, how do the forces they exert on each other compare?",
+      "a": "The truck exerts a larger force.",
+      "b": "They are equal in size and opposite in direction.",
+      "c": "The car exerts a larger force, because it is faster.",
+      "fa": "Hint: the third law always holds, whatever the masses.",
+      "fb": "Correct: third law. The car suffers more only because it has less mass.",
+      "fc": "Hint: speed does not change the action–reaction rule."
+    },
+    "q5": {
+      "text": "Why don't action and reaction cancel out?",
+      "a": "Because they act on different bodies.",
+      "b": "Because one is always larger.",
+      "c": "Actually they always cancel out.",
+      "fa": "Correct: each force acts on a different body, so they cannot be added together on the same body.",
+      "fb": "Hint: the third law says they are always equal in size.",
+      "fc": "Hint: if they cancelled out, no rocket could ever lift off. Which bodies do they act on?"
+    },
+    "q6": {
+      "text": "According to the sources, what is the link between Newton's apple and the three laws of motion?",
+      "a": "The three laws were born when an apple hit Newton on the head.",
+      "b": "No direct link: the story is about gravitation.",
+      "c": "The apple inspired the third law.",
+      "fa": "Hint: there is no record that the apple hit Newton on the head. And which idea is the story about?",
+      "fb": "Correct: the apple is linked to gravitation, not to the laws of motion.",
+      "fc": "Hint: re-read “The apple” on the History page."
+    },
+    "q7": {
+      "text": "In which work, and in what year, do the three laws first appear?",
+      "a": "In De motu corporum in gyrum, 1684.",
+      "b": "In the Principia, 1687.",
+      "c": "In a letter to the Royal Society, 1666.",
+      "fa": "Hint: De motu is the 9-page treatise that Newton later expanded.",
+      "fb": "Correct: in the Philosophiæ Naturalis Principia Mathematica of 1687, in the section “Axioms, or laws of motion”.",
+      "fc": "Hint: look at the timeline on the History page."
+    },
+    "q8": {
+      "text": "Who had already stated the idea of inertia, at least in part, before Newton?",
+      "a": "Nobody: it is entirely Newton's idea.",
+      "b": "Halley.",
+      "c": "Galileo and Descartes.",
+      "fa": "Hint: Newton built on the ideas of those who came before him. Re-read “Before Newton”.",
+      "fb": "Hint: Halley played an important role in the birth of the Principia, but not in the idea of inertia.",
+      "fc": "Correct: Galileo for horizontal motion, Descartes for motion in a straight line."
+    },
+    "prev": "← Third law",
+    "next": "Sources →"
+  },
+  "sources": {
+    "meta": {
+      "title": "Sources and bibliography | Newton in Motion",
+      "description": "The primary and secondary sources used for the site's historical content, with licence information."
+    },
+    "eyebrow": "Sources",
+    "title": "Sources and bibliography",
+    "lead": "Every historical statement on this site points to one of these sources. We distinguish primary sources (documents from the period) from secondary ones (studies and reference works).",
+    "primaryTitle": "Primary sources",
+    "secondaryTitle": "Secondary sources",
+    "principles": "Editorial principle: we always distinguish documented fact, tradition and interpretation. The Latin passages quoted come from public-domain editions of the *Principia*; the English and Italian renderings are our own.",
+    "items": {
+      "principia": {
+        "title": "Isaac Newton, *Philosophiæ Naturalis Principia Mathematica* (1687; 3rd ed. 1726)",
+        "desc": "The work in which the three laws appear, in the section “Axiomata, sive leges motus”. Scans can be viewed in the Newton collection of the Cambridge Digital Library.",
+        "link": "[Cambridge Digital Library — Newton Papers](https://cudl.lib.cam.ac.uk/collections/newton/1)",
+        "license": "Original text: public domain."
+      },
+      "cudl": {
+        "title": "Cambridge Digital Library, “Papers connected with the Principia” (MS Add. 3965)",
+        "desc": "Manuscripts related to the making and revision of the *Principia*.",
+        "link": "[MS Add. 3965 on Cambridge Digital Library](https://cudl.lib.cam.ac.uk/view/MS-ADD-03965/1)",
+        "license": "Viewable online; check the image terms of use on the site."
+      },
+      "nt": {
+        "title": "National Trust, history of Woolsthorpe Manor",
+        "desc": "Newton's birthplace, the years 1665–1667 and the story of the apple.",
+        "link": "[History of Woolsthorpe Manor — National Trust](https://www.nationaltrust.org.uk/visit/nottinghamshire-lincolnshire/woolsthorpe-manor/history-of-woolsthorpe-manor)",
+        "license": "Copyrighted content: cited for reference only."
+      },
+      "sep": {
+        "title": "Stanford Encyclopedia of Philosophy, entry “Newton's Philosophiae Naturalis Principia Mathematica”",
+        "desc": "Reference entry on the making, structure and laws of the *Principia*.",
+        "link": "[plato.stanford.edu](https://plato.stanford.edu/entries/newton-principia/)",
+        "license": "Copyrighted content: cited for reference only."
+      },
+      "britannica": {
+        "title": "Encyclopaedia Britannica, “Newton's laws of motion”",
+        "desc": "Encyclopedia entry on the three laws and their predecessors.",
+        "link": "[britannica.com](https://www.britannica.com/science/Newtons-laws-of-motion)",
+        "license": "Copyrighted content: cited for reference only."
+      },
+      "nova": {
+        "title": "NOVA / PBS, “Newton's Dark Secrets”",
+        "desc": "Documentary and background material on Newton's life and work.",
+        "link": "[pbs.org/wgbh/nova](https://www.pbs.org/wgbh/nova/newton/)",
+        "license": "Copyrighted content: cited for reference only."
+      }
+    },
+    "imagesTitle": "Images and fonts",
+    "imagesText": "All illustrations are original SVG drawings made for this site. Fonts: Atkinson Hyperlegible (Braille Institute) and Fraunces, both under the SIL Open Font License 1.1, hosted on the site itself. The full list is in the project's CREDITS.md file.",
+    "prev": "← Quiz",
+    "next": "Back to home →"
+  },
+  "historyPager": {
+    "prev": "← Home",
+    "next": "First law →"
+  }
+}

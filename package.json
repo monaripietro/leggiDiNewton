@@ -1,0 +1,11 @@
+{
+  "name": "newton-in-movimento",
+  "private": true,
+  "type": "module",
+  "description": "Sito educativo statico sulle tre leggi di Newton. Nessuna dipendenza: gli script usano solo Node 22.",
+  "scripts": {
+    "serve": "python3 -m http.server 8000",
+    "build": "node tools/build.js",
+    "check": "node tools/check-placeholders.js && node tools/check-i18n.js && node tools/build.js --check && node tools/check-links.js && node tools/contrast-check.js && node --test tests/physics.test.js"
+  }
+}

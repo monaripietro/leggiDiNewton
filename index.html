@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="it">
+<head>
+<!-- @head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Newton in movimento — Le tre leggi del moto</title>
+<meta name="description" content="Scopri le tre leggi di Newton con la loro storia e con simulazioni interattive accessibili, in italiano e in inglese.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/index.html">
+<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/index.html?lang=it">
+<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/index.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/index.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newton in movimento">
+<meta property="og:title" content="Newton in movimento — Le tre leggi del moto">
+<meta property="og:description" content="Scopri le tre leggi di Newton con la loro storia e con simulazioni interattive accessibili, in italiano e in inglese.">
+<meta property="og:image" content="https://monaripietro.github.io/leggiDiNewton/assets/img/og-image.png">
+<meta property="og:image:alt" content="Newton in movimento: le tre leggi del moto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/theme-init.js"></script>
+<script type="module" src="assets/js/nav.js"></script>
+<!-- /@head -->
+</head>
+<body data-page="home">
+<!-- @header -->
+<a class="skip-link" href="#main" data-i18n="common.skip">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/><path d="M7 19h14" stroke="#1F2A37" stroke-width="2.5" stroke-linecap="round"/><path d="M19 14.5l5 4.5-5 4.5z" fill="#1F2A37"/><circle cx="11" cy="11" r="3.2" fill="#FFD9C4" stroke="#1F2A37" stroke-width="1.6"/></svg>
+      <span data-i18n="common.siteName">Newton in movimento</span>
+    </a>
+    <div class="header-tools">
+      <label class="visually-hidden" for="lang-select" data-i18n="common.lang.label">Lingua</label>
+      <select id="lang-select">
+        <option value="it" lang="it">Italiano</option>
+        <option value="en" lang="en">English</option>
+      </select>
+      <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg>
+        <span data-theme-label data-i18n="common.theme.dark">Tema scuro</span>
+      </button>
+      <button id="nav-toggle" class="btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="common.menu">Menu</span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:common.nav.label" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html" data-nav="home" aria-current="page" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="storia.html" data-nav="history" data-i18n="common.nav.history">Storia</a></li>
+        <li><a href="legge-1.html" data-nav="law1" data-i18n="common.nav.law1">Prima legge</a></li>
+        <li><a href="legge-2.html" data-nav="law2" data-i18n="common.nav.law2">Seconda legge</a></li>
+        <li><a href="legge-3.html" data-nav="law3" data-i18n="common.nav.law3">Terza legge</a></li>
+        <li><a href="quiz.html" data-nav="quiz" data-i18n="common.nav.quiz">Quiz</a></li>
+        <li><a href="fonti.html" data-nav="sources" data-i18n="common.nav.sources">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /@header -->
+<main id="main" tabindex="-1">
+  <div class="container">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title" data-i18n="home.title">Newton in movimento</h1>
+        <p class="lead" data-i18n="home.promise">Scopri come un'idea sul moto ha cambiato il mondo.</p>
+        <p data-i18n="home.intro">Tre leggi, poche righe in un libro del 1687, e ancora oggi spiegano perché una palla si ferma, come accelera un'auto e come vola un razzo. Qui le scopri sperimentando, prima di vedere le formule.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-large" href="storia.html" data-i18n="home.cta">Inizia dal viaggio storico</a>
+          <a class="btn btn-large" href="legge-1.html" data-i18n="home.ctaLaws">Vai subito alla prima legge</a>
+        </div>
+      </div>
+      <img class="hero-art" src="assets/img/hero.svg" width="360" height="300" data-i18n-attr="alt:home.heroAlt" alt="Illustrazione: un carrello con tre frecce, una per ciascuna legge del moto.">
+    </section>
+
+    <section class="home-section" aria-labelledby="laws-title">
+      <h2 id="laws-title" data-i18n="home.lawsTitle">Le tre leggi</h2>
+      <ul class="card-grid">
+        <li>
+          <article class="law-card law-1">
+            <div class="law-icon"><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><rect x="6" y="15" width="16" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="10" cy="26" r="2.5" fill="currentColor"/><circle cx="18" cy="26" r="2.5" fill="currentColor"/><path d="M6 10h20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M25 6l6 4-6 4z" fill="currentColor"/></svg></div>
+            <span class="law-tag" data-i18n="home.law1.tag">Legge 1</span>
+            <h3 data-i18n="home.law1.title">Inerzia</h3>
+            <p data-i18n="home.law1.text">Perché un oggetto continua a muoversi, o resta fermo, se nessuna forza lo cambia.</p>
+            <a href="legge-1.html" data-i18n="home.law1.link">Esplora la prima legge</a>
+          </article>
+        </li>
+        <li>
+          <article class="law-card law-2">
+            <div class="law-icon"><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><path d="M4 18h18" stroke="currentColor" stroke-width="3" stroke-dasharray="5 3" stroke-linecap="round"/><path d="M21 12l9 6-9 6z" fill="currentColor"/><path d="M8 6v8M4 10h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+            <span class="law-tag" data-i18n="home.law2.tag">Legge 2</span>
+            <h3 data-i18n="home.law2.title">Forza e accelerazione</h3>
+            <p data-i18n="home.law2.text">Come forza e massa decidono quanto cambia la velocità: la forma moderna è F = m·a.</p>
+            <a href="legge-2.html" data-i18n="home.law2.link">Esplora la seconda legge</a>
+          </article>
+        </li>
+        <li>
+          <article class="law-card law-3">
+            <div class="law-icon"><svg viewBox="0 0 36 36" aria-hidden="true" focusable="false"><path d="M19 13h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M28 8l6 5-6 5z" fill="currentColor"/><path d="M17 23H6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M8 18l-6 5 6 5z" fill="currentColor"/></svg></div>
+            <span class="law-tag" data-i18n="home.law3.tag">Legge 3</span>
+            <h3 data-i18n="home.law3.title">Azione e reazione</h3>
+            <p data-i18n="home.law3.text">Perché le forze nascono sempre in coppia, e come fa un razzo a spingersi nel vuoto.</p>
+            <a href="legge-3.html" data-i18n="home.law3.link">Esplora la terza legge</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="home-section" aria-labelledby="method-title">
+      <h2 id="method-title" data-i18n="home.methodTitle">Come funziona ogni pagina</h2>
+      <ol class="method-list">
+        <li><strong data-i18n="home.method.predict">Predici</strong> <span data-i18n="home.method.predictText">Scegli cosa pensi che succederà.</span></li>
+        <li><strong data-i18n="home.method.experiment">Sperimenta</strong> <span data-i18n="home.method.experimentText">Prova la simulazione e cambia i parametri.</span></li>
+        <li><strong data-i18n="home.method.explain">Spiega</strong> <span data-i18n="home.method.explainText">Scopri l'idea chiave e la formula.</span></li>
+        <li><strong data-i18n="home.method.check">Verifica</strong> <span data-i18n="home.method.checkText">Metti alla prova ciò che hai capito.</span></li>
+      </ol>
+    </section>
+
+    <section class="home-section" aria-labelledby="access-title">
+      <h2 id="access-title" data-i18n="home.accessTitle">Per tutte e tutti</h2>
+      <p data-i18n="home.accessText">Ogni simulazione si usa anche solo con la tastiera, ha una descrizione testuale aggiornata in tempo reale e una tabella dati alternativa ai grafici. Se il tuo sistema chiede di ridurre il movimento, le simulazioni partono in pausa.</p>
+    </section>
+  </div>
+</main>
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="common.footer.about">Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.</p>
+    <p data-i18n="common.footer.privacy">Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.</p>
+    <p data-i18n="common.footer.license">Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.</p>
+    <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
+      <ul>
+        <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
+        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- /@footer -->
+</body>
+</html>

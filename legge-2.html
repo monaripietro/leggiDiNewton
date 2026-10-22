@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="it">
+<head>
+<!-- @head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Seconda legge: forza e accelerazione | Newton in movimento</title>
+<meta name="description" content="Spingi il carrello: scopri con una simulazione interattiva come forza e massa determinano l'accelerazione (F = m·a).">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html">
+<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html?lang=it">
+<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/legge-2.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newton in movimento">
+<meta property="og:title" content="Seconda legge: forza e accelerazione | Newton in movimento">
+<meta property="og:description" content="Spingi il carrello: scopri con una simulazione interattiva come forza e massa determinano l'accelerazione (F = m·a).">
+<meta property="og:image" content="https://monaripietro.github.io/leggiDiNewton/assets/img/og-image.png">
+<meta property="og:image:alt" content="Newton in movimento: le tre leggi del moto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/theme-init.js"></script>
+<script type="module" src="assets/js/nav.js"></script>
+<!-- /@head -->
+</head>
+<body data-page="law2" class="law-2">
+<!-- @header -->
+<a class="skip-link" href="#main" data-i18n="common.skip">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/><path d="M7 19h14" stroke="#1F2A37" stroke-width="2.5" stroke-linecap="round"/><path d="M19 14.5l5 4.5-5 4.5z" fill="#1F2A37"/><circle cx="11" cy="11" r="3.2" fill="#FFD9C4" stroke="#1F2A37" stroke-width="1.6"/></svg>
+      <span data-i18n="common.siteName">Newton in movimento</span>
+    </a>
+    <div class="header-tools">
+      <label class="visually-hidden" for="lang-select" data-i18n="common.lang.label">Lingua</label>
+      <select id="lang-select">
+        <option value="it" lang="it">Italiano</option>
+        <option value="en" lang="en">English</option>
+      </select>
+      <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg>
+        <span data-theme-label data-i18n="common.theme.dark">Tema scuro</span>
+      </button>
+      <button id="nav-toggle" class="btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="common.menu">Menu</span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:common.nav.label" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html" data-nav="home" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="storia.html" data-nav="history" data-i18n="common.nav.history">Storia</a></li>
+        <li><a href="legge-1.html" data-nav="law1" data-i18n="common.nav.law1">Prima legge</a></li>
+        <li><a href="legge-2.html" data-nav="law2" aria-current="page" data-i18n="common.nav.law2">Seconda legge</a></li>
+        <li><a href="legge-3.html" data-nav="law3" data-i18n="common.nav.law3">Terza legge</a></li>
+        <li><a href="quiz.html" data-nav="quiz" data-i18n="common.nav.quiz">Quiz</a></li>
+        <li><a href="fonti.html" data-nav="sources" data-i18n="common.nav.sources">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /@header -->
+<main id="main" tabindex="-1">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow" data-i18n="law2.eyebrow">Legge 2 · Forza e accelerazione</p>
+      <h1 data-i18n="law2.title">Seconda legge: forza e accelerazione</h1>
+      <p class="lead" data-i18n="law2.hook">Perché è più facile mettere in moto un carrello vuoto che uno pieno?</p>
+    </header>
+
+    <section aria-labelledby="story-title">
+      <h2 id="story-title" data-i18n="common.steps.story">Un po' di storia</h2>
+      <p data-i18n="law2.story">Nei <em>Principia</em> (1687) Newton scrisse che la variazione della «quantità di moto» è proporzionale alla forza motrice impressa, e avviene lungo la retta in cui la forza agisce. Oggi la scriviamo, in forma moderna, F = m·a. <a href="storia.html#ev-principia">Leggi la storia</a></p>
+    </section>
+
+    <section aria-labelledby="predict-title">
+      <h2 id="predict-title" class="step-heading"><span class="step-num" aria-hidden="true">1</span> <span data-i18n="common.steps.predict">Predici</span></h2>
+<!-- @predict key=law2.predict correct=b -->
+<form class="question predict" data-predict="law2.predict" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="law2.predict.text">Spingi un carrello con una certa forza. Poi lo spingi con una forza doppia, senza cambiare la massa. Che cosa succede all'accelerazione?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law2-predict" value="a"> <span data-i18n="law2.predict.a">Resta uguale.</span></label>
+      <label class="option"><input type="radio" name="law2-predict" value="b"> <span data-i18n="law2.predict.b">Raddoppia.</span></label>
+      <label class="option"><input type="radio" name="law2-predict" value="c"> <span data-i18n="law2.predict.c">Diventa quattro volte più grande.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-role="confirm" data-i18n="common.predict.confirm">Conferma la previsione</button>
+    <p class="feedback" data-role="status" role="status" aria-live="polite"></p>
+    <button type="button" class="btn" data-role="reveal" hidden data-i18n="common.predict.reveal">Confronta con ciò che hai osservato</button>
+    <div class="feedback" data-role="result" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@predict -->
+    </section>
+
+    <section aria-labelledby="experiment-title">
+      <h2 id="experiment-title" class="step-heading"><span class="step-num" aria-hidden="true">2</span> <span data-i18n="common.steps.experiment">Sperimenta</span></h2>
+      <div class="sim" id="sim-force" role="region" aria-labelledby="sim2-title">
+        <h3 id="sim2-title" data-i18n="law2.sim.title">Spingi il carrello</h3>
+        <p data-i18n="law2.sim.intro">Scegli forza e massa, poi avvia: la forza agisce finché il carrello non arriva in fondo alla pista. Ogni prova finisce nella tabella degli esperimenti.</p>
+        <p class="sim-note" data-role="reduced" hidden data-i18n="common.sim.reducedMotion">Movimento ridotto attivo: la simulazione parte in pausa. Usa «Avvia» oppure «Passo avanti».</p>
+        <div class="sim-tabs" role="group" data-i18n-attr="aria-label:law2.sim.modeLabel" aria-label="Modalità">
+          <button type="button" class="btn" data-mode="free" aria-pressed="true" data-i18n="law2.sim.modeFree">Esperimento libero</button>
+          <button type="button" class="btn" data-mode="rule" aria-pressed="false" data-i18n="law2.sim.modeRule">Scopri la regola</button>
+          <button type="button" class="btn" data-mode="challenge" aria-pressed="false" data-i18n="law2.sim.modeChallenge">Sfida</button>
+        </div>
+        <div class="sim-layout">
+          <div>
+            <div class="sim-stage">
+              <canvas role="img" data-i18n-attr="aria-label:law2.sim.canvasLabel" aria-label="Simulazione, vista laterale: un carrello su una pista orizzontale lunga 20 metri, spinto da una forza F. Le frecce indicano la forza F, l'accelerazione a e la velocità v."></canvas>
+            </div>
+            <ul class="sim-legend" data-i18n-attr="aria-label:common.sim.legend" aria-label="Legenda">
+              <li><span class="swatch swatch-f" aria-hidden="true"></span> <span data-i18n="common.sim.legendF">F = forza (freccia tratteggiata)</span></li>
+              <li><span class="swatch swatch-a" aria-hidden="true"></span> <span data-i18n="common.sim.legendA">a = accelerazione (freccia puntinata)</span></li>
+              <li><span class="swatch swatch-v" aria-hidden="true"></span> <span data-i18n="common.sim.legendV">v = velocità (freccia piena)</span></li>
+              <li data-role="scale-f"></li>
+            </ul>
+            <div class="sim-buttons" role="group" data-i18n-attr="aria-label:common.sim.playback" aria-label="Riproduzione">
+              <button type="button" class="btn btn-primary" data-action="toggle" data-i18n="common.sim.play">Avvia</button>
+              <button type="button" class="btn" data-action="step" data-i18n="common.sim.step">Passo avanti</button>
+              <button type="button" class="btn" data-action="reset" data-i18n="common.sim.reset">Reset</button>
+              <button type="button" class="btn" data-action="challenge" hidden data-i18n="law2.sim.challengeNew">Nuova sfida</button>
+            </div>
+            <p class="sim-guide" data-role="guide" aria-live="polite"></p>
+            <dl class="sim-readout">
+              <div><dt data-i18n="law2.sim.rF">Forza applicata</dt><dd data-out="f">0 N</dd></div>
+              <div><dt data-i18n="law2.sim.rNet">Forza risultante</dt><dd data-out="net">0 N</dd></div>
+              <div><dt data-i18n="law2.sim.rM">Massa</dt><dd data-out="m">0 kg</dd></div>
+              <div><dt data-i18n="law2.sim.rA">Accelerazione a = F/m</dt><dd data-out="a">0 m/s²</dd></div>
+              <div><dt data-i18n="law2.sim.rV">Velocità</dt><dd data-out="v">0 m/s</dd></div>
+              <div><dt data-i18n="law2.sim.rX">Posizione</dt><dd data-out="x">0 m</dd></div>
+            </dl>
+            <p class="sim-live" data-role="live" aria-live="polite"></p>
+            <h4 data-i18n="law2.sim.trials">Tabella degli esperimenti (ultime 5 prove)</h4>
+            <div class="table-wrap">
+              <table>
+                <caption class="visually-hidden" data-i18n="law2.sim.trialsCaption">Ultime prove: forza, massa e accelerazione misurata</caption>
+                <thead><tr><th scope="col" data-i18n="law2.sim.colN">Prova</th><th scope="col" data-i18n="law2.sim.colF">F (N)</th><th scope="col" data-i18n="law2.sim.colM">m (kg)</th><th scope="col" data-i18n="law2.sim.colA">a misurata (m/s²)</th></tr></thead>
+                <tbody data-role="trials"></tbody>
+              </table>
+            </div>
+            <details>
+              <summary data-i18n="common.sim.dataTable">Tabella dati (alternativa ai grafici)</summary>
+              <div class="table-wrap">
+                <table>
+                  <caption class="visually-hidden" data-i18n="common.sim.dataTable">Tabella dati (alternativa ai grafici)</caption>
+                  <thead><tr><th scope="col" data-i18n="law2.sim.colT">t (s)</th><th scope="col" data-i18n="law2.sim.colA">a misurata (m/s²)</th><th scope="col" data-i18n="law2.sim.colV">v (m/s)</th><th scope="col" data-i18n="law2.sim.colX">x (m)</th></tr></thead>
+                  <tbody data-role="table"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+          <form class="sim-controls" data-role="controls" novalidate>
+            <fieldset>
+              <legend data-i18n="common.sim.controls">Controlli della simulazione</legend>
+              <div class="control">
+                <label for="l2-force"><span data-i18n="law2.sim.force">Forza F</span> <output for="l2-force"></output></label>
+                <input id="l2-force" type="range" min="0" max="50" step="1" value="20" aria-describedby="l2-force-hint">
+                <p class="sim-note" id="l2-force-hint" data-i18n="law2.sim.forceHint">Sul cursore: frecce ← → per 1 N, Maiusc + freccia per 5 N. Puoi anche trascinare la freccia rossa sulla pista.</p>
+              </div>
+              <div class="control">
+                <label for="l2-mass"><span data-i18n="law2.sim.mass">Massa m</span> <output for="l2-mass"></output></label>
+                <input id="l2-mass" type="range" min="0.5" max="20" step="0.5" value="5">
+              </div>
+            </fieldset>
+            <fieldset data-role="direction">
+              <legend data-i18n="law2.sim.direction">Direzione della forza</legend>
+              <label class="check"><input type="radio" name="l2-dir" value="1" checked> <span data-i18n="law2.sim.right">Verso destra</span></label>
+              <label class="check"><input type="radio" name="l2-dir" value="-1"> <span data-i18n="law2.sim.left">Verso sinistra</span></label>
+            </fieldset>
+            <label class="check"><input id="l2-friction" type="checkbox"> <span data-i18n="law2.sim.friction">Attrito con la pista (μ = 0,1)</span></label>
+            <div class="callout callout-history">
+              <p class="callout-title" data-i18n="common.historyNote">Nota storica</p>
+              <p data-i18n="law2.sim.historyNote">Newton scrisse la legge in termini di variazione della quantità di moto; F = m·a è la forma moderna.</p>
+            </div>
+          </form>
+        </div>
+        <details>
+          <summary data-i18n="common.sim.physics">Come funziona la fisica (per i curiosi)</summary>
+          <p data-i18n="law2.sim.physics">Ogni 1/120 di secondo il motore calcola la forza risultante (forza applicata più l'eventuale attrito, F_attrito = μ·m·g opposta al moto), poi a = F_risultante / m, v ← v + a·Δt e x ← x + v·Δt. Se la spinta non supera μ·m·g, l'attrito statico la equilibra e il carrello resta fermo. L'accelerazione in tabella è misurata come variazione di velocità divisa per il tempo, proprio come in laboratorio.</p>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="explain-title">
+      <h2 id="explain-title" class="step-heading"><span class="step-num" aria-hidden="true">3</span> <span data-i18n="common.steps.explain">Spiega</span></h2>
+      <div class="callout callout-key">
+        <p class="callout-title" data-i18n="common.keyIdea">Idea chiave</p>
+        <p class="key-sentence" data-i18n="law2.keyIdea.sentence">La forza risultante cambia la velocità: più massa, più difficile cambiarla.</p>
+        <p data-i18n="law2.keyIdea.text">A parità di massa, una forza doppia produce un'accelerazione doppia. A parità di forza, una massa doppia accelera la metà. E l'accelerazione ha sempre la direzione della forza risultante.</p>
+        <p class="formula-box formula" data-i18n="law2.keyIdea.formula">F = m · a   (forma moderna)</p>
+        <dl class="symbols">
+          <dt>F</dt><dd data-i18n="law2.keyIdea.F">forza risultante, in newton (N). 1 N è la forza che fa accelerare 1 kg di 1 m/s².</dd>
+          <dt>m</dt><dd data-i18n="law2.keyIdea.m">massa, in chilogrammi (kg): misura quanto è difficile cambiare il moto del corpo.</dd>
+          <dt>a</dt><dd data-i18n="law2.keyIdea.a">accelerazione, in metri al secondo quadrato (m/s²): di quanto cambia la velocità ogni secondo.</dd>
+        </dl>
+      </div>
+      <div class="callout callout-warn">
+        <h3 id="mass-weight-title" class="callout-title" data-i18n="law2.massWeight.title">Massa e peso non sono la stessa cosa</h3>
+        <p data-i18n="law2.massWeight.text">La <strong>massa</strong> (kg) dice quanta inerzia ha un corpo ed è uguale ovunque. Il <strong>peso</strong> è la forza con cui la gravità lo attira (N): sulla Terra vale circa m · 9,81 N, sulla Luna molto meno. Un astronauta sulla Luna pesa meno, ma ha la stessa massa.</p>
+      </div>
+      <h3 data-i18n="common.latinLabel">Forma originale in latino</h3>
+      <p data-i18n="law2.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio):</p>
+      <blockquote class="latin" lang="la"><p data-i18n="law2.latin.text">Mutationem motus proportionalem esse vi motrici impressae, et fieri secundum lineam rectam qua vis illa imprimitur.</p></blockquote>
+      <p data-i18n="law2.latin.modern">In parole semplici: il cambiamento del moto è proporzionale alla forza impressa e avviene nella direzione in cui la forza agisce. <a href="fonti.html#principia">Fonte</a></p>
+    </section>
+
+    <section aria-labelledby="myths-title">
+      <h2 id="myths-title" data-i18n="common.steps.myths">Errori frequenti</h2>
+<!-- @myths law=law2 -->
+<ul class="misconceptions">
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law2.myths.1.myth">«La velocità è proporzionale alla forza.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law2.myths.1.fact">È l'<strong>accelerazione</strong> a essere proporzionale alla forza. Con una forza costante la velocità continua a crescere: guarda il grafico v–t, è una retta in salita.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law2.myths.2.myth">«La forza è dentro il corpo che si muove.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law2.myths.2.fact">Una forza è un'azione tra due corpi (chi spinge e chi è spinto). Quando la spinta finisce, il corpo non si porta dietro nessuna forza: conserva solo la sua velocità.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law2.myths.3.myth">«Massa e peso sono la stessa cosa.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law2.myths.3.fact">La massa si misura in kg e non cambia; il peso è una forza, si misura in N e dipende dalla gravità del luogo.</span></p>
+  </li>
+</ul>
+<!-- /@myths -->
+    </section>
+
+    <section aria-labelledby="check-title">
+      <h2 id="check-title" class="step-heading"><span class="step-num" aria-hidden="true">4</span> <span data-i18n="common.steps.check">Verifica</span></h2>
+<!-- @question key=law2.check.q1 correct=b -->
+<form class="question" data-quiz="law2.check.q1" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="law2.check.q1.text">Un carrello di 4 kg viene spinto con una forza risultante di 8 N. Quanto vale la sua accelerazione?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law2-check-q1" value="a"> <span data-i18n="law2.check.q1.a">32 m/s²</span></label>
+      <label class="option"><input type="radio" name="law2-check-q1" value="b"> <span data-i18n="law2.check.q1.b">2 m/s²</span></label>
+      <label class="option"><input type="radio" name="law2-check-q1" value="c"> <span data-i18n="law2.check.q1.c">0,5 m/s²</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=law2.check.q2 correct=a -->
+<form class="question" data-quiz="law2.check.q2" data-correct="a" novalidate>
+  <fieldset>
+    <legend data-i18n="law2.check.q2.text">Spingi con la stessa forza un carrello vuoto e uno carico, di massa tripla. Che cosa succede?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law2-check-q2" value="a"> <span data-i18n="law2.check.q2.a">Il carrello carico accelera un terzo di quello vuoto.</span></label>
+      <label class="option"><input type="radio" name="law2-check-q2" value="b"> <span data-i18n="law2.check.q2.b">Accelerano allo stesso modo, perché la forza è la stessa.</span></label>
+      <label class="option"><input type="radio" name="law2-check-q2" value="c"> <span data-i18n="law2.check.q2.c">Il carrello carico accelera tre volte di più.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=law2.check.q3 correct=b -->
+<form class="question" data-quiz="law2.check.q3" data-correct="b" novalidate>
+  <fieldset>
+    <legend data-i18n="law2.check.q3.text">Un carrello si muove verso destra, ma la forza risultante su di esso punta verso sinistra. Che cosa succede?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law2-check-q3" value="a"> <span data-i18n="law2.check.q3.a">Continua ad accelerare verso destra.</span></label>
+      <label class="option"><input type="radio" name="law2-check-q3" value="b"> <span data-i18n="law2.check.q3.b">Rallenta, perché l'accelerazione punta verso sinistra.</span></label>
+      <label class="option"><input type="radio" name="law2-check-q3" value="c"> <span data-i18n="law2.check.q3.c">Si ferma all'istante.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+    </section>
+<!-- @pager prev=legge-1.html next=legge-3.html key=law2 -->
+<nav class="pager" data-i18n-attr="aria-label:common.pagerLabel" aria-label="Pagina precedente e successiva">
+  <a class="btn" href="legge-1.html" rel="prev" data-i18n="law2.prev">← Prima legge</a>
+  <a class="btn btn-primary" href="legge-3.html" rel="next" data-i18n="law2.next">Terza legge →</a>
+</nav>
+<!-- /@pager -->
+  </div>
+</main>
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="common.footer.about">Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.</p>
+    <p data-i18n="common.footer.privacy">Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.</p>
+    <p data-i18n="common.footer.license">Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.</p>
+    <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
+      <ul>
+        <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
+        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- /@footer -->
+<script type="module" src="assets/js/pages/legge-2.js"></script>
+</body>
+</html>

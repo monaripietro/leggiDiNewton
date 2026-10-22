@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 300" font-family="Atkinson Hyperlegible, system-ui, sans-serif">
+  <rect width="360" height="300" rx="24" fill="#CFE6FA"/>
+  <circle cx="290" cy="62" r="30" fill="#FFF1B8"/>
+  <!-- pista -->
+  <rect x="20" y="226" width="320" height="10" rx="5" fill="#4B5563"/>
+  <!-- carrello -->
+  <rect x="120" y="160" width="120" height="56" rx="12" fill="#FFFFFF" stroke="#1F2A37" stroke-width="4"/>
+  <circle cx="148" cy="220" r="12" fill="#1F2A37"/>
+  <circle cx="212" cy="220" r="12" fill="#1F2A37"/>
+  <!-- legge 1: velocità costante -->
+  <g>
+    <line x1="140" y1="140" x2="250" y2="140" stroke="#1D6B4F" stroke-width="6" stroke-linecap="round"/>
+    <path d="M262 140l-16 -10v20z" fill="#1D6B4F"/>
+    <circle cx="118" cy="140" r="14" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/>
+    <text x="118" y="146" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2A37">1</text>
+  </g>
+  <!-- legge 2: forza che spinge -->
+  <g>
+    <line x1="30" y1="188" x2="100" y2="188" stroke="#B4441B" stroke-width="6" stroke-dasharray="12 7" stroke-linecap="round"/>
+    <path d="M114 188l-16 -10v20z" fill="#B4441B"/>
+    <circle cx="52" cy="160" r="14" fill="#FFD9C4" stroke="#1F2A37" stroke-width="2"/>
+    <text x="52" y="166" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2A37">2</text>
+  </g>
+  <!-- legge 3: coppia di forze -->
+  <g>
+    <line x1="250" y1="270" x2="320" y2="270" stroke="#5B3FA8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M332 270l-14 -9v18z" fill="#5B3FA8"/>
+    <line x1="230" y1="270" x2="160" y2="270" stroke="#5B3FA8" stroke-width="5" stroke-linecap="round"/>
+    <path d="M148 270l14 -9v18z" fill="#5B3FA8"/>
+    <circle cx="240" cy="270" r="14" fill="#DCD3F5" stroke="#1F2A37" stroke-width="2"/>
+    <text x="240" y="276" text-anchor="middle" font-size="16" font-weight="700" fill="#1F2A37">3</text>
+  </g>
+</svg>

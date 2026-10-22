@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="it">
+<head>
+<!-- @head -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Terza legge: azione e reazione | Newton in movimento</title>
+<meta name="description" content="Pattinatori e razzo: simulazioni interattive per capire che le forze nascono in coppia e agiscono su corpi diversi.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html">
+<link rel="alternate" hreflang="it" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html?lang=it">
+<link rel="alternate" hreflang="en" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html?lang=en">
+<link rel="alternate" hreflang="x-default" href="https://monaripietro.github.io/leggiDiNewton/legge-3.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Newton in movimento">
+<meta property="og:title" content="Terza legge: azione e reazione | Newton in movimento">
+<meta property="og:description" content="Pattinatori e razzo: simulazioni interattive per capire che le forze nascono in coppia e agiscono su corpi diversi.">
+<meta property="og:image" content="https://monaripietro.github.io/leggiDiNewton/assets/img/og-image.png">
+<meta property="og:image:alt" content="Newton in movimento: le tre leggi del moto">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fonts/atkinson-hyperlegible-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<script src="assets/js/theme-init.js"></script>
+<script type="module" src="assets/js/nav.js"></script>
+<!-- /@head -->
+</head>
+<body data-page="law3" class="law-3">
+<!-- @header -->
+<a class="skip-link" href="#main" data-i18n="common.skip">Salta al contenuto</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#CDEFE3" stroke="#1F2A37" stroke-width="2"/><path d="M7 19h14" stroke="#1F2A37" stroke-width="2.5" stroke-linecap="round"/><path d="M19 14.5l5 4.5-5 4.5z" fill="#1F2A37"/><circle cx="11" cy="11" r="3.2" fill="#FFD9C4" stroke="#1F2A37" stroke-width="1.6"/></svg>
+      <span data-i18n="common.siteName">Newton in movimento</span>
+    </a>
+    <div class="header-tools">
+      <label class="visually-hidden" for="lang-select" data-i18n="common.lang.label">Lingua</label>
+      <select id="lang-select">
+        <option value="it" lang="it">Italiano</option>
+        <option value="en" lang="en">English</option>
+      </select>
+      <button id="theme-toggle" class="btn" type="button" aria-pressed="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M15.5 12.5A6.5 6.5 0 0 1 7.5 4.5a6.5 6.5 0 1 0 8 8z" fill="currentColor"/></svg>
+        <span data-theme-label data-i18n="common.theme.dark">Tema scuro</span>
+      </button>
+      <button id="nav-toggle" class="btn nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span data-i18n="common.menu">Menu</span>
+      </button>
+    </div>
+    <nav id="site-nav" class="site-nav" data-i18n-attr="aria-label:common.nav.label" aria-label="Navigazione principale">
+      <ul>
+        <li><a href="index.html" data-nav="home" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="storia.html" data-nav="history" data-i18n="common.nav.history">Storia</a></li>
+        <li><a href="legge-1.html" data-nav="law1" data-i18n="common.nav.law1">Prima legge</a></li>
+        <li><a href="legge-2.html" data-nav="law2" data-i18n="common.nav.law2">Seconda legge</a></li>
+        <li><a href="legge-3.html" data-nav="law3" aria-current="page" data-i18n="common.nav.law3">Terza legge</a></li>
+        <li><a href="quiz.html" data-nav="quiz" data-i18n="common.nav.quiz">Quiz</a></li>
+        <li><a href="fonti.html" data-nav="sources" data-i18n="common.nav.sources">Fonti</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /@header -->
+<main id="main" tabindex="-1">
+  <div class="container">
+    <header class="page-intro">
+      <p class="eyebrow" data-i18n="law3.eyebrow">Legge 3 · Azione e reazione</p>
+      <h1 data-i18n="law3.title">Terza legge: azione e reazione</h1>
+      <p class="lead" data-i18n="law3.hook">Se spingi un amico sui pattini, perché ti muovi anche tu?</p>
+    </header>
+
+    <section aria-labelledby="story-title">
+      <h2 id="story-title" data-i18n="common.steps.story">Un po' di storia</h2>
+      <p data-i18n="law3.story">La terza legge è l'ultima delle tre leggi enunciate nei <em>Principia</em> (1687). Prima di Newton, Huygens aveva già studiato gli urti tra corpi. <a href="storia.html#ev-others">Leggi la storia</a></p>
+    </section>
+
+    <section aria-labelledby="predict-title">
+      <h2 id="predict-title" class="step-heading"><span class="step-num" aria-hidden="true">1</span> <span data-i18n="common.steps.predict">Predici</span></h2>
+<!-- @predict key=law3.predict correct=c -->
+<form class="question predict" data-predict="law3.predict" data-correct="c" novalidate>
+  <fieldset>
+    <legend data-i18n="law3.predict.text">Due pattinatori sul ghiaccio: A (adulto, 60 kg) spinge B (ragazzo, 40 kg). Durante la spinta, chi riceve la forza più grande?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law3-predict" value="a"> <span data-i18n="law3.predict.a">B, perché è A a spingere.</span></label>
+      <label class="option"><input type="radio" name="law3-predict" value="b"> <span data-i18n="law3.predict.b">A, perché è più pesante.</span></label>
+      <label class="option"><input type="radio" name="law3-predict" value="c"> <span data-i18n="law3.predict.c">Nessuno dei due: le due forze hanno la stessa intensità.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-role="confirm" data-i18n="common.predict.confirm">Conferma la previsione</button>
+    <p class="feedback" data-role="status" role="status" aria-live="polite"></p>
+    <button type="button" class="btn" data-role="reveal" hidden data-i18n="common.predict.reveal">Confronta con ciò che hai osservato</button>
+    <div class="feedback" data-role="result" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@predict -->
+    </section>
+
+    <section aria-labelledby="experiment-title">
+      <h2 id="experiment-title" class="step-heading"><span class="step-num" aria-hidden="true">2</span> <span data-i18n="common.steps.experiment">Sperimenta</span></h2>
+      <div class="sim" id="sim-reaction" role="region" aria-labelledby="sim3-title">
+        <h3 id="sim3-title" data-i18n="law3.sim.title">Pattini e razzo</h3>
+        <p data-i18n="law3.sim.intro">Due scene: nella prima due pattinatori si spingono a vicenda; nella seconda un razzo nello spazio espelle gas.</p>
+        <p class="sim-note" data-role="reduced" hidden data-i18n="common.sim.reducedMotion">Movimento ridotto attivo: la simulazione parte in pausa. Usa «Avvia» oppure «Passo avanti».</p>
+        <div class="sim-tabs" role="group" data-i18n-attr="aria-label:law3.sim.sceneLabel" aria-label="Scena">
+          <button type="button" class="btn" data-scene="A" aria-pressed="true" data-i18n="law3.sim.sceneA">A · Due pattinatori</button>
+          <button type="button" class="btn" data-scene="B" aria-pressed="false" data-i18n="law3.sim.sceneB">B · Razzo nello spazio</button>
+        </div>
+        <div class="sim-layout">
+          <div>
+            <div class="sim-stage">
+              <canvas role="img" data-i18n-attr="aria-label:law3.sim.canvasLabelA" aria-label="Simulazione, scena dei pattinatori: due figure su una pista di ghiaccio, A a sinistra e B a destra. Durante la spinta compaiono due frecce di forza uguali e opposte, ciascuna sul proprio corpo."></canvas>
+            </div>
+            <ul class="sim-legend" data-i18n-attr="aria-label:common.sim.legend" aria-label="Legenda">
+              <li><span class="swatch swatch-f" aria-hidden="true"></span> <span data-i18n="common.sim.legendF">F = forza (freccia tratteggiata)</span></li>
+              <li><span class="swatch swatch-v" aria-hidden="true"></span> <span data-i18n="common.sim.legendV">v = velocità (freccia piena)</span></li>
+              <li data-role="scale-f"></li>
+            </ul>
+            <div class="sim-buttons" role="group" data-i18n-attr="aria-label:common.sim.playback" aria-label="Riproduzione">
+              <button type="button" class="btn btn-primary" data-action="push" data-scene-only="A" data-i18n="law3.sim.pushBtn">Spingi!</button>
+              <button type="button" class="btn btn-primary" data-action="ignite" data-scene-only="B" hidden data-i18n="law3.sim.ignite">Accendi il motore</button>
+              <button type="button" class="btn" data-action="toggle" data-i18n="common.sim.play">Avvia</button>
+              <button type="button" class="btn" data-action="step" data-i18n="common.sim.step">Passo avanti</button>
+              <button type="button" class="btn" data-action="reset" data-i18n="common.sim.reset">Reset</button>
+            </div>
+            <dl class="sim-readout" data-scene-only="A">
+              <div><dt data-i18n="law3.sim.rFA">Forza su A</dt><dd data-out="fa">0 N</dd></div>
+              <div><dt data-i18n="law3.sim.rFB">Forza su B</dt><dd data-out="fb">0 N</dd></div>
+              <div><dt data-i18n="law3.sim.rVA">Velocità di A</dt><dd data-out="va">0 m/s</dd></div>
+              <div><dt data-i18n="law3.sim.rVB">Velocità di B</dt><dd data-out="vb">0 m/s</dd></div>
+              <div><dt data-i18n="law3.sim.rP">Quantità di moto totale</dt><dd data-out="p">0 kg·m/s</dd></div>
+            </dl>
+            <dl class="sim-readout" data-scene-only="B" hidden>
+              <div><dt data-i18n="law3.sim.rThrust">Spinta</dt><dd data-out="thrust">0 N</dd></div>
+              <div><dt data-i18n="law3.sim.rVR">Velocità del razzo</dt><dd data-out="vr">0 m/s</dd></div>
+              <div><dt data-i18n="law3.sim.rMass">Massa attuale</dt><dd data-out="mass">0 kg</dd></div>
+              <div><dt data-i18n="law3.sim.rFuel">Carburante</dt><dd data-out="fuel">0 kg</dd></div>
+              <div><dt data-i18n="law3.sim.rP">Quantità di moto totale</dt><dd data-out="pr">0 kg·m/s</dd></div>
+            </dl>
+            <p class="sim-live" data-role="live" aria-live="polite"></p>
+            <p class="callout callout-history" data-scene-only="B" hidden data-i18n="law3.sim.vacuumNote">Nello spazio non c'è aria: il razzo non si «appoggia» a niente. Spinge il proprio gas all'indietro, e il gas spinge il razzo in avanti.</p>
+            <details>
+              <summary data-i18n="common.sim.dataTable">Tabella dati (alternativa ai grafici)</summary>
+              <div class="table-wrap" data-scene-only="A">
+                <table>
+                  <caption class="visually-hidden" data-i18n="law3.sim.sceneA">A · Due pattinatori</caption>
+                  <thead><tr><th scope="col" data-i18n="law3.sim.colT">t (s)</th><th scope="col" data-i18n="law3.sim.colVA">v di A (m/s)</th><th scope="col" data-i18n="law3.sim.colVB">v di B (m/s)</th><th scope="col" data-i18n="law3.sim.colP">quantità di moto totale (kg·m/s)</th></tr></thead>
+                  <tbody data-role="table-A"></tbody>
+                </table>
+              </div>
+              <div class="table-wrap" data-scene-only="B" hidden>
+                <table>
+                  <caption class="visually-hidden" data-i18n="law3.sim.sceneB">B · Razzo nello spazio</caption>
+                  <thead><tr><th scope="col" data-i18n="law3.sim.colT">t (s)</th><th scope="col" data-i18n="law3.sim.colVR">v razzo (m/s)</th><th scope="col" data-i18n="law3.sim.colM">massa (kg)</th><th scope="col" data-i18n="law3.sim.colP">quantità di moto totale (kg·m/s)</th></tr></thead>
+                  <tbody data-role="table-B"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+          <form class="sim-controls" data-role="controls" novalidate>
+            <fieldset data-scene-only="A">
+              <legend data-i18n="law3.sim.sceneA">A · Due pattinatori</legend>
+              <div class="control">
+                <label for="l3-ma"><span data-i18n="law3.sim.massA">Massa di A</span> <output for="l3-ma"></output></label>
+                <input id="l3-ma" type="range" min="30" max="100" step="5" value="60">
+              </div>
+              <div class="control">
+                <label for="l3-mb"><span data-i18n="law3.sim.massB">Massa di B</span> <output for="l3-mb"></output></label>
+                <input id="l3-mb" type="range" min="30" max="100" step="5" value="40">
+              </div>
+            </fieldset>
+            <fieldset data-scene-only="B" hidden>
+              <legend data-i18n="law3.sim.sceneB">B · Razzo nello spazio</legend>
+              <div class="control">
+                <label for="l3-flow"><span data-i18n="law3.sim.flow">Portata del getto</span> <output for="l3-flow"></output></label>
+                <input id="l3-flow" type="range" min="0.5" max="5" step="0.5" value="2">
+              </div>
+              <div class="control">
+                <label for="l3-dry"><span data-i18n="law3.sim.dryMass">Massa del razzo vuoto</span> <output for="l3-dry"></output></label>
+                <input id="l3-dry" type="range" min="10" max="60" step="5" value="30">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <details>
+          <summary data-i18n="common.sim.physics">Come funziona la fisica (per i curiosi)</summary>
+          <p data-i18n="law3.sim.physics">Pattinatori: durante il contatto (0,4 s) il motore applica +F a B e −F ad A nello stesso istante; ogni corpo accelera di F/m. Dopo, il ghiaccio senza attrito li lascia scivolare. La quantità di moto totale m_A·v_A + m_B·v_B resta zero, quindi v_A / v_B = −m_B / m_A. Razzo: a ogni passo esce una piccola massa di gas dm a 40 m/s rispetto al razzo. Dalla conservazione della quantità di moto, m·v = (m − dm)·v′ + dm·(v − u), il motore ricava la nuova velocità v′. La spinta vale portata × 40 m/s.</p>
+        </details>
+      </div>
+    </section>
+
+    <section aria-labelledby="explain-title">
+      <h2 id="explain-title" class="step-heading"><span class="step-num" aria-hidden="true">3</span> <span data-i18n="common.steps.explain">Spiega</span></h2>
+      <div class="callout callout-key">
+        <p class="callout-title" data-i18n="common.keyIdea">Idea chiave</p>
+        <p class="key-sentence" data-i18n="law3.keyIdea.sentence">Ogni volta che A spinge B, B spinge A con la stessa forza, in verso opposto.</p>
+        <p data-i18n="law3.keyIdea.text">Le forze nascono sempre in coppia. Le due forze della coppia hanno la stessa intensità e verso opposto, ma agiscono su corpi diversi: per questo non si annullano. Gli effetti sul moto, invece, dipendono dalle masse.</p>
+        <p class="formula-box formula" data-i18n="law3.keyIdea.formula">F(A su B) = − F(B su A)</p>
+        <dl class="symbols">
+          <dt>F(A→B)</dt><dd data-i18n="law3.keyIdea.FAB">la forza che A esercita su B, in newton (N).</dd>
+          <dt>F(B→A)</dt><dd data-i18n="law3.keyIdea.FBA">la forza che B esercita su A. Il segno meno indica il verso opposto.</dd>
+        </dl>
+      </div>
+      <h3 data-i18n="common.latinLabel">Forma originale in latino</h3>
+      <p data-i18n="law3.latin.intro">Ecco la legge come la scrisse Newton (3ª edizione dei <em>Principia</em>, 1726, testo di pubblico dominio):</p>
+      <blockquote class="latin" lang="la"><p data-i18n="law3.latin.text">Actioni contrariam semper et aequalem esse reactionem: sive corporum duorum actiones in se mutuo semper esse aequales et in partes contrarias dirigi.</p></blockquote>
+      <p data-i18n="law3.latin.modern">In parole semplici: a ogni azione corrisponde sempre una reazione uguale e contraria; le azioni reciproche di due corpi sono sempre uguali e dirette in versi opposti. <a href="fonti.html#principia">Fonte</a></p>
+    </section>
+
+    <section aria-labelledby="myths-title">
+      <h2 id="myths-title" data-i18n="common.steps.myths">Errori frequenti</h2>
+<!-- @myths law=law3 -->
+<ul class="misconceptions">
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law3.myths.1.myth">«Il più forte spinge di più.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law3.myths.1.fact">Le due forze della coppia sono sempre uguali. Chi è più «forte» può spingere più a lungo o più intensamente, ma in ogni istante riceve indietro la stessa forza che dà.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law3.myths.2.myth">«Azione e reazione si annullano, quindi niente si muove.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law3.myths.2.fact">Si annullerebbero solo se agissero sullo stesso corpo. Invece una agisce su A e l'altra su B: ciascun corpo riceve una sola delle due forze e si mette in moto.</span></p>
+  </li>
+  <li>
+    <p class="myth"><span class="visually-hidden" data-i18n="common.myth">Idea sbagliata</span> <span data-i18n="law3.myths.3.myth">«Un camion colpisce un'auto con più forza di quanta l'auto ne eserciti sul camion.»</span></p>
+    <p class="fact"><span class="visually-hidden" data-i18n="common.fact">Come stanno davvero le cose</span> <span data-i18n="law3.myths.3.fact">Durante l'urto le due forze sono uguali. L'auto subisce un effetto molto maggiore perché ha molta meno massa: a parità di forza, accelera di più.</span></p>
+  </li>
+</ul>
+<!-- /@myths -->
+    </section>
+
+    <section aria-labelledby="check-title">
+      <h2 id="check-title" class="step-heading"><span class="step-num" aria-hidden="true">4</span> <span data-i18n="common.steps.check">Verifica</span></h2>
+<!-- @question key=law3.check.q1 correct=c -->
+<form class="question" data-quiz="law3.check.q1" data-correct="c" novalidate>
+  <fieldset>
+    <legend data-i18n="law3.check.q1.text">Sei su una barca ferma e lanci uno zaino verso la riva. Che cosa succede alla barca?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law3-check-q1" value="a"> <span data-i18n="law3.check.q1.a">Resta ferma.</span></label>
+      <label class="option"><input type="radio" name="law3-check-q1" value="b"> <span data-i18n="law3.check.q1.b">Si sposta verso la riva, insieme allo zaino.</span></label>
+      <label class="option"><input type="radio" name="law3-check-q1" value="c"> <span data-i18n="law3.check.q1.c">Si sposta un po' nel verso opposto al lancio.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+<!-- @question key=law3.check.q2 correct=a -->
+<form class="question" data-quiz="law3.check.q2" data-correct="a" novalidate>
+  <fieldset>
+    <legend data-i18n="law3.check.q2.text">Perché un razzo può accelerare anche nello spazio, dove non c'è aria?</legend>
+    <div class="options">
+      <label class="option"><input type="radio" name="law3-check-q2" value="a"> <span data-i18n="law3.check.q2.a">Perché spinge il gas all'indietro e il gas spinge il razzo in avanti.</span></label>
+      <label class="option"><input type="radio" name="law3-check-q2" value="b"> <span data-i18n="law3.check.q2.b">Non può: senza aria su cui appoggiarsi, il razzo resta fermo.</span></label>
+      <label class="option"><input type="radio" name="law3-check-q2" value="c"> <span data-i18n="law3.check.q2.c">Perché nello spazio non c'è gravità.</span></label>
+    </div>
+    <button type="submit" class="btn btn-primary" data-i18n="common.quiz.check">Verifica</button>
+    <div class="feedback" role="status" aria-live="polite"></div>
+  </fieldset>
+</form>
+<!-- /@question -->
+    </section>
+<!-- @pager prev=legge-2.html next=quiz.html key=law3 -->
+<nav class="pager" data-i18n-attr="aria-label:common.pagerLabel" aria-label="Pagina precedente e successiva">
+  <a class="btn" href="legge-2.html" rel="prev" data-i18n="law3.prev">← Seconda legge</a>
+  <a class="btn btn-primary" href="quiz.html" rel="next" data-i18n="law3.next">Quiz finale →</a>
+</nav>
+<!-- /@pager -->
+  </div>
+</main>
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="container">
+    <p data-i18n="common.footer.about">Un sito educativo per scoprire le tre leggi del moto di Isaac Newton, la loro storia e il concetto dietro le formule.</p>
+    <p data-i18n="common.footer.privacy">Nessun cookie e nessun tracciamento: la lingua e il tema scelti restano solo nel tuo browser.</p>
+    <p data-i18n="common.footer.license">Testi con licenza CC BY 4.0. Codice open source (vedi il file LICENSE). Immagini: disegni SVG originali.</p>
+    <nav data-i18n-attr="aria-label:common.footer.linksLabel" aria-label="Collegamenti utili">
+      <ul>
+        <li><a href="fonti.html" data-i18n="common.footer.sources">Fonti e bibliografia</a></li>
+        <li><a href="CREDITS.md" data-i18n="common.footer.credits">Crediti</a></li>
+        <li><a href="#main" data-i18n="common.footer.top">Torna all'inizio</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+<!-- /@footer -->
+<script type="module" src="assets/js/pages/legge-3.js"></script>
+</body>
+</html>
